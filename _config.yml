@@ -1,0 +1,16 @@
+# Site settings
+title: Adrian Oboroc's personal site
+description: "Blog, links to my projects and some details about me."
+pygments: true
+github: oboroc
+url: http://www.oboroc.com
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 3
+
+# enable automatic site map
+gems:
+  - jekyll-sitemap
