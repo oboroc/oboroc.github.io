@@ -8,4 +8,4 @@ I'm a mellow and unambitious IT guy with mild programming and DIY electronics ho
 
 Currently I'm working at a great company, have fantastic colleagues and boss and hope it will last a little bit longer before everything inevitably goes sideways.
 
-I enjoyed most Animal Kingdom, Fire Emblem and WarioWare games. Never got into modern military shooters, World of Warcraft or League of Legends.
+I enjoy Animal Kingdom, Fire Emblem and WarioWare games. Also I was huge on Guild Wars, but after a decade and about 20'000 hours logged can't really play it anymore.
