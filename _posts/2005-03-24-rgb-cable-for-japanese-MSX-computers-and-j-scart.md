@@ -11,21 +11,19 @@ All japanese MSX2, MSX2+ and TurboR computers have RGB out on a DIN-8 connector.
 The pinout for this connector is available at Ultimate MSX FAQ:
 <http://www.faq.msxnet.org/connector.html#rgbjap>
 
-```
- 7    6
-3   8   1    
- 5     4
-    2
+         7    6
+        3   8   1    
+         5     4
+            2
 
-1 GND
-2 AUDIO
-3 NC
-4 C SYNC
-5 +5V
-6 R
-7 G
-8 B
-```
+        1 GND
+        2 AUDIO
+        3 NC
+        4 C SYNC
+        5 +5V
+        6 R
+        7 G
+        8 B
 
 Note: if you mod your MSX for PSG stereo output (ABC or ACB), you can use pin 1
 for "AUDIO LEFT" and pin 2, which is not used by default, as "AUDIO RIGHT".
@@ -35,29 +33,27 @@ example Micomsoft XRGB* family of upscanners or XAV* RGB to S-Video converter
 series). The pinout for J-SCART is available from GameSX:
 <http://www.gamesx.com/avpinouts/rgb21pinj.htm>
 
-```
-  1                 19
-+---------------------+
-| | | | | | | | | | |  \21
-|  | | | | | | | | | |  \ 
-+-----------------------+
-   2                 20
-
-1  R AUDIO
-3  L/R AUDIO GND
-5  L AUDIO
-7  C SYNC GND
-9  C SYNC  
-13 R GND
-15 R
-16 +5V
-17 G GND
-18 B GND
-19 G
-20 B
-21 GND
-```
-
+          1                 19
+        +---------------------+
+        | | | | | | | | | | |  \21
+        |  | | | | | | | | | |  \ 
+        +-----------------------+
+           2                 20
+        
+        1  R AUDIO
+        3  L/R AUDIO GND
+        5  L AUDIO
+        7  C SYNC GND
+        9  C SYNC  
+        13 R GND
+        15 R
+        16 +5V
+        17 G GND
+        18 B GND
+        19 G
+        20 B
+        21 GND
+        
 Note: there are only 20 pins. Pin 21 is actually shielding that protects
 connector.
 
@@ -65,19 +61,17 @@ I didn't know if GameSX pinout is 100% acurate. What I did is order a known
 working XRGB cable for SEGA Genesis model 1, and then just replaced connector
 on SEGA part with japanese MSX RGB connector. Here is what I ended up with:
 
-```
-DIN-8     J-SCART  
-
-1         3,7,17
-2         5
-3         1 (*)
-4         9
-5         16 (**)
-6         15
-7         19
-8         20
-Shielding 21
-```
+        DIN-8     J-SCART  
+        
+        1         3,7,17
+        2         5
+        3         1 (*)
+        4         9
+        5         16 (**)
+        6         15
+        7         19
+        8         20
+        Shielding 21
 
 \* Optional. You only need this signal if you plan to add PSG stereo mod.
 
