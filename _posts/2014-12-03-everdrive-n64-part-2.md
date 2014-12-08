@@ -26,3 +26,16 @@ This time I managed to open it without damage:
 ![Black shell front](/img/2014-12-03-everdrive-n64-4.jpg)
 
 ![Black shell back](/img/2014-12-03-everdrive-n64-5.jpg)
+
+Here are the two pieces of shielding.
+I've straightened top edges to fit in full sized Everdrive 64 PCB and cut a bit of metal from place where battery is going to be:
+
+![Shielding](/img/2014-12-03-everdrive-n64-6.jpg)
+
+Partially assembled Everdrive N64:
+
+![Partially assembled](/img/2014-12-03-everdrive-n64-7.jpg)
+
+Fully assembled, running great on actual Nintendo 64 console:
+
+![Fully assembled](/img/2014-12-03-everdrive-n64-8.jpg)
