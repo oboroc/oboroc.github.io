@@ -1,16 +1,32 @@
 # Site settings
-title: Adrian Oboroc's personal site
+title:       Adrian Oboroc's personal site
+#email:       your_email@example.com
+author:      Adrian Oboroc
 description: "Blog, links to my projects and some details about me."
-pygments: true
-github: oboroc
-url: http://www.oboroc.com
-baseurl: ""
+baseurl:     ""
+url:         "http://www.oboroc.com"
+
+# Google analytics
+#google_analytics:
+
+# Optional features
+animated:           false
+show_related_posts: false
+show_post_footers:  false
+
+# Social icons
+show_social_icons: false
+github_username:   oboroc
+#twitter_username:
+#google_plus_id:
+#linkedin_username:
+#bitcoin_url:
+#paypal_url:
+#flattr_button:
 
 # Build settings
-markdown: kramdown
-permalink: pretty
-paginate: 3
-
-# enable automatic site map
-gems:
-  - jekyll-sitemap
+markdown:     kramdown
+permalink:    pretty
+paginate:     3
+sass:
+  compressed: true
