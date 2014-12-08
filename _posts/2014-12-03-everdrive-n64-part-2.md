@@ -20,7 +20,7 @@ Here is the Everdrive N64 with trasnplant CIC chip soldered in:
 
 ![Transplant CIC chip back](/img/2014-12-03-everdrive-n64-3.jpg)
 
-Next I got a back donor cartridge with Madden 2002 game for 5.65$.
+Next I got a black donor cartridge with Madden 2002 game for 5.65$.
 This time I managed to open it without damage.
 I filed holes for SD card and mini-USB socket.
 Also I had to remove some plastic from inside to fit in large Everdrive N64 PCB:
