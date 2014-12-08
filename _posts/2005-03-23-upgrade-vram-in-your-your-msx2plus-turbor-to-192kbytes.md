@@ -23,36 +23,32 @@ data bus, and the other - D4-D7.
 
 Normally VRAM chips look like this on computer PCB:
 
-```
-  +--------+
-1 |  4464  (  \
-  +--------+   \ bank 1 (D0-D3)
-  +--------+   /
-2 |  4464  (  /
-  +--------+
-  +--------+
-3 |  4464  (  \
-  +--------+   \ bank 2 (D4-D7)
-  +--------+   /
-4 |  4464  (  /
-  +--------+
-```
+          +--------+
+        1 |  4464  (  \
+          +--------+   \ bank 1 (D0-D3)
+          +--------+   /
+        2 |  4464  (  /
+          +--------+
+          +--------+
+        3 |  4464  (  \
+          +--------+   \ bank 2 (D4-D7)
+          +--------+   /
+        4 |  4464  (  /
+          +--------+
 
 Here is the pinout for 4464 DRAM chip in DIP-18 package (viewing from top):
 
-```
-     +---U---+
- /OE |1    18| GND
-  D0 |2    17| D3
-  D1 |3    16| /CAS
- /WE |4    15| D2
-/RAS |5    14| A0
-  A6 |6    13| A1
-  A5 |7    12| A2
-  A4 |8    11| A3
- Vcc |9    10| A7
-     +-------+
-```
+             +---U---+
+         /OE |1    18| GND
+          D0 |2    17| D3
+          D1 |3    16| /CAS
+         /WE |4    15| D2
+        /RAS |5    14| A0
+          A6 |6    13| A1
+          A5 |7    12| A2
+          A4 |8    11| A3
+         Vcc |9    10| A7
+             +-------+
 
 The extra chips should go on top of chip 2 and 4. Just bend pin 16 (/CAS) on
 each chip first and solder the rest of pins to corresponding pins of existing
