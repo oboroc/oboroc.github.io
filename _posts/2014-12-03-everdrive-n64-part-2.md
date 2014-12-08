@@ -10,3 +10,6 @@ This is a follow-up to my first [Everdrive N64 post](http://www.oboroc.com/posts
 I got a blue donor cartridge with Bassmasters 2000 game for 4.50$:
 
 ![Blue donor](/img/2014-12-03-everdrive-n64-1.jpg)
+
+Unfortunately, I broke one of the two hooks that hold the shell together at the bottom.
+I still ended up using CIC chip from the PCB.
