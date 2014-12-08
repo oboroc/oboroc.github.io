@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Adrian Oboroc
+title: About me
 permalink: /about/
 ---
 
