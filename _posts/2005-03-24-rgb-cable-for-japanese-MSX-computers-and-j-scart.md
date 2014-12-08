@@ -11,19 +11,21 @@ All japanese MSX2, MSX2+ and TurboR computers have RGB out on a DIN-8 connector.
 The pinout for this connector is available at Ultimate MSX FAQ:
 <http://www.faq.msxnet.org/connector.html#rgbjap>
 
-         7    6
-        3   8   1    
-         5     4
-            2
+```
+ 7     6
+3   8   1
+ 5     4
+    2
 
-        1 GND
-        2 AUDIO
-        3 NC
-        4 C SYNC
-        5 +5V
-        6 R
-        7 G
-        8 B
+1 GND
+2 AUDIO
+3 NC
+4 C SYNC
+5 +5V
+6 R
+7 G
+8 B
+```
 
 Note: if you mod your MSX for PSG stereo output (ABC or ACB), you can use pin 1
 for "AUDIO LEFT" and pin 2, which is not used by default, as "AUDIO RIGHT".
