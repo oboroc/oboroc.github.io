@@ -14,6 +14,8 @@ If there are not many recognizable items in the room, user may want to put a few
 System would use some sort of AI knowledge base system to judge how similar and unknown object is to some of the known objects and based on this suggest it belongs to the same category.
 If input video is stereoscopic (3D), it could further improve depth perception of CV algorithms.
 Some of the algorithms can benefit from custom FPGA or GPGPU solutions to speed things up and/or reduce power consumption.
+With enough video footage it should be possible to build a fairly high resolution texture models for object surfaces.
+Microsoft Research lab did something similar for building high quality 3d models of human face from a grainy low resolution surveilance videos.
 
 I would like to release it as a smartphone app, but offload all processing to servers in the Internet.
 It could also be offered to other developers as SaaS service to integrate functionality in their products.
