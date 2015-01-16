@@ -17,5 +17,5 @@ Some of the algorithms can benefit from custom FPGA or GPGPU solutions to speed 
 I would like to release it as a smartphone app, but offload all processing to servers in the Internet.
 It could also be offered to other developers as SaaS service to integrate functionality in their products.
 
-Given the population of our planet, probably hundreds of people considered the same idea (“It’s like Google Street View, but for interiors!”).
-I haven’t seen any good implementations yet, so definitely this is something interesting to pursue.
+Given the population of our planet, probably hundreds of people considered the same idea ("It's like Google Street View, but for interiors!").
+I haven't seen any good implementations yet, so definitely this is something interesting to pursue.
