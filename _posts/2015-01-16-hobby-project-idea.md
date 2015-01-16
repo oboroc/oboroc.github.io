@@ -11,6 +11,7 @@ I decided that it would be fun building reasonably accurate 3d model of apartmen
 The video would be analyzed using computer vision algorithms.
 It would use a community-curated library of 3d models of popular items: Billy bookshelf, 25 cents, flat screen TV, washer and dryer etc.
 If there are not many recognizable items in the room, user may want to put a few easily recognizable items around, so that CV algorithms have some point of reference to judge distance and size of other objects.
+System would use some sort of AI knowledge base system to judge how similar and unknown object is to some of the known objects and based on this suggest it belongs to the same category.
 If input video is stereoscopic (3D), it could further improve depth perception of CV algorithms.
 Some of the algorithms can benefit from custom FPGA or GPGPU solutions to speed things up and/or reduce power consumption.
 
