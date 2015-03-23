@@ -46,4 +46,5 @@ Books I finished are in italics, book I am currently reading is in bold:
 30. The Damnation of Pythos
 31. Legacies of Betrayal
 
-~~Stikethrough~~
+<s>html s tag</s>
+<del>html del tag</del>
