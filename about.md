@@ -14,25 +14,25 @@ but I mostly follow the order of publishing.
 
 Books I finished are in italics, book I am currently reading is in bold:
 
-1. _Horus Rising_
-2. _False Gods_
-3. _Galaxy in Flames_
-4. _The Flight of the Eisenstein_
-5. _Fulgrim_
-6. _Descent of Angels_
-7. _Legion_
-8. _Battle for the Abyss_
-9. _Mechanicum_
-10. _Tales of Heresy_
-11. _Fallen Angels_
-12. _A Thousand Sons_
+1. <del>Horus Rising</del>
+2. <del>False Gods</del>
+3. <del>Galaxy in Flames</del>
+4. <del>The Flight of the Eisenstein</del>
+5. <del>Fulgrim</del>
+6. <del>Descent of Angels</del>
+7. <del>Legion</del>
+8. <del>Battle for the Abyss</del>
+9. <del>Mechanicum</del>
+10. <del>Tales of Heresy</del>
+11. <del>Fallen Angels</del>
+12. <del>A Thousand Sons</del>
 13. Nemesis
 14. The First Heretic
-15. _Prospero Burns_
-16. _Age of Darkness_
+15. <del>Prospero Burns</del>
+16. <del>Age of Darkness</del>
 17. The Outcast Dead
 18. Deliverance Lost
-19. _Know No Fear_
+19. <del>Know No Fear</del>
 20. The Primarchs
 21. Fear to Tread
 22. Shadows of Treachery
@@ -45,6 +45,3 @@ Books I finished are in italics, book I am currently reading is in bold:
 29. Vengeful Spirit
 30. The Damnation of Pythos
 31. Legacies of Betrayal
-
-<s>html s tag</s>
-<del>html del tag</del>
