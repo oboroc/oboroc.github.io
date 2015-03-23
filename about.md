@@ -12,7 +12,7 @@ Wikipedia has an
 [elaborate reading order graph](http://en.wikipedia.org/wiki/Horus_Heresy_%28fictional_event%29#/media/File:English_Horus_heresy_spoiler_free_tree.jpg),
 but I mostly follow the order of publishing.
 
-Books I finished are in italics, book I am currently reading is in bold:
+Books I finished are striken through, book I am currently reading is in bold:
 
 1. <del>Horus Rising</del>
 2. <del>False Gods</del>
