@@ -45,3 +45,5 @@ Books I finished are in italics, book I am currently reading is in bold:
 29. Vengeful Spirit
 30. The Damnation of Pythos
 31. Legacies of Betrayal
+
+~~Stikethrough~~
