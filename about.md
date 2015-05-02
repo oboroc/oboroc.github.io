@@ -30,7 +30,7 @@ Books I finished are striken through, book I am currently reading is in bold:
 14. The First Heretic
 15. <del>Prospero Burns</del>
 16. <del>Age of Darkness</del>
-17. The Outcast Dead
+17. **The Outcast Dead**
 18. Deliverance Lost
 19. <del>Know No Fear</del>
 20. The Primarchs
@@ -38,7 +38,7 @@ Books I finished are striken through, book I am currently reading is in bold:
 22. Shadows of Treachery
 23. Angel Exterminatus
 24. Betrayer
-25. **Mark of Calth**
+25. <del>Mark of Calth</del>
 26. Vulkan Lives
 27. The Unremembered Empire
 28. Scars
