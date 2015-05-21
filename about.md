@@ -27,10 +27,10 @@ Books I finished are striken through, book I am currently reading is in bold:
 11. <del>Fallen Angels</del>
 12. <del>A Thousand Sons</del>
 13. Nemesis
-14. The First Heretic
+14. **The First Heretic**
 15. <del>Prospero Burns</del>
 16. <del>Age of Darkness</del>
-17. **The Outcast Dead**
+17. <del>The Outcast Dead</del>
 18. Deliverance Lost
 19. <del>Know No Fear</del>
 20. The Primarchs
