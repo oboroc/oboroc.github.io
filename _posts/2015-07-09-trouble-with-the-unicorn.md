@@ -22,7 +22,7 @@ I ended up buying this book:
 
 It is also available [online](http://scholarworks.rit.edu/cgi/viewcontent.cgi?article=1064&context=books).
 
-I got stuck dead very early, on page 11. I just don't get what is formulation and position marker.
+I got stuck dead very early, on page 11. I just don't get what a formulation and position marker is.
 I can't quite grep states in .output file from running `bison -v` on your grammar (pages 9-10).
 I don't understand trees related to LL and LR parsing (pages 6-8). I think this is somehow related to
 deconstructing input string left to right or right to left, but I'm not sure.
