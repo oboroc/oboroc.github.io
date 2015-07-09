@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Monitor repair"
-date:   2015-07-09 16:51:00
+date:   2015-07-08 21:05:00
 categories: posts
 ---
 
