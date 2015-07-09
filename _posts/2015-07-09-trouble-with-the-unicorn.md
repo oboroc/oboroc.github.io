@@ -13,8 +13,8 @@ on it, and it all clicks together into overall comprehension. I guess criticism 
 dramatically if you can get someone to see what you do and tell you what they think about it.
 
 For a while now I'm trying to understand how proper lexer and parser generators work.
-Specifically, ![flex](http://flex.sourceforge.net/manual/) and
-![bison](http://www.gnu.org/software/bison/manual/html_node/index.html).
+Specifically, [flex](http://flex.sourceforge.net/manual/) and
+[bison](http://www.gnu.org/software/bison/manual/html_node/index.html).
 
 I ended up buying this book:
 
