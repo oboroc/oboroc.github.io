@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Trouble with the unicorn"
-date:   2015-01-16 16:31:00
+date:   2015-01-16 16:51:00
 categories: posts
 ---
 
 I know how learning of complex subject is supposed to work, but it's not happening for me right now.
 
-You're supposed to mimic someone else as much as possible, slowly gaining small insights into why
+You're supposed to mimic someone who knows how to do it, slowly gaining small insights into why
 they are doing something this way or that. And hopefully eventually you kind of daydream or sleep
 on it, and it all clicks together into overall comprehension. I guess criticism could accelerate it
 dramatically if you can get someone to see what you do and tell you what they think about it.
