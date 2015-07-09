@@ -15,10 +15,9 @@ drammatically if you can get someone to see what you do and tell you what they t
 For a while now I'm trying to understand how proper lexer and parser generators work.
 Specifically, flex and bison. I ended up buying this book:
 
-[Introduction to Compiler Construction with UNIX]: /img/2015-07-09-trouble-with-the-unicorn.jpg
-"Introduction to Compiler Construction with UNIX, Axel T. Schreiner and H. Gerorge Friedman, Jr., 1985"
+![Introduction to Compiler Construction with UNIX](/img/2015-07-09-trouble-with-the-unicorn.jpg ""Introduction to Compiler Construction with UNIX, Axel T. Schreiner and H. Gerorge Friedman, Jr., 1985"")
 
-It is also available online: <http://scholarworks.rit.edu/cgi/viewcontent.cgi?article=1064&context=books>
+It is also available [online](http://scholarworks.rit.edu/cgi/viewcontent.cgi?article=1064&context=books)
 
 I got stuck dead very early, on page 11. I just don't get what is formulation and position marker.
 I can't quite grep states in .output file from running `bison -v` on your grammar (pages 9-10).
