@@ -13,7 +13,10 @@ on it, and it all clicks together into overall comprehension. I guess criticism 
 dramatically if you can get someone to see what you do and tell you what they think about it.
 
 For a while now I'm trying to understand how proper lexer and parser generators work.
-Specifically, flex and bison. I ended up buying this book:
+Specifically, ![flex](http://flex.sourceforge.net/manual/) and
+![bison](http://www.gnu.org/software/bison/manual/html_node/index.html).
+
+I ended up buying this book:
 
 ![Introduction to Compiler Construction with UNIX](/img/2015-07-09-trouble-with-the-unicorn.jpg ""Introduction to Compiler Construction with UNIX, Axel T. Schreiner and H. Gerorge Friedman, Jr., 1985"")
 
