@@ -19,7 +19,7 @@ reconnected the cable to the bezel, and snapped bezel back. Tested the monitor a
 
 ![POST screen from my ALR Flyer VL 486DX/2 50MHz computer](/img/2015-07-08-monitor-repair-1.jpg)
 
-![Vendor's label on the back](/img/2015-07-08-monitor-repair-1.jpg)
+![Vendor's label on the back](/img/2015-07-08-monitor-repair-2.jpg)
 
 Sadly it's not a great monitor. Poorly built, with horrible stand, as expected from Bestbuy's store brand stuff.
 In it's hey days it sold for 120$ and was 80$ on sale. I'll be lucky to get 20$ for it. But since my awesome
