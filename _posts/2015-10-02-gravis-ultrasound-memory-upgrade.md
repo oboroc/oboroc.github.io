@@ -19,9 +19,14 @@ It took a bit of fiddling to dislodge chips from the sockets they were in for th
 
 I installed Gravis Ultrasound with upgraded memory in my awesome ALR Flyer VL 486 PC.
 I tested memory with setup tool, it all checked out fine.
-I played both Second Reality from Future Crew and Crystal Dreams 2 from Triton, both worked as expected.
 
-On the down side, those demos were mind blowing back in 93-94. But they look underwhelming now. It would've been better not to revisit this memory.
+I played both Second Reality from Future Crew and Crystal Dreams 2 from Triton.
+Those demos were mind blowing back in 93-94. But they look underwhelming now.
+It would've been better not to revisit this memory.
+
+In the lower left corner, you can see soldering pads for sockets for 512KB EDO RAM SOJ chips.
+Such chips were later used in Gravis Ultrasound Max and most PCI SVGA video cards.
+I may try someday to transplant sockets from an old PCI SVGA card and see if it will work with SOJ EDO RAM.
 
 <a href="/img/2015-10-04-gravis-ultrasound-memory-upgrade-1-full.jpg">
 ![Gravis Ultrasound and Trident TVGA8900C after the memory swap](/img/2015-10-04-gravis-ultrasound-memory-upgrade-1.jpg)
