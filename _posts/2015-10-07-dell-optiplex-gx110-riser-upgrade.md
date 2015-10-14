@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dell Optiplex GX110 Riser Upgrade"
+title:  "Dell Optiplex GX110 riser upgrade"
 date:   2015-10-07 21:53:00
 categories: posts
 ---
