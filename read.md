@@ -24,12 +24,12 @@ Books I finished are striken through, book I am currently reading is in bold:
 10. <del>Tales of Heresy</del>
 11. <del>Fallen Angels</del>
 12. <del>A Thousand Sons</del>
-13. **Nemesis**
+13. <del>Nemesis</del>
 14. <del>The First Heretic</del>
 15. <del>Prospero Burns</del>
 16. <del>Age of Darkness</del>
 17. <del>The Outcast Dead</del>
-18. Deliverance Lost
+18. **Deliverance Lost**
 19. <del>Know No Fear</del>
 20. The Primarchs
 21. <del>Fear to Tread</del>
