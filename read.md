@@ -29,12 +29,12 @@ Books I finished are striken through, book I am currently reading is in bold:
 15. <del>Prospero Burns</del>
 16. <del>Age of Darkness</del>
 17. <del>The Outcast Dead</del>
-18. **Deliverance Lost**
+18. <del>Deliverance Lost</del>
 19. <del>Know No Fear</del>
 20. The Primarchs
 21. <del>Fear to Tread</del>
 22. Shadows of Treachery
-23. Angel Exterminatus
+23. **Angel Exterminatus**
 24. Betrayer
 25. <del>Mark of Calth</del>
 26. Vulkan Lives
