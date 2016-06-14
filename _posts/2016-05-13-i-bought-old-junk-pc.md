@@ -26,8 +26,8 @@ On an impulse, I spoke to driver and offered 10$ for the PC that looked least da
 It was in a baby-AT case, predecessor of modern ATX cases.
 I took it home and tried to start it, things didn't go well.
 On power-on it would spin CPU fan and turn up all the lights (power, ide, suspend), but it would not react to keyboard, output anything to monitor or even produce any beep codes if I pulled memory.
-After a few minutes of trying to make it run it started exuding strong mold stink.
-After reading internet for a while, I took it apart as much as possible, and left all pieces out on the balcony under direct and very bright summer sun.
+After a few minutes of trying to make it run it started exuding strong moldy odor.
+I took it apart and left pieces out on the balcony under direct summer sun.
 After 6 hours of baking, I hooked up motherboard to a known good power supply and hurrah, it booted to post screen.
 Motherboard has very few labels or silkscreen text on it, not a good sign. Good brands plaster their logos and model numbers all over their products.
 It did have Elpina and BO E-VO in silk screen.
