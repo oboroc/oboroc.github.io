@@ -16,7 +16,7 @@ a Sound Blaster Pro compatible ISA sound card with ESS AudioDrive 688 chipset,
 a single-speed IDE CDROM I got for free from a generous colleague at University,
 a 1.7GB Fujitsu IDE HDD and a 3.5" floppy drive.
 It was housed in AT mid-tower case.
-It came with affordable but very nice Chicony keyboard and Mitsumi mouse.
+It came with affordable but nice Mitsumi keyboard and mouse.
 It cost us about 1600 US$, and I managed to sell it 1.5 years later for 700 US$ and was very happy.
 But now I'm kind of nostalgic and wish I kept it, but that would've been way to expensive.
 I ended up using 700 US$ towards my new 1998 system, It also had an ASUS motherboard, AMD K6 300MHz CPU, Nvidia Riva TNT 16MB, Gravis Ultrasound PnP with 8MB sample RAM and a 2x2x4 HP CD-RW drive.
