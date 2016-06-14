@@ -38,7 +38,8 @@ I did search online and found a couple of very comprehensive sites, dedicated to
 Thanks a lot to people who created and maintain those pages!
 If it wasn't for them, I'd give up and just desolder power, SIMM-72 and battery sockets and trash the rest.
 Apparently there are 3 main versions of this motherboard.
-Versions 3.2 and 7.x have 3 ISA slots and on-board CM8830 sound chip, and version 1.x have 4 ISA slots but no sound chip.
+Versions 3.2 and 7.x have 3 ISA slots and on-board [C-Media CMI8330](https://www.vogonsdrivers.com/index.php?catid=55) sound chip.
+Version 1.x have 4 ISA slots but no sound chip.
 Version 7.x supports 2.2v core voltage for AMD K6-2+/K6-III CPUs, and it's clearly marked with black dot next to 2.2v jumper.
 On versions 1.x and 3.2, same jumper provides 2.5v, and is clearly labeled as such in silkscreen.
 This let me to believe I got version 3.2.
