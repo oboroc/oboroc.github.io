@@ -34,8 +34,8 @@ Books I finished are striken through, book I am currently reading is in bold:
 20. The Primarchs
 21. <del>Fear to Tread</del>
 22. Shadows of Treachery
-23. **Angel Exterminatus**
-24. Betrayer
+23. <del>Angel Exterminatus</del>
+24. **Betrayer**
 25. <del>Mark of Calth</del>
 26. Vulkan Lives
 27. The Unremembered Empire
@@ -43,3 +43,11 @@ Books I finished are striken through, book I am currently reading is in bold:
 29. Vengeful Spirit
 30. The Damnation of Pythos
 31. Legacies of Betrayal
+32. Deathfire: Into the Ruinstorm
+33. War Without End: Heresy Begets Retribution
+34. Pharos: the Dying of the Light
+35. Eye of Terra: I Am the Emperor's Vigilance
+36. The Path of Heaven: Riding Out from the Storm
+37. The Silent War: Chosen of the Sigillite
+38. Angels of Caliban: Emperors and Slaves
+39. Praetorian of Dorn: Alpha to Omega
