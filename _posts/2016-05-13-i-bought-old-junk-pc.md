@@ -31,7 +31,7 @@ I took it apart and left pieces out on the balcony under direct summer sun.
 After 6 hours of baking, I hooked up motherboard to a known good power supply and hurrah, it booted to post screen.
 Motherboard has very few labels or silkscreen text on it, not a good sign. Good brands plaster their logos and model numbers all over their products.
 It did have Elpina and BO E-VO in silk screen.
-This was enough to find a forum post about it being a relabeled M571 motherboard from PCChips.
+This was enough to find a [forum post](https://www.wimsbios.com/forum/where-can-find-motherboard-manual-f34/manual-for-elpina-9814-t5742.html) about it being a relabeled M571 motherboard from PCChips.
 For those who don't know, PCChips was a very prolific motherboard vendor in late 90-s to early 2000-s.
 It was offering very cheap prices and their motherboards sort of worked, but not very well.
 I did search online and found a couple of very comprehensive sites, dedicated to M571: [1](http://m571.com/m571/) and [2](http://cwcyrix.duckdns.org/techpage/html/m1.html).
