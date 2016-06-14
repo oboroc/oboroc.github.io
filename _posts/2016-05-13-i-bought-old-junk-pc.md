@@ -55,7 +55,7 @@ While looking for different versions of amiflash, I came across an amazing proje
 This program worked beautifully, I took backup of BIOS that motherboard came with and upgraded to BIOS version 19990514S.
 The one I had before was 1997xxyyS, sadly I forgot to take a picture and now I can't see it as clear text in BIOS file.
 Someday I may flash back just to see if the version I got is somehow unique, and if so, share it with the good folks who maintain M571 support pages.
-If anyone is curious to look at it, here is the file: [2016-05-13-m571-1997-bios-backup.zip](2016-05-13-m571-1997-bios-backup.zip).
+If anyone is curious to look at it, here is the file: [2016-05-13-m571-1997-bios-backup.zip](/files/2016-05-13-m571-1997-bios-backup.zip).
 After upgrade, booting from CDROM works. It didn't with original BIOS.
 
 I'm kind of tired of this project for now, so I'll just put it on hold until I have some free time and willpower to continue.
