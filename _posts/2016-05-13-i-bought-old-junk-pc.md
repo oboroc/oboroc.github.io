@@ -14,8 +14,8 @@ My memory is vague, but most likely it had ASUS P2T4 motherboard,
 a glitchy Cirrus CL-GD5434 PCI VGA card with 1MB RAM,
 a Sound Blaster Pro compatible ISA sound card with ESS AudioDrive 688 chipset,
 a single-speed IDE CDROM I got for free from a generous colleague at University,
-a 1.7GB Fujitsu IDE HDD and a 3.5" HD floppy drive.
-It was housed in an AT mid-tower.
+a 1.7GB Fujitsu IDE HDD and a 3.5" floppy drive.
+It was housed in AT mid-tower case.
 It came with affordable but very nice Chicony keyboard and Mitsumi mouse.
 It cost us about 1600 US$, and I managed to sell it 1.5 years later for 700 US$ and was very happy.
 But now I'm kind of nostalgic and wish I kept it, but that would've been way to expensive.
