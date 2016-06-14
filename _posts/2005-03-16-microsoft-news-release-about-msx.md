@@ -3,6 +3,7 @@ layout: post
 title:  "MICROSOFT NEWS RELEASE"
 date:   2005-03-16 00:00:00
 categories: posts
+redirect_from: "/posts/2005/03/16/microsoft-news-release-about-msx.html"
 ---
 
 For more information contact:
