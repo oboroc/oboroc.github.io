@@ -67,3 +67,4 @@ After upgrade, booting from CDROM works. It didn't with original BIOS.
 
 I'm kind of tired of this project for now, so I'll just put it on hold until I have some free time and willpower to continue.
 I also need to update this post with some pictures.
+Once I get back to it, I'd like to recap the board and add 2.2v voltage support to run with AMD K6-2+ 366 CPU.
