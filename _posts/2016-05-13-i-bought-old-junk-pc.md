@@ -7,13 +7,19 @@ categories: posts
 
 I bought an old junk PC from a scrap collector on the street.
 
-The reason for this is that my very first PC parents bought me in 1996.
+The reason for this is my very first PC parents bought me in 1996.
 It was a Pentium 120MHz overclocked to 133MHz (FSB 60MHz -> 66MHz).
-My memory is vague, but most likely it had ASUS P2T4 motherboard, a glitchy Cirrus CL-GD5434 PCI VGA card with 1MB RAM, a Sound Blaster Pro compatible ISA sound card with ESS AudioDrive 688 chipset,
-a single-speed IDE CDROM I got for free from a colleague at University,
+My memory is vague, but most likely it had ASUS P2T4 motherboard,
+16MB RAM (2x 8MB 60ns EDO 72-pin SIMM),
+a glitchy Cirrus CL-GD5434 PCI VGA card with 1MB RAM,
+a Sound Blaster Pro compatible ISA sound card with ESS AudioDrive 688 chipset,
+a single-speed IDE CDROM I got for free from a generous colleague at University,
 a 1.7GB Fujitsu IDE HDD and a 3.5" HD floppy drive.
 It was housed in an AT mid-tower.
 It came with affordable but very nice Chicony keyboard and Mitsumi mouse.
+It cost us about 1600 US$, and I managed to sell it 1.5 years later for 700 US$ and was very happy.
+But now I'm kind of nostalgic and wish I kept it, but that would've been way to expensive.
+I ended up using 700 US$ towards my new 1998 system, It also had an ASUS motherboard, AMD K6 300MHz CPU, Nvidia Riva TNT 16MB, Gravis Ultrasound PnP with 8MB sample RAM and a 2x2x4 HP CD-RW drive.
 
 A few days ago I went out to buy lunch and on my way I saw a truck full of old junk computers, printers and CRT monitors.
 On an impulse, I spoke to driver and offered 10$ for the PC that looked least damaged.
@@ -51,7 +57,7 @@ Later I disassembled it to find hair and a bunch of used long distance calling c
 I cleaned floppy drive thoroughly, but I'm still doubtful if it's salvageable after all the abuse it suffered.
 I finally decided to update to a more recent version of BIOS.
 I couldn't flash BIOS with amiflash 6.x that came from PCChips with BIOS file, it would just hang.
-While looking for different versions of amiflash, I came across an amazing project: [UniFlash](http://www.rainbow-software.org/uniflash/)
+While looking for different versions of amiflash, I came across an amazing project: [UniFlash](http://www.rainbow-software.org/uniflash/).
 This program worked beautifully, I took backup of BIOS that motherboard came with and upgraded to BIOS version 19990514S.
 The one I had before was 1997xxyyS, sadly I forgot to take a picture and now I can't see it as clear text in BIOS file.
 Someday I may flash back just to see if the version I got is somehow unique, and if so, share it with the good folks who maintain M571 support pages.
