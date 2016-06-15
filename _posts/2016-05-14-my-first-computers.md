@@ -77,5 +77,5 @@ I needed 700 US$ for my 1998 PC. It was built around AMD K6 300MHz CPU, Nvidia R
 I don't really have any fond memories about my second PC, even though I was much better then my first PC.
 
 I upgraded again in early 2000 to a system based on fresh and exciting Slot-A AMD Athlon 700MHz CPU.
-It had Asus K7A motheboard, 128MB PC-100 SDRAM, 20GB IBM HDD, Sound Blaster 128 PCI audio card, Matrox Millennium G450 AGP video card.
+It had Asus K7V motheboard, 128MB PC-100 SDRAM, 20GB IBM HDD, Sound Blaster 128 PCI audio card, Matrox Millennium G450 AGP video card.
 This is the PC I took with me to Canada, it served me well until 2002, when I sold it to my coworked and got myself a new system based on Athlon XP 1700.
