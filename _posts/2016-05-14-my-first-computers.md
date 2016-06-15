@@ -49,7 +49,7 @@ Money wasn't great, but I would've done it even for free.
 The class I managed had about 10 gorgeous IBM PS/2 Model 50 286 10MHz PCs with 1MB RAM, 20MB HDD, clicky model M keyboards and greyscale monochrome 12" monitors.
 As a very junior member of staff, I could use a really cool 386SX 16MHz PC with 2MB RAM and 100MB HDD with 13" VGA color monitor, but only after 6:00pm, after everyone else left.
 Later that year I also got a paid programming gig at ASE (Academy of Economic Studies) and got access to an amazing 386 DX40 system and I think a 15" VGA monitor.
-I was wonderous. I wrote some software for statistic modelling. It featured TUI user interface using Borland Turbo Vision and 640x480 16 color VGA graphics for plotting graphs.
+It was wonderous. I wrote some software for statistic modelling. It featured TUI user interface using Borland Turbo Vision and 640x480 16 color VGA graphics for plotting graphs.
 It also allowed printing graphics out to EPSON compatible dot-matrix printers using ESC/P codes.
 
 In 1996 my awesome parents bought me my first PC.
@@ -73,8 +73,9 @@ LBM was native file format of EA Deluxe Paint on Amiga and PC and for a while it
 
 I ended up selling my first PC 1.5 years later for 700 US$ and was very happy about the money I got for it.
 I am a bit nostalgic and wish I kept it, but that would've been way too expensive.
-I needed 700 US$ for my 1998 PC. It was built about AMD K6 300MHz CPU, Nvidia Riva TNT 16MB, Gravis Ultrasound PnP with 8MB sample RAM, 2x2x4 HP CD-RW drive and ASUS motherboard, probably P5A-B.
+I needed 700 US$ for my 1998 PC. It was built around AMD K6 300MHz CPU, Nvidia Riva TNT 16MB, Gravis Ultrasound PnP with 8MB sample RAM, 2x2x4 HP CD-RW drive and ASUS motherboard, probably P5A-B.
 I don't really have any fond memories about my second PC, even though I was much better then my first PC.
+
 I upgraded again in early 2000 to a system based on fresh and exciting Slot-A AMD Athlon 700MHz CPU.
 It had Asus K7A motheboard, 128MB PC-100 SDRAM, 20GB IBM HDD, Sound Blaster 128 PCI audio card, Matrox Millennium G450 AGP video card.
 This is the PC I took with me to Canada, it served me well until 2002, when I sold it to my coworked and got myself a new system based on Athlon XP 1700.
