@@ -11,7 +11,7 @@ It didn't help that my classmate, Vlad Hoholkov, got a full blown PC XT clone wi
 
 My family wasn't crazy rich.
 My parents are doctors, not apparatchiks or oligarchs, but they where really awesome and bought me a Kvorum BK05 8-bit computer as a high school graduation gift.
-I bought it from Vlad Hoholkov again, he got one too.
+I bought it from Vlad Hoholkov's aunt, he got one too.
 His aunt was paid in Kvorums by her factory in lieu of actual money.
 It was not unusual right after the fall of Soviet Union.
 Computer was beautiful and worked really well.
