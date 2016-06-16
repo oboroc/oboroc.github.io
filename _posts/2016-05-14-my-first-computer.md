@@ -7,7 +7,7 @@ redirect_from: "/posts/2016/05/13/2016-05-14-my-first-computers/"
 ---
 
 I really wanted to get my own computer since 1990, when I started programming.
-It didn't help that my classmate, Vlad Khokholkhov, got a full blown PC XT clone with hipster amber monochrome monitor at home.
+It didn't help that my classmate, Vlad Hoholkov, got a full blown PC XT clone with hipster amber monochrome monitor at home.
 
 My family wasn't crazy rich. My parents are doctors, not apparatchiks or oligarchs,
 but they where really awesome and bought me a Kvorum-64 8-bit computer as a high school graduation gift.
