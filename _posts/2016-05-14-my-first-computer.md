@@ -9,10 +9,14 @@ redirect_from: "/posts/2016/05/13/2016-05-14-my-first-computers/"
 I really wanted to get my own computer since 1990, when I started programming.
 It didn't help that my classmate, Vlad Hoholkov, got a full blown PC XT clone with hipster amber monochrome monitor at home.
 
-My family wasn't crazy rich. My parents are doctors, not apparatchiks or oligarchs,
-but they where really awesome and bought me a Kvorum-64 8-bit computer as a high school graduation gift.
-The cost was something around 600 rubles, which was cheaper then normal store price, but in 1992 it still was about 2 months worth of combined parents salary.
-It was beautiful and worked really well. It was one of the better russian clones of ZX Spectrum 48. Here is a photo by Andshel, CC BY-SA 3.0, from russian Wikipedia page about Kvorum:
+My family wasn't crazy rich.
+My parents are doctors, not apparatchiks or oligarchs, but they where really awesome and bought me a Kvorum BK05 8-bit computer as a high school graduation gift.
+I bought it from Vlad Hoholkov again, he got one too.
+His aunt was paid in Kvorums by her factory in lieu of actual money.
+It was not unusual right after the fall of Soviet Union.
+Computer was beautiful and worked really well.
+It was one of the better russian clones of ZX Spectrum 48.
+Here is a photo by Andshel, CC BY-SA 3.0, from russian Wikipedia page about Kvorum:
 
 <a href="https://commons.wikimedia.org/w/index.php?curid=27138616">
 ![Kvorum BK05](/img/2016-05-14-my-first-computer.jpg)
