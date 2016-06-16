@@ -18,7 +18,7 @@ _December 17, 2013 update_: translation is now complete!
 
 _December 29, 2013 update_: moved project to GitHub
 
-[asmsx-cleanup]: https://github.com/oboroc/asmsx-cleanup/
+[asmsx-cleanup]: https://github.com/msxdev/asmsx-cleanup/
 "asmsx-cleanup GitHub project page"
 
 [Eduardo "pitpan" Robsy]: https://twitter.com/EduRobsy
