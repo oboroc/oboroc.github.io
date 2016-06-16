@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My first computers"
+title:  "My first PC"
 date:   2016-05-14 23:56:00
 categories: posts
 ---
