@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My Matrox video cards"
+title:  "Matrox Millennium"
 date:   2016-07-01 22:11:00
 categories: posts
 ---
@@ -9,12 +9,12 @@ A couple of days ago I bought an original Matrox Millennium PCI SVGA video card.
 It's a DELL OEM rev. B version with 220MHz RAMDAC and 4MB WRAM on-board.
 Board layout and components are really beautiful:
 
-<a href="/img/2016-07-01-my-matrox-video-cards-1-full.jpg">
-![Matrox Millennium front side](/img/2016-07-01-my-matrox-video-cards-1.jpg)
+<a href="/img/2016-07-01-matrox-millennium-1-full.jpg">
+![Matrox Millennium front side](/img/2016-07-01-matrox-millennium-1.jpg)
 </a>
 
-<a href="/img/2016-07-01-my-matrox-video-cards-2-full.jpg">
-![Matrox Millennium front side](/img/2016-07-01-my-matrox-video-cards-2.jpg)
+<a href="/img/2016-07-01-matrox-millennium-2-full.jpg">
+![Matrox Millennium front side](/img/2016-07-01-matrox-millennium-2.jpg)
 </a>
 
 Back in it's heyday this card was selling for around 600$.
@@ -33,7 +33,7 @@ C:\mgafold\setup351\ directory size is about 1.6MB, so it won't fit on a single 
 I reformated HDD to FAT32, booted from Windows 98 boot floppy and ran UPDBIOS.EXE.
 It helpfully notified me that I had BIOS v2.3 and it will be updated to v3.0:
 
-![Matrox Millennium BIOS update](/img/2016-07-01-my-matrox-video-cards-3.jpg)
+![Matrox Millennium BIOS update](/img/2016-07-01-matrox-millennium-3.jpg)
 
-Here is a backup copy of [Matrox Millennium BIOS v2.3](/files/2016-07-01-my-matrox-video-cards-matrox-millennium-bios-v2.3.zip) for anyone interested.
+Here is a backup copy of [Matrox Millennium BIOS v2.3](/files/2016-07-01-matrox-millennium-bios-v2.3.zip) for anyone interested.
 
