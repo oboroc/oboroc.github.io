@@ -21,6 +21,8 @@ Back in it's heyday this card was selling for around 600$.
 Needless to say I used a much cheaper and slower noname PCI SVGA card with Cirrus Logic CL-GD5436 chipset and 1MB DRAM.
 I can't quite explain why it's so much fun to play around with stuff that was way out of reach when it was current, but it is.
 
-Out of curiosity I searched online for BIOS update and found this amazing resource:
+Out of curiosity I searched online for BIOS update and found this mirror of Matrox web site download page circa 2005:
 
-[BIOS updates for Matrox Millennium, Millennium II, Mistique, Mistique 220, Productiva G100, Millennium G200, G200MMS, G400, G450, G450MMS, G550, P650 and P750 and Parhelia](http://video.rom.by/matrox/recovery/html/home2.htm)
+[BIOS updates for Matrox Millennium, Millennium II, Mistique, Mistique 220, Productiva G100, Millennium G200, G200MMS, G400, G450, G450MMS, G550, P650, P750 and Parhelia](http://video.rom.by/matrox/recovery/html/home2.htm)
+
+For some unfathomable reasons Matrox removed those files from it's current web site.
