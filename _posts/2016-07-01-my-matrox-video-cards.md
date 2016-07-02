@@ -5,7 +5,7 @@ date:   2016-07-01 22:11:00
 categories: posts
 ---
 
-A couple of days ago I bought an original Matrox Millennium PCI SVGA video card from 1996.
+A couple of days ago I bought an original Matrox Millennium PCI SVGA video card.
 It's a DELL OEM rev. B version with 220MHz RAMDAC and 4MB WRAM on-board.
 Board layout and component placement is really beautiful:
 
@@ -18,7 +18,7 @@ Board layout and component placement is really beautiful:
 </a>
 
 Back in it's heyday this card was selling for around 600$.
-Needless to say I bought a much cheaper noname PCI SVGA card with Cirrus Logic CL-GD5436 chipset and 1MB DRAM.
+Needless to say I used a much cheaper and slower noname PCI SVGA card with Cirrus Logic CL-GD5436 chipset and 1MB DRAM.
 I can't quite explain why it's so much fun to play around with stuff that was way out of reach when it was current, but it is.
 
 Out of curiosity I searched online for BIOS update and found this amazing resource:
