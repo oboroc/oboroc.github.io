@@ -6,7 +6,7 @@ categories: posts
 ---
 
 A couple of days ago I bought an original Matrox Millennium PCI SVGA video card.
-It's a DELL OEM rev. B version with 4MB WRAM on-board.
+It's a 1997 DELL OEM rev. B board with 4MB WRAM.
 Board layout and components are really beautiful:
 
 <a href="/img/2016-07-01-matrox-millennium-1-full.jpg">
