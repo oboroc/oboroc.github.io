@@ -41,3 +41,6 @@ Since it's an OEM version of card, I wasn't sure if it has 175 or 220MHz RAMDAC.
 Fortunately Matrox drivers reported it as 220MHz version:
 
 ![Matrox Millennium information](/img/2016-07-01-matrox-millennium-4.png)
+
+I later found out that all 4MB OEM boards had 220MHz RAMDAC.
+Only 2MB OEM boars had 175MHz RAMDAC.
