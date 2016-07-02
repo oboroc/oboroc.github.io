@@ -6,7 +6,7 @@ categories: posts
 ---
 
 A couple of days ago I bought an original Matrox Millennium PCI SVGA video card.
-It's a DELL OEM rev. B version with 220MHz RAMDAC and 4MB WRAM on-board.
+It's a DELL OEM rev. B version with 4MB WRAM on-board.
 Board layout and components are really beautiful:
 
 <a href="/img/2016-07-01-matrox-millennium-1-full.jpg">
@@ -37,3 +37,7 @@ It helpfully notified me that I had BIOS v2.3 and it will be updated to v3.0:
 
 Here is a backup copy of [Matrox Millennium BIOS v2.3](/files/2016-07-01-matrox-millennium-bios-v2.3.zip) for anyone interested.
 
+Since it's an OEM version of card, I wasn't sure if it has 175 or 220MHz RAMDAC.
+Fortunately Matrox drivers reported it as 220MHz version:
+
+![Matrox Millennium information](/img/2016-07-01-matrox-millennium-4.png)
