@@ -7,7 +7,7 @@ categories: posts
 
 A couple of days ago I bought an original Matrox Millennium PCI SVGA video card.
 It's a DELL OEM rev. B version with 220MHz RAMDAC and 4MB WRAM on-board.
-Board layout and component placement is really beautiful:
+Board layout and components are really beautiful:
 
 <a href="/img/2016-07-01-my-matrox-video-cards-1-full.jpg">
 ![Matrox Millennium front side](/img/2016-07-01-my-matrox-video-cards-1.jpg)
