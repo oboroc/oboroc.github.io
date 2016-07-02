@@ -31,7 +31,7 @@ To start flashing, run C:\mgafold\setup351\UPDBIOS.EXE.
 This is a DOS-only program, it didn't work under Windows.
 C:\mgafold\setup351\ directory size is about 1.6MB, so it won't fit on a single 3.5" floppy.
 I reformated HDD to FAT32, booted from Windows 98 boot floppy and ran UPDBIOS.EXE.
-It helpfully notified me that I had BIOS v2.3 and it will be updated to BIOS v3.0:
+It helpfully notified me that I had BIOS v2.3 and it will be updated to v3.0:
 
 ![Matrox Millennium BIOS update](/img/2016-07-01-my-matrox-video-cards-3.jpg)
 
