@@ -31,11 +31,11 @@ Books I finished are striken through, book I am currently reading is in bold:
 17. <del>The Outcast Dead</del>
 18. <del>Deliverance Lost</del>
 19. <del>Know No Fear</del>
-20. The Primarchs
+20. **The Primarchs**
 21. <del>Fear to Tread</del>
 22. Shadows of Treachery
 23. <del>Angel Exterminatus</del>
-24. **Betrayer**
+24. <del>Betrayer</del>
 25. <del>Mark of Calth</del>
 26. Vulkan Lives
 27. The Unremembered Empire
