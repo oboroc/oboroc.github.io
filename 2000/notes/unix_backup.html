@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<TITLE>doba homepage :: Notes :: Backup under UNIX</TITLE>
+<META CONTENT="text/html; charset=iso-8859-1" HTTP-EQUIV=Content-Type>
+<SCRIPT LANGUAGE=JavaScript SRC="../inc/header.js"></SCRIPT>
+<LINK REL="stylesheet" HREF="../styles/main_win.css" MEDIA="screen">
+</HEAD>
+
+<BODY ALINK=#ff0000 BGCOLOR=#ffffff LINK=#000066 TEXT=#000000 VLINK=#000066 
+BACKGROUND="../img/watermark_bg.gif">
+{% include ../inc/header.html %}
+{% include ../inc/inca.html %}
+<IMG SRC="../img/notes_big.gif" WIDTH="300" HEIGHT="50" BORDER="0">
+{% include ../inc/incb.html %}
+
+<H5>Backup under UNIX</H5>
+
+<P>
+Install/configure rsh or ssh. When use something like this:
+</P>
+<PRE>
+# tar cvf  - `cat /home/BACKUP/files.lst` | rsh remote_host dd\
+ obs=20b of=/dev/rmt0
+</PRE>
+<P>
+or with compression
+</P>
+<PRE>
+# tar cvf  - `cat /home/BACKUP/files.lst` | \
+gzip -c | \
+rsh remote_host dd obs=20b of=/dev/rmt0
+</PRE>
+<P>
+To restore:
+</P>
+<PRE>
+# rsh remote_host dd if=/dev/rmt0 ibs=20b | \
+gzip -dc | tar xvf -
+</PRE>
+
+{% include ../inc/incz.html %}
+</BODY>
+</HTML>

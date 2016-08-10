@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+<TITLE>doba homepage :: Notes :: Web site content protection</TITLE>
+<META CONTENT="text/html; charset=iso-8859-1" HTTP-EQUIV=Content-Type>
+<SCRIPT LANGUAGE=JavaScript SRC="../inc/header.js"></SCRIPT>
+<LINK REL="stylesheet" HREF="../styles/main_win.css" MEDIA="screen">
+</HEAD>
+
+<BODY ALINK=#ff0000 BGCOLOR=#ffffff LINK=#000066 TEXT=#000000 VLINK=#000066 
+BACKGROUND="../img/watermark_bg.gif">
+{% include ../inc/header.html %}
+{% include ../inc/inca.html %}
+<IMG SRC="../img/notes_big.gif" WIDTH="300" HEIGHT="50" BORDER="0">
+{% include ../inc/incb.html %}
+<H5>Web site content protection</H5>
+
+<P>Here is a message I've found a while ago an USENET</P>
+
+<P>
+Here is a free alternative to the previous messages.  There are a few
+caveats, though.  Since this program is being run on the same computer as
+the web server, a cracker could circumvent this.  On the positive side, if
+you run this program out of cron, say every 5 minutes, it is very likely
+that either a notification would get sent out before the cracker has time to
+disable this program, or the cracker doesn't bother to try to cover his
+tracks.  A better way may be to run this program using a web spider on a
+different computer, and pass the output to openssl just as below.
+</P>
+
+<H6>Instructions</H6>
+<UL>
+<LI>Make sure you have openssl, tar and cmp.</LI>
+<LI>Modify the following files to suite (email address, and paths).</LI>
+<LI>Any time you make a change to your web pages, run
+"update_md5_fingerprint.sh" to update the recorded md5 fingerprint.</LI>
+<LI>Add the command "check_web_site.sh" to crontab every 5, 10, or however long
+you want to wait between checks.</LI>
+<LI>Follow other instructions at http://www.bellnetworks.net/cs for other
+suggestions for hardening your Internet servers.</LI>
+</UL>
+
+<P>
+File update_md5_fingerprint.sh:
+</P>
+
+<PRE>
+#!/bin/sh
+WEBDIR=/www/htdocs		#path to web files
+MD5DIR=/var/md5			#path to store MD5 fingerprints mail address
+to notify on discrepency
+/usr/bin/tar -cf - $WEBDIR | /usr/local/bin/openssl md5 > $MD5DIR/md5print
+</PRE>
+
+<P>File check_web_site.sh:</P>
+
+<PRE>
+#!/bin/sh
+WEBDIR=/www/htdocs		#path to web files
+MD5DIR=/var/md5			#path to store MD5 fingerprintsmail address
+to notify on discrepency
+EMAIL=jerry@bellnetworks.net	#email address to notify on discrepency
+
+/usr/bin/tar -cf - $WEBDIR | /usr/local/bin/openssl md5 > $MD5DIR/md5check
+/usr/bin/cmp -s md5print md5check || echo MD5 Checksum mismatch|
+/usr/bin/mail -s "Possible Web Site Attack" $EMAIL
+</PRE>
+
+<P>Cheers,<P>
+
+<P>Jerry<BR>
+http://www.bellnetworks.net/cs</P>
+{% include ../inc/incz.html %}
+</BODY>
+</HTML>

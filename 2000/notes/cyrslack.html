@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+<TITLE>doba homepage :: Notes :: Cyrillics for Slackware Linux console</TITLE>
+<META CONTENT="text/html; charset=iso-8859-1" HTTP-EQUIV=Content-Type>
+<SCRIPT LANGUAGE=JavaScript SRC="../inc/header.js"></SCRIPT>
+<LINK REL="stylesheet" HREF="../styles/main_win.css" MEDIA="screen">
+</HEAD>
+
+<BODY ALINK=#ff0000 BGCOLOR=#ffffff LINK=#000066 TEXT=#000000 VLINK=#000066 
+BACKGROUND="../img/watermark_bg.gif">
+{% include ../inc/header.html %}
+{% include ../inc/inca.html %}
+<IMG SRC="../img/notes_big.gif" WIDTH="300" HEIGHT="50" BORDER="0">
+{% include ../inc/incb.html %}
+<H5>Cyrillics for Slackware Linux console</H5>
+
+<P>Credits for the following information goes to the strongest moldovan
+Linux hacker - Bobb. Thank you, Bobb!
+</P>
+
+<P>So, you are Slackware Linux user and you wish to enable cyrillics in OS.
+You will have to modify several files:</P>
+
+<PRE>
+In ~/.inputrc
+-------------------------------
+set meta-flag on
+set convert-meta off
+set output-meta on
+-------------------------------
+
+In the initial local init script:
+-------------------------------
+/usr/bin/setfont /usr/lib/kbd/consolefonts/Cyr_a8x16
+/usr/bin/loadkeys /usr/lib/kbd/keytables/ru1.map
+/usr/bin/mapscrn /usr/lib/kbd/consoletrans/koi2alt
+-------------------------------
+ 
+In ~/.profile
+-------------------------------
+echo -ne "\033(K"
+-------------------------------
+ 
+In ~/.pinerc
+-------------------------------
+...
+character-set=koi-8r
+...
+-------------------------------
+ 
+In ~/.joerc : move to the left line with "-asis"
+</PRE> 
+
+{% include ../inc/incb.html %}
+</BODY>
+</HTML>

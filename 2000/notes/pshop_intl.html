@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>doba homepage :: Notes :: National symbol support for Adobe PhotoShop 5.5</TITLE>
+<META CONTENT="text/html; charset=iso-8859-1" HTTP-EQUIV=Content-Type>
+<SCRIPT LANGUAGE=JavaScript SRC="../inc/header.js"></SCRIPT>
+<LINK REL="stylesheet" HREF="../styles/main_win.css" MEDIA="screen">
+</HEAD>
+
+<BODY ALINK=#ff0000 BGCOLOR=#ffffff LINK=#000066 TEXT=#000000 VLINK=#000066 
+BACKGROUND="../img/watermark_bg.gif">
+{% include ../inc/header.html %}
+{% include ../inc/inca.html %}
+<IMG SRC="../img/notes_big.gif" WIDTH="300" HEIGHT="50" BORDER="0">
+{% include ../inc/incb.html %}
+
+<H5>National symbol support for Adobe PhotoShop 5.5</H5>
+
+<P>
+During my work on Company's web site I meet a serious problem. 
+I wasn't able to create russian, romanian and turkish text in my favorite
+graphics design software: Adobe PhotoShop 5.5 for Windows. I asked people 
+from FidoNet how they are dealing with this problem and I received two 
+answers:
+</P>
+
+<P>Eugene Belyaev (2:469/83.210) wrote:<br><br>
+There are several methods to enable cyrillic symbols 
+(sometimes they are working only if combined):
+<ul>
+<li>Run regedit.exe, go to
+"HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage" and
+replace 1252 with "C_1251.NLS" for Windows NT and with "cp_1251.nls" for
+Windows 9X. Close regedit and reboot the system.</li>
+<li>Erase file ADMUI3.fon (or ADMUI2.fon) in PhotoShop\Required folder.</li>
+<li>Erase file AdobeUI.fon in Photoshop folder.</li>
+</ul>
+</P>
+
+<P>Mike Peleah (2:469/133.33) wrote:<br><br>
+To enable romanian characters please add following section to your
+win.ini file:<br>
+</P>
+<PRE>
+[fontsubstituties]
+Tahoma Rom, 0 = Tahoma, 204
+Tahoma Rom, 204 = Tahoma, 204
+</PRE>
+
+{% include ../inc/incz.html %}
+</BODY>
+</HTML>

@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<TITLE>doba homepage :: Notes :: JFS (AIX) resize</TITLE>
+<META CONTENT="text/html; charset=iso-8859-1" HTTP-EQUIV=Content-Type>
+<SCRIPT LANGUAGE=JavaScript SRC="../inc/header.js"></SCRIPT>
+<LINK REL="stylesheet" HREF="../styles/main_win.css" MEDIA="screen">
+</HEAD>
+
+<BODY ALINK=#ff0000 BGCOLOR=#ffffff LINK=#000066 TEXT=#000000 VLINK=#000066 
+BACKGROUND="../img/watermark_bg.gif">
+{% include ../inc/header.html %}
+{% include ../inc/inca.html %}
+<IMG SRC="../img/notes_big.gif" WIDTH="300" HEIGHT="50" BORDER="0">
+{% include ../inc/incb.html %}
+<H5>JFS (AIX) resize</H5>
+<P>A while ago I administered a very nice UNIX server from IBM - RS/6000 E74
+(PowerPC 604e RISC CPU at 200MHz, 128MB RAM, 2+8GB SCSI hard drives). It was
+extremly cool, and I liked it's operating system (IBM AIX 4.3.1) very much.
+</P>
+
+<P>During initial installation I encounted an interesting problem: I created
+unreasonably big /usr file system (1GB), while I already created 3GB /usr/local
+filesystem. I started to search the way to reduce the size of /usr, but from
+SMIT (main administering utility for AIX) I was able only to enlarge existing
+JFS file systems.</P>
+
+<P>I had an idea to create another smaller file system, mount it somethere
+(for example to /tmp/newusr), make a complete copy of files from existing
+/usr to /tmp/newusr (cp -r /usr/* /tmp/usrnew) and then to edit /etc/fstab,
+so what it will mount newly created filesystem instead of old one. If all
+is fine - delete old file system. Before proceeding I asked people from
+RU.UNIX.AIX FidoNet conference about possible problems (broken links etc.)
+in this approach.
+</P>
+
+<P>Mr. <A HREF="mailto:lejnin@fors.ru">Vadim Lejnin</A> kindly answered to me 
+with this <A HREF="jfs_resize_orig.html">letter</A>. He told that approach 
+which I planed to use will cause a lot of problems with dynamic libraries 
+etc.</P>
+
+<P>He proposed alternative method. Boot-up from installation CD no. 1 in 
+restricted maintenance shell mode:</P>
+
+<PRE>
+# exportvg hdisk0 # (or there the rootvg is placed)
+# mkdir /mnt/usr
+# mkdir -p /mnt/home
+# mount /dev/hd2 /mnt/usr
+# mount /dev/hd1 /mnt/home
+# cp /mnt/sbin/chroot /mnt/bin/tar /mnt/usr/bin/ls /bin
+# export PATH=/bin:$PATH
+# chroot /mnt /bin/tar cvf /home/usr.tar /usr
+....
+# umount /mnt/usr
+# rmfs /dev/hd2
+# mklv -y hd2 rootvg Number_PP
+
+# mkfs -l /usr -v /usr -V jfs hd2
+# mount /dev/hd2 /mnt/usr
+# chroot /bin/tar xvf /home/usr.tar
+# umount /mnt/usr
+# umount /mnt/home
+# sync;sync;sync;reboot
+</PRE>
+
+<P>
+Calculate NUmer_PP (Phisical Partitions).
+First you should take a look at PP SIZE:
+</P>
+<PRE>
+# lsvg rootvg
+VOLUME GROUP:   rootvg                   VG IDENTIFIER:  00001937db52aca8
+VG STATE:       active                   PP SIZE:        8 megabyte(s)
+VG PERMISSION:  read/write               TOTAL PPs:      542 (4336
+megabytes)
+MAX LVs:        256                      FREE PPs:       2 (16 megabytes)
+LVs:            9                        USED PPs:       540 (4320
+megabytes)
+OPEN LVs:       8                        QUORUM:         2
+TOTAL PVs:      1                        VG DESCRIPTORS: 2
+STALE PVs:      0                        STALE PPs:      0
+ACTIVE PVs:     1                        AUTO ON:        yes
+MAX PPs per PV: 1016                     MAX PVs:        32
+</PRE>
+
+<P>
+After that you should count necessary number of PPs:
+</P>
+<PRE>
+size_of_usr.tar / size_of_PP
+</PRE>
+{% include ../inc/incz.html %}
+</BODY>
+</HTML>

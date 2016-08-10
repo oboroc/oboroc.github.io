@@ -1,0 +1,70 @@
+a:hover  {
+	color : #FF0000
+    }
+
+a:link  {
+	color : #000066
+    }
+
+a:visited  {
+	color : #0000AA
+    }
+
+a:active  {
+	color : #FF0000
+    }
+
+body, p, td, blockquote, ul  {
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size : 8pt;
+    }
+
+h2  {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12pt;
+    }
+
+h3  {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 9pt
+    }
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 12pt
+   }
+  
+h6 {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 10pt; 
+    font-weight: bold
+   }
+
+strong  {
+	font-size : 9pt;
+	font-style : normal
+    }
+
+ol { 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 8pt; 
+    font-weight: normal; 
+    line-height: 12pt
+    }
+
+.downloadTitle { 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	font-color: #000033;
+	font-weight: bold;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px; 
+	padding-right: 1px
+	}
+
+.body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	text-align: justify;
+	}

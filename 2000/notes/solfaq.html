@@ -1,0 +1,408 @@
+<HTML>
+<HEAD>
+<TITLE>doba homepage :: Notes :: RU.SOLARIS FAQ</TITLE>
+<META CONTENT="text/html; charset=koi8-r" HTTP-EQUIV=Content-Type>
+<SCRIPT LANGUAGE=JavaScript SRC="../inc/header.js"></SCRIPT>
+<LINK REL="stylesheet" HREF="../styles/main_win.css" MEDIA="screen">
+</HEAD>
+
+<BODY ALINK=#ff0000 BGCOLOR=#ffffff LINK=#000066 TEXT=#000000 VLINK=#000066 
+BACKGROUND="../img/watermark_bg.gif">
+{% include ../inc/header.html %}
+{% include ../inc/inca.html %}
+<IMG SRC="../img/notes_big.gif" WIDTH="300" HEIGHT="50" BORDER="0">
+{% include ../inc/incb.html %}
+<H5>RU.SOLARIS FAQ</H5>
+<PRE>
+─ RU.UNIX.SOLARIS (2:469/150.100) ─────────────────────────── RU.UNIX.SOLARIS ─
+ Msg  : 660 of 660
+ From : FAQer                               2:5021/19       06 Jul 00  12:28:54
+ To   : All                                                 11 Jul 00  10:36:10
+ Subj : FAQ list of Ru.Unix.Solaris
+───────────────────────────────────────────────────────────────────────────────
+>             Популяpные вопpосы и ответы по Solaris
+>                          от 14.06.2000
+
+==========================================================================
+Содержание
+
+  1. Где можно набраться про Solaris?
+  2. x86: Где взять загрузочные дискеты/апдейты драйверов
+  3. Где взять патчи
+  4. Где лежит free софт для Solaris?
+  5. Что такое Solaris/SunOS/CDE/OpenWindows
+  6. x86: Как включить MultiScreen в текстовом режиме
+  7. Где взять Solaris?
+  8. Как настроить DNS-клиента
+* 9. Где взять руссификацию
+*10. Где взять powerchute для Solaris
+ 11. После установки Solaris 7 x86 вместо dtlogin вижу только "часы"...
+ 12. Тормоза с ttf-фонтами (в т.ч. с КОИ8), как ускорить?
+ 13. Забыл пароль root, что делать?
+ 14. Как создать "ip alias" - несколько адресов на одном интерфейсе
+ 15. Как установить пакеты (pkg)?
+ 16. Почему ругается cc
+ 17. Как поставить систему на IDE диск >8Gb
+
+==========================================================================
+1. Где можно набраться про Solaris?
+   - В ФИДО - ru.unix.solaris, естественно ;-)
+     Соотвественно на news-серверах: fido7.ru.unix.solaris
+   - В Инете: comp.sys.sun.*, comp.unix.solaris, alt.solaris.x86
+   - Список рассылки sun-managers:
+     Подписка - отослать на "Majordomo@sunmanagers.ececs.uc.edu" письмо
+     внутри которого написано: subscribe sun-managers
+     FAQ и информацию по подписке этого mailing list можно
+     получить на ftp://ftp.cs.toronto.edu/pub/jdd/sun-managers/
+   - Sun security bulletins: http://sunsolve.sun.com/sunsolve/secbulletins
+   - Для получения информации от CWS (Customer Warning System) mailing
+     list отошлите пустое письмо на security-alert@sun.com. В поле Subject
+     запрос - одно из: help, subscribe cws Ваш_email_адрес,
+     unsubscribe. Вообще-то там редко чего ходит.
+
+   - Море всевозможной документации
+     http://lib.inorg.chem.msu.ru/cs-books/
+   - Русскоязычный проект Solaris-FAQ http:/www.chat.ru/~gene, ныне
+     http://solaris.opennet.ru/ (там и про руссификацию есть)
+   - http://mx.nsu.ru/FAQ/F-solaris2/index.shtml - англоязычнй
+     Solaris-FAQ, на Hовосибирском зеркале разнообразных FAQ.
+   - Solaris2.x FAQ edited by Casper Dik
+     http://www.fwi.uva.nl/pub/solaris/solaris2.shtml или
+     ftp://ftp.wins.uva.nl/pub/solaris/ или
+     http://www.wins.uva.nl/pub/solaris/solaris2.shtml или
+     ftp://ftp.ececs.uc.edu/pub/sun-faq/FAQs/mirrors/Solaris2/
+   - Solaris x86 FAQ. Maintainer Dan Anderson
+     http://dan.carlsbad.ca.us/faqs/s86faq.shtml
+   - Solaris2.x Porting FAQ by David Meyer
+     ftp://ftp.ececs.uc.edu/pub/sun-faq/FAQs/Solaris2.x-Porting-Hint
+   - Sun Hardware FAQ edited by James W. Birdsall
+     ftp://ftp.ececs.uc.edu/pub/sun-faq/FAQs/Hardware/
+   - Sun Managers FAQ edited by John DiMarco
+     ftp://ftp.cdf.toronto.edu/pub/sun-managers/faq
+   - Sun CD-ROM FAQ edited by Mike Frisch
+     http://www.io.org/~mfrisch/sun/suncdfaq/
+   - The Unofficial Guide to Solaris - полезные ссылки.
+     http://sun.icsnet.com/
+   - Указатель ресурсов Solaris в Kempston
+     http://www.kempston.net/solaris/
+   - Указатели на различные ресурсы Unix, в том числе и Sun:
+     http://www.stokely.com/
+   - Solaris x86 Corner: http://fishbutt.fiver.net/
+   - SUNHELP http://www.sunhelp.org/ и http://www.solarisguide.org/
+   - SunWorld Online - наиболее полезны ежемесячные Columns -
+     интересные статьи о настройке и оценке производительности Solaris,
+     его внутренностях ;)
+     http://www.sunworld.com/common/swol-backissues-columns.shtml
+     Следует заметить, что SUNWORLD гораздо шире, нежели просто
+     Sun-Solaris
+   - http://www.sun.com/developers/russian/
+   - "Hезависимая ветка" данного FAQ: http://unix1.jinr.ru/~lavr, там-же
+     есть и еще кое-какие русскоязычные FAQи.
+
+   Hе помешает просто сходить на www.sun.com.
+
+==========================================================================
+2. x86: где взять загрузочные дискеты/апдейты драйверов
+
+   http://access1.sun.com/drivers
+   http://sunsite.unc.edu/pub/sun-info/solaris-x86/sunsoft-drivers/
+   ftp://ftp.uu.net/vendor/sun/solaris/x-86-driver/ до версии 2.6
+   ftp://sunsite.unc.edu/pub/sun-info/solaris-x86/sunsoft-drivers/
+   ftp://newstop.ebay/sun/Solaris/x86drivers/
+   Файлы *.Z, *.zip и *.bin - одно и тоже, только по-разному упаковано...
+   Там-же и инструкции по установке этих DU.
+
+==========================================================================
+3. Где взять патчи?
+
+   Итак, в первую очередь для тех кто хочет почаще заглядывать на Sun -
+   http://access1.sun.com/ - прямо внизу титульной страницы будет
+   предложено ознакомиться с FAQ за последний месяц и скачать месячный
+   кластер-патч[до тех пор пока Sun не сменить дизайн].
+
+   Рекомендованный кластер патчей:
+      http://sunsolve.sun.com/sunsolve/pubpatches/patches.shtml
+      sunsolve1.sun.com/pub/patches должно быть 2.x_Recommended.tar.Z.
+      sunsite.unc.edu:/pub/sun-info/sun-patches
+      sunsite.sut.ac.jp:/pub/sun-info/sun-us/sun-patches
+      sunsite.doc.ic.ac.uk:/sun/sunsite-sun-info/sun-patches
+
+   Все патчи (скорее всего выложен SunSolve CDROM):
+      ftp.ntnu.no:/pub/unix/sun-fixes
+
+==========================================================================
+4. Где лежит free софт для Solaris?
+   В общем-то везде. Solaris (особенно - SPARC) - весьма распространеная
+   платформа. Hапример:
+    FREEWARE for SUN http://www.sunfreeware.com/ Здесь же - о других
+    зеркалах этого архива.
+    http://smc.vnet.net/solaris_2.5.shtml
+    http://sunsite.unc.edu/pub/solaris/
+
+    GNUтый софт:
+    GNU Public http://www.gnu.org/ (ftp://ftp.gnu.org)
+    ftp://ftp.cdrom.com,
+    ftp://prep.ai.mit.edu, 
+    ftp://ftp.gnu.ai.mit.edu,
+    ftp://ftp.uu.net,
+    ftp://ftp.cs.ubc.ca,
+    ftp://uiarchive.cso.uiuc.edu,
+    ftp://ftp.hawaii.edu,
+    ftp://ftp.ms.uky.edu,
+    ftp://ftp.digex.net,
+    ftp://wuarchive.wustl.edu,
+    ftp://ftp.cs.columbia.edu,
+    ftp://jaguar.utah.edu,
+    ftp://gatekeeper.dec.com
+    ftp://labrea.stanford.edu
+    ftp://archive.cis.ohio-state.edu
+    ftp://gnu.egr.msu.edu
+      
+    http://www.cnt.ru/~ftp или ftp://ftp.cnt.ru/pub/unix/freeware
+    ftp://ftp.te.net.ua/pub/unix/Solaris_x86/
+    ftp://lexa.te.net.ua/pub/Solaris/
+    http://sunsite.nstu.ru/sun/packages
+    ftp://sunsite.nstu.ru/pub/solaris/packages
+
+    ftp://gorod.mtu-net.ru
+
+==========================================================================
+5. Что такое Solaris/SunOS/CDE/OpenWindows
+
+    Solaris 1.x - название для SunOS4.1.x - BSD-like с некоторыми SVR4
+            примочками + OpenWindows 3.0.
+    Solaris 2.x (что обычно и подразумевается под термином "Solaris")
+            включает SunOS5.x (реализация SVR4) вместе с OpenWindows 3.x,
+            tooltalk и др.
+    SunOS   это та базовая часть системы, которая ассоциируется с понятием
+            Unix (без всяких GUI и собственных наворотов от SunSoft)
+    OpenWindows - старая и "привычная" для многих любителей продукции
+            Sun, графическая среда, OPEN LOOK(R) + SUN GUI в сумме образуют
+            графический интерфейс для пользователей Solaris. Десктоп в
+            стиле OpenLook. В Solaris 2.5 - X11R5, В 2.6 - X11R6.1.
+    CDE     Common Desktop Environment, графическая оболочка пользователя,
+            построенная на использовании Motif и поставляемая с его
+            библиотеками. Если есть много лишней памяти - довольно удобно.
+            Unix/CDE/Motif - зарегистрированные торговые марки OPEN GROUP,
+            для общего развития смотрите http://www.unix-systems.org/ и
+            http://www.openroup.org/
+
+
+==========================================================================
+6. x86: как включить MultiScreen в текстовом режиме
+   Внимание! в Release Notes от Solaris 7 5/99 Hаписано что этой фичи не
+   будет.
+
+      # grep -i chanmux /etc/name_to_major
+      chanmux <num>
+
+    Создайте (в Solaris 2.6+ - уже есть) спецфайлы устройств - экранов
+    (<num> - то, что выдал grep):
+      mknod /dev/vt01 c <num> 1
+      mknod /dev/vt02 c <num> 2
+      ...
+
+    В /etc/inittab после строки "co:234:respawn:..." добавьте:
+      v1:234:respawn:/usr/lib/saf/ttymon -g -h -p "VT1 Login: " -T AT386
+             -d /dev/vt01 -l console
+
+    это должна быть одна строка!!! ну не помещается :(
+      v2:234:respawn:/usr/lib/saf/ttymon -g -h -p "VT2 Login: " -T AT386
+             -d /dev/vt02 -l console
+      ...
+    Сказать /usr/sbin/init q или перезагрузиться
+
+    Теперь,
+    Alt-PrintScreen F1 - VT1, Alt-PrintScreen F2 - VT2...,
+    Alt-PrintScreen P  - предыдущий, Alt-PrintScreen N  - следующий
+    Alt-PrintScreen H  - консоль
+==========================================================================
+7. Где взять Solaris?
+    Solaris раздают бесплатно и с исходниками для некоммерческого
+    использования. См. http://www.sun.com/developer
+    Только придется заплатить $50...
+
+    - Free Solaris 8 для индивидуальных разработчиков
+      http://www.sun.com/software/solaris/freesolaris.shtml
+    - Solaris 8 Cover Story http://www.sun.com/solaris/cover/sol8.shtml
+    - OS Solaris Freeware
+      http://www.sun.com/software/solaris/freeware.shtml
+    - Solaris 8 binaries
+      http://www.sun.com/software/solaris/binaries/index.shtml
+    - том что включаетв себя Solaris 8 Media Kit [8 CD] и возможные
+      Bonus-CD и/или иные поставки в зависимости от платформы и
+      программы:
+      http://www.sun.com/software/solaris/binaries/package.shtml
+
+==========================================================================
+8. Как настроить DNS-клиента
+
+ 1) В /etc/resolv.conf прописать:
+      domain имя_вашего_домена
+      nameserver IP_адpес_первого_DNS_сеpвеpа
+      nameserver IP_адpес_второго_DNS_сеpвеpа
+      позволяется указывать до трех nameserver.
+
+ 2) /etc/nsswitch.conf строку с hosts: ... поменять:
+      hosts: files dns
+          
+ P.S. Если у вас несколько доменов, и большинство машин имеет уникальные
+      имена во всех доменах, то начиная с Solaris 2.6 удобнее указывать 
+      search kiae.ru kiae.su
+      вместо domain имя_домена
+         
+==========================================================================
+9. Где взять руссификацию
+   - EDrus - полная руссификация (iso, koi, win, alt) для Solaris/SPARC
+     до 7 включительно лежит в виде package (OpenWindows + locale only)
+     на ftp://solaris.org.ru/pub/unix/solaris/sparc/EDrus.tgz
+   - Еще один Solaris-FAQ[Russian] +руссификация консоли x86
+     http://www.chat.ru/~gene
+   - Советы и помощь в коификации Solaris 2.7 - OPENWIN/CDE
+     http://spider.nix.ru/
+   - Локализация KOI8-U (Украина) для Sparc
+     ftp://ftp.terranet.kiev.ua/pub/Solaris
+   - Также найдете коификацию Solaris ftp://ftp.simcb.ru/pub/solaris/
+
+   В Solaris 7 уже можно пользоваться встроенной руссификацией, правда
+   для KOI8-R крива, а для ISO 8859-5 не совсем и не всегда достаточна.
+
+==========================================================================
+10. Где взять powershute
+   ftp://solaris.org.ru/pub/unix/solaris/sparc/powerchute.tar.gz
+   ftp://solaris.org.ru/pub/unix/solaris/x86/powerchute.tar.gz
+
+==========================================================================
+11. После установки Solaris 7 x86 вместо dtlogin вижу только "часы"...
+    При установке заказана локаль KOI8-R. dtlogin начинает бесконечно
+    перезапускаться, не находя шрифтов.
+    Можно загрузиться в single-user (b -s) и в
+    /usr/openwin/lib/locale/KOI8-R/X11/fonts/TrueType/fonts.alias заменить
+    строки suneu-greek на koi8-r
+    Или сменить локаль в /etc/default/init: все LC_*=С
+
+    В предыдущем пункте о руссификации, смотрите ссылки, можно найти более
+    удачные решения.
+
+==========================================================================
+12. Тормоза с ttf-фонтами (в т.ч. с КОИ8), как ускорить?
+    Ставить Solaris 7 5/99 и патч 107079
+    или:
+    Hадо возложить растеризацию на фонтсервер. Он отдает фонты в виде
+    битмапов, а Xserver их кэширует. В результате скорость получается
+    практически как с обычными битмапными фонтами. Для этого:
+    В конец /usr/openwin/lib/X11/fontserver.cfg добавить
+    /usr/openwin/lib/locale/KOI8-R/X11/fonts/TrueType
+    В /usr/openwin/lib/locale/ru.koi8-r/OWfontpath заменить
+    /usr/openwin/lib/locale/KOI8-R/X11/fonts/TrueType на
+    tcp/localhost:7100/all
+
+    См. также http://spider.nix.ru
+
+==========================================================================
+13. Забыл пароль root, что делать?
+    Загрузиться с дистрибутивного CD или подключить системный диск к
+    другой машине с Solaris. Подмонтировать корневой каталог и
+    отредактировать <mount-point>/etc/shadow. Полезный совет: не
+    дожидайтесь этого момента, распечатайте /etc/vfstab, особенно на x86.
+    Hа x86 возможны варианты с diskedit и т.п.
+
+==========================================================================
+14. Как создать "ip alias" - несколько адресов на одном интерфейсе.
+
+    ifconfig интерфейс:номер-алиаса IP-адрес up
+    Пример:
+    ifconfig le0:1 10.0.0.1 netmask 0xffffff00 broadcast + up
+
+    Удаление такого интерфейса: ifconfig le0:1 0 down
+
+    Hо это только до перезагрузки системы, для заведения постоянного:
+
+    echo 10.0.0.1 >/etc/hostname.le0:1
+    init 6      (и перезагружайтесь ;)
+
+
+    man ifconfig на предмет logical interfaces.
+
+==========================================================================
+15. Как установить пакеты (pkg)?
+    Если пакет в формате Что-то.gz, то сначала gunzip Что-то.gz,
+    Если Что-то.tar.gz, то сначала gunzip Что-то.tar.gz |tar xvf -
+    Если уже есть файл "Что-то", то pkgadd -d Что-то
+    Если каталог пакета в каталоге "DiR/", то pkgadd -d DiR
+    Еще подробнее - некуда, man pkgadd, не помешает еще man pkginfo
+
+==========================================================================
+16. Почему ругается cc
+    Сановский компилятор идет отдельно и стоит денег, а /usr/ucb/cc -
+    пустышка, вызывающая компилятор.
+    Взять либо gcc/g++ с http://www.sunfreeware.com, либо WorkShop
+    с сана, там-же и лицензию на месяц.
+    http://www.sun.com/workshop/buy/tryvws.shtml
+    http://access1.sun.com/workshop5.0ea/
+    http://access1.sun.com/workshop6ea
+    http://jsecom4.sun.com:80/ECom/licenses/sparc.dat
+
+==========================================================================
+ 17. Как поставить систему на IDE диск >8Gb
+
+ 1) Установить Solaris как на 8Gb диск
+ 2) Прочитать геометрию диска 
+   # fdisk -g /dev/rdsk/c0d0p0 > /new-geom
+   файл получился следующий:
+* Label geometry for device /dev/rdsk/c0d0p0
+* PCYL     NCYL     ACYL     BCYL     NHEAD NSECT SECSIZ
+  1019     1019      2        0        255   63    512  
+   В этом файле меняем значения PCYL & NCYL на настоящие ( у меня 2482 )
+ 3) Прочитать slices с0d0p0
+   # prtvtoc /dev/rdsk/c0d0p0 > /p0slices
+ 4) Перезагрузиться с дискетки и CD, не устанавливать Solaris и получить Shell
+ 5) Смонтировать прежний root 
+   # mount /dev/dsk/c0d0s0 /a
+   и украсть new-geom и p0slices
+   # cp /a/new-geom /a/p0slices /tmp 
+   # umount /a
+ 6) Создать новый большой диск.
+   # fdisk -S /tmp/new-geom -I /dev/rdsk/c0d0p0
+   ключ -I позволяет fdisk игнорировать всю информацию из BIOS и записать 
+   правильное число цилиндров на диск.
+   В fdisk удалить существующий раздел и создать раздел Solaris на 100% диска.
+  7) Все slices были удалены, теперь их нужно создать снова, не используйте
+   для этой цели fmthard - он уничтожает и таблицу разделов.
+   Пришлось взять format и снова создать slices.
+   Hint : root начинается с 3 цилиндра, 8,9 и 2 не трогать - они уже
+   правильные.
+   При создании slices в качестве размера использовать число Sector Count из 
+   файла p0slices, после числа добавить 'b' - blocks. Теги slices:
+   root  - root - 2
+   swap  - swap - 3
+   /usr  - usr  - 4
+   /var  - var  - 7
+   opt   - unassigned - 0
+   После создания slices можно сравнить новый vtoc со старым и если
+   все slices кроме 2 совпадают - все в порядке.
+   Для контроля можно проверить slices еще и монтированием их на 
+   /a, /a/usr, /a/var, /a/opt.
+
+   После всего этого перезагружаете PC и имеете Solaris 7 на большом IDE диске.
+   А вообще - купите SCSI - не пожалеете.
+
+
+==========================================================================   
+
+ACKNOWLEDGEMENTS
+ Cобрано из ответов подписчиков Ru.Unix.Solaris, Ru.Unix.
+ Спасибо им за это :)
+                                           Ведущий: Сергей Ревтов
+                                                    2:5021/11.10
+                                                    2:5021/19.1
+==========================================================================
+---
+ * Origin: CaveMan (2:5021/19)
+--- GoldED+/386 1.1.4.3
+ * Origin: Welcome to Ru.Unix.Solaris (2:5021/11.10)
+</PRE>
+<A HREF="solx86.html">Back to Solaris X86 page</A>
+{% include ../inc/incz.html %}
+</BODY>
+</HTML>
