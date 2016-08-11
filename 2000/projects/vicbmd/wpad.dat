@@ -1,0 +1,17 @@
+
+function FindProxyForURL(url, host)
+{
+    if (isPlainHostName(host) || shExpMatch(host, "*.pvt"))
+	return "DIRECT";
+	
+    if (url.substring(0,5)=="http:" ||
+	url.substring(0,6)=="https:" ||
+	url.substring(0,4)=="ftp:" ||
+	url.substring(0,7)=="gopher:")
+	return "PROXY 192.168.2.10:3128; DIRECT";
+	
+    if (url.substring(0,5)=="wais:")
+	return "DIRECT";
+	
+    return "DIRECT";
+}

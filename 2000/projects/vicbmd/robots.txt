@@ -1,0 +1,3 @@
+# robots.txt for http://www.victoriabank.md/
+User-agent: *
+Disallow: /cgi-bin/ /img/ /src/ /download/

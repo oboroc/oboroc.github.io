@@ -1,0 +1,17 @@
+body, td, p	{	font-family:	sans-serif, verdana, arial, helvetica;
+			font-size:	13px		}
+
+A:link		{	color:		#57E1EF 	}
+
+A:visited	{	color:		#57E1EF 	}
+
+A:active	{	color:		#57E1EF 	}
+
+p.menu		{	font-family:	impact,  times, sans-serif;
+			margin-top:	6px;
+			margin-left:	4px;
+			margin-right:	4px;
+			text-align:	center		}
+
+p.copyright	{	color:		#57E1EF;
+			font-size:	9px		}

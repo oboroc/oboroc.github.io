@@ -1,0 +1,33 @@
+body, td, p	{	font-family:	sans-serif, verdana, arial, helvetica;
+			font-size:	12px		}
+
+A:link		{	color:		#0080C0 	}
+
+A:visited	{	color:		#0080C0 	}
+
+A:active	{	color:		#0080C0 	}
+
+p.banner	{	font-family:	impact,  times, sans-serif;
+			font-size:	20px;
+			text-align:	center		}
+
+p.title 	{	text-align:	center		}
+
+p.subtitle	{	text-align:	left;
+			margin-left:	24px		}
+
+p.para		{	text-indent:	24px;
+			margin-right:	20px;
+			text-align:	justify 	}
+
+p.signature	{	text-align:	right;
+			margin-right:	30px		}
+
+p.language	{	color:		#57E1EF;
+			font-size:	12px		}
+
+p.navy		{	font-size:	11px		}
+
+p.linkinfo	{	text-indent:	-20px;
+			margin-left:	20px;
+			margin-top:	8px		}
