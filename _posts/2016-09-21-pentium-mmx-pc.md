@@ -26,8 +26,8 @@ Current specs:
 * Sound Blaster 64 ISA sound card
 * Shielded audio cable between CD burner and Sound Blaster
 
-I reconfigured frequency indicator from showing 200 to 233.
-I cleaned everything agressively, so now it looks pretty fresh.
+I reconfigured frequency indicator from showing 200 to 233 and
+cleaned everything thoroughly, so now it looks pretty fresh.
 
 This would've been am amazing PC for 1997 and even 1998.
 It's certainly much better that my first PC from 1996.
