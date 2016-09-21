@@ -5,7 +5,7 @@ date:   2016-09-21 18:37:00
 categories: posts
 ---
 
-A while ago I wrote a post about a [PC with M571 motherboard](../m571-retro-pc) I bought.
+A while ago I wrote a post about a [PC with M571 motherboard](/posts/2016/05/13/m571-retro-pc/) I bought.
 
 <a href="/img/2016-09-21-pentium-mmx-pc-full.jpg">
 ![Matrox Millennium front side](/img/2016-09-21-pentium-mmx-pc.jpg)
@@ -18,7 +18,7 @@ Current specs:
 * ASUS TX97-E motherboard
 * Intel Pentium MMX 233MHz CPU
 * 32MB PC66 SDRAM DIMM
-* [Matrox Millennium 4MB](../matrox-millennium)
+* [Matrox Millennium 4MB](/posts/2016/07/01/matrox-millennium/)
 * 15GB 5200RPM Seagate HDD
 * Plextor 8x4x32 CD burner
 * 3.5" and 5.25" HD floppy drives
