@@ -24,7 +24,7 @@ Current specs:
 * 3.5" and 5.25" HD floppy drives
 * IBM EtherJet 10/100 PCI network card
 * Sound Blaster 64 ISA sound card
-* Shielded audio cable between CD burner and Sound Blaster
+* shielded audio cable between CD burner and Sound Blaster
 
 I reconfigured frequency indicator from showing 200 to 233 and
 cleaned everything thoroughly, so now it looks pretty fresh.
