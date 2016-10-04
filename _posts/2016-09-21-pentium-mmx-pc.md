@@ -45,5 +45,5 @@ Update
 To do
 -----
 
-* find shorter metal sockets to support motherboard, so AT keyboard post is better alligned with case
-* replace constant speed CPU cooler with molex connector with a 3-pin variable speed fan cooler
+* find shorter metal sockets to support motherboard, so AT keyboard port is better aligned with case
+* replace constant speed CPU cooler with molex connector with one that has 3-pin variable speed
