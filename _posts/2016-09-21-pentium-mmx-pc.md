@@ -34,3 +34,16 @@ It's certainly much better that my first PC from 1996.
 
 I'll let it air a bit to get rid of agressive cleaning chemicals
 and then wrap it in plastic and move it to storage.
+
+Update
+------
+
+* replaced Plextor 8x4x32 CD burner with an LG GDR-8161B DVD-ROM drive, updated firmware from 1.00 to 1.02
+* replaced Sound Blaster 64 with Sound Blaster 16 CT1950 with Waveblaster II CT1910 daughterboard
+* upgraded memory from dual-sided 32MB PC66 to single-sided 64MB PC133 DIMM
+
+To do
+-----
+
+* find shorter metal sockets to support motherboard, so AT keyboard post is better alligned with case
+* replace constant speed CPU cooler with molex connector with a 3-pin variable speed fan cooler
