@@ -63,3 +63,28 @@ but I mostly follow the order of publishing.
 4. Zoe's Tale
 5. The Human Division
 6. The End of All Things
+
+### Pelevin (russian author)
+
+1. <del>Hermit and Sixfinger (1990)</del>
+2. <del>Blue Lantern and Other Stories (1991)</del>
+3. <del>Prince of Central Planning (1992)</del>
+4. <del>Omon Ra (1992)</del>
+5. <del>The Life of Insects (1993)</del>
+6. <del>The Yellow Arrow (1993)</del>
+7. <del>Chapayev and Void (1996)</del>
+8. <del>Generation P (1999)</del>
+9. 4 by Pelevin' (2001)
+10. Macedonian Criticism of French Thought (2003)
+11. <del>DTP(NN) - The Dialectics of the Transition Period (from Nowhere to No Place)) (2004)</del>
+12. <del>The Sacred Book of the Werewolf (2004)</del>
+13. <del>The Helmet of Horror (2005)</del>
+14. <del>Empire V (2006)</del>
+15. <del>P5: Farewell songs of the political pygmies of Pindostan</del>
+16. <del>t (2009)</del>
+17. Pineapple Water for the Fair Lady (2010)
+18. <del>S.N.U.F.F. (2011)</del>
+19. Batman Apollo (2013)
+20. **Love for three Zuckerbrins (2014)**
+21. The Watcher (2015)
+22. <del>Mafusail's lamp or the most recent battle of chekists with masons (2016)</del>
