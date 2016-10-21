@@ -1,16 +1,19 @@
----
+﻿---
 layout: page
 title: Reading list
 permalink: /read/
 ---
+
+Books I finished are striken through. Books I am currently reading are in bold:
+
+Horus Heresy
+------------
 
 Currently, I'm reading through
 [Horus Heresy novels](http://en.wikipedia.org/wiki/The_Horus_Heresy_%28novels%29).
 Wikipedia has an
 [elaborate reading order graph](http://en.wikipedia.org/wiki/Horus_Heresy_%28fictional_event%29#/media/File:English_Horus_heresy_spoiler_free_tree.jpg),
 but I mostly follow the order of publishing.
-
-Books I finished are striken through, book I am currently reading is in bold:
 
 1. <del>Horus Rising</del>
 2. <del>False Gods</del>
@@ -51,3 +54,13 @@ Books I finished are striken through, book I am currently reading is in bold:
 37. The Silent War: Chosen of the Sigillite
 38. Angels of Caliban: Emperors and Slaves
 39. Praetorian of Dorn: Alpha to Omega
+
+Old Man's War
+-------------
+
+1. <del>Old Man's War</del>
+2. <del>The Ghost Brigades</del>
+3. **The Last Colony**
+4. Zoe's Tale
+5. The Human Division
+6. The End of All Things
