@@ -6,7 +6,7 @@ permalink: /read/
 
 Books I finished are striken through. Books I am currently reading are in bold.
 
-## Horus Heresy
+# Horus Heresy
 
 Currently, I'm reading through
 [Horus Heresy novels](http://en.wikipedia.org/wiki/The_Horus_Heresy_%28novels%29).
@@ -54,7 +54,7 @@ but I mostly follow the order of publishing.
 38. Angels of Caliban: Emperors and Slaves
 39. Praetorian of Dorn: Alpha to Omega
 
-## Old Man's War
+# Old Man's War
 
 1. <del>Old Man's War</del>
 2. <del>The Ghost Brigades</del>
