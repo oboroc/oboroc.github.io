@@ -12,7 +12,7 @@ I hope to break this irritating barrier over this weekend with the help of a blo
 I'll go all Richard Phillips Feynman on you, my hypothetical audience member.
 He told at some point that if you want to understand something, you have to explain it to someone first.
 It's kind of like [rubber ducking](https://en.wikipedia.org/wiki/Rubber_duck_debugging), only there is no duck.
-I'm a very poor Feyman. Kind of like Kleborp from "E.T. Returns Home" Robot Chicken episode.
+I'm a very poor Feyman. Think Kleborp from "E.T. Returns Home" Robot Chicken episode.
 It's alright, though. Only my mom would read my blog, and she doesn't speak English.
 
 RPN (Reverse Polish Notation), also known as postfix notation, is a hard prerequisite to understanding correct parsing.
