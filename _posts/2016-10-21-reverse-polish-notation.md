@@ -35,13 +35,11 @@ Lets do a simple mental excersise.
 We'll start with string I = `(1-2*3)/4*5`, which is an infix representation of expression we want to transform into RPN representation.
 Please note, `(1-2*3)/4*5` = `-6.25`. We'll have to make sure that any RPN representation we build evaluates to same value.
 
-First we prepare by using brackets gratuitously.
-Pretending we don't know operator precedence rules but we still want no ambiguity.
-Our fully bracketized infix expression looks like this: `((1-(2*3))/4)*5`.
+Let us pretend we don't know operator precedence rules but want no ambiguity, so we use lots of brackets: `((1-(2*3))/4)*5`.
 Initial RPN expression R is empty. S is a temporary value we'll use to build R.
 
-1. In each iteration, we scan I for closing bracket `)`;
-2. If there is no `)` in I, just assign S the value of I, assign I an empty value and jump to step 6;
+1. In each iteration, we scan I for a closing bracket `)`;
+2. If there is no `)` in I, assign S the value of I, assign I an empty value and jump to step 6;
 3. If we found `)` in I, we track back to the last opening bracket `(` before it;
 4. Do the RPN transform on simple expression whithin the brackets and assign it to a temporary variable S;
 5. In I, we replace the whole substring between and including `(` and `)` with a special token `X`;
