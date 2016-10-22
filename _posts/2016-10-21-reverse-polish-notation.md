@@ -9,7 +9,7 @@ A while ago I complained how I [strugle to understand yacc/lex inner workings](/
 I hope to break this irritating barrier over this weekend with the help of a blog post:
 [LL and LR Parsing Demystified by Josh Haberman](http://blog.reverberate.org/2013/07/ll-and-lr-parsing-demystified.html).
 
-I'm going to go all Richard Phillips Feynman on you, my hypothetical audience member.
+I'll go all Richard Phillips Feynman on you, my hypothetical audience member.
 He told at some point that if you want to understand something, you have to explain it to someone first.
 It's kind of like [rubber ducking](https://en.wikipedia.org/wiki/Rubber_duck_debugging), only there is no duck.
 I'm a very poor Feyman. Kind of like Kleborp from "E.T. Returns Home" Robot Chicken episode.
