@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title:  "Reverse polish notation"
 date:   2016-10-21 21:47:00
