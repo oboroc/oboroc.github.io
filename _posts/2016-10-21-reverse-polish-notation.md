@@ -6,7 +6,7 @@ categories: posts
 ---
 
 A while ago I complained how I [strugle to understand yacc/lex inner workings](/posts/2015/07/09/trouble-with-the-unicorn/).
-I hope to break this irritating barrier over this weekend with the help of a blog:
+I hope to break this irritating barrier over this weekend with the help of this blog post:
 [LL and LR Parsing Demystified by Josh Haberman](http://blog.reverberate.org/2013/07/ll-and-lr-parsing-demystified.html).
 
 I'm going to go all Richard Phillips Feynman on you, my hypothetical audience member.
@@ -27,15 +27,13 @@ For example infix `3+2` is `3 2 +`.
 I'll use space as token delimeter, because infix `33+22` is RPN `33 22 +`.
 It would be hard to understand if it was `3322+`.
     
-Things get hairy for me once you have 3 or more operators. Somehow infix `3-4*5` turns to `3 4 5 * -`.
+Things get hairy for me once you have 2 or more operators. Somehow infix `3-4*5` turns to `3 4 5 * -`.
 One way to process RPN is to scan for any two operands that are already numbers, immediately followed by an operator.
 We then replace this simple expression with result and look at bigger expression again.
 In our `3 4 5 * -` RPN, we should replace `4 5 *` with `20`. Now it's `3 20 -`, which in turn is `-17`.
 If we look at infix expression `(3-4)*5`
 
 But I'm not sure computer is well used if your code repeatedly scans expression and replace simple subexpressions with their result.
-
-One way to deal with this is to use one of the basic computer data structures: stack.
 
 Say, we want to represent infix expression `(1+2*3-4)/5-6` in RPN.
 I think we can prepare by using brackets gratuitously, which is what we would need to do if we didn't had operator precedence rules.
@@ -46,10 +44,71 @@ Then we do our RPN transformation, and so on.
 So our RPN will be `((((2 3 *) 1 +) 4 -) 5 /) 6 -`.
 If you look at it like this, you'll see that there is no ambiguity about the order of operator application and it's operands,
 so we can drop all brackets, and it still makes sense: `2 3 * 1 + 4 - 5 / 6 -`.
-Now if we move all the operands to the left and all the operators to the rights, the final RPN expression will look like this:
-`2 3 1 4 5 6 * + - / -`. At least I think that's how it is.
+<del>Now if we move all the operands to the left and all the operators to the rights, the final RPN expression will look like this:
+`2 3 1 4 5 6 * + - / -`. At least I think that's how it is.</del> - nope.
+It's actually more like this:
+<pre>
+1. `2 3 * 1 + 4 - 5 / 6 -`
+2. `1 2 3 * + 4 - 5 / 6 -`
+3. `4 1 2 3 * + - 5 / 6 -`
+4. `5 4 1 2 3 * + - / 6 -`
+5. `6 5 4 1 2 3 * + - / -`
+</pre>
+If we kept our brackets, it would look like this:
+<pre>
+1. `((((2 3 *) 1 +) 4 -) 5 /) 6 -`
+2. `(((1 (2 3 *) +) 4 -) 5 /) 6 -`
+3. `((4 (1 (2 3 *) +) -) 5 /) 6 -`
+4. `(5 (4 (1 (2 3 *) +) -) /) 6 -`
+5. `6 (5 (4 (1 (2 3 *) +) -) /) -`
+</pre>
+
 I used some
 [online infix to RPN converter](http://www.meta-calculator.com/learning-lab/how-to-build-scientific-calculator/infix-to-postifix-convertor.php),
 and it says infix `(1+2*3-4)/5-6` is `1 2 3 * + 4 - 5 / 6 -` in RPN.
 [Another infix to RPN converter](http://www.mathblog.dk/tools/infix-postfix-converter/) says it's `1 2 3 * 4 + 5 6 / - -`.
 The third link in Google search results leads to a [blog post about shunting yard algorithm](http://andreinc.net/2010/10/05/converting-infix-to-rpn-shunting-yard-algorithm/).
+
+I think a way for a computer to calculate the value or RPN expression is to use stack.
+It starts by reading a token from input. If it's a number, it's operand, and we just push it to stack.
+Repeat until we get an `operator`, i.e. one of `+ - * /`.
+If you get one of those pop the top two operands from stack to variables a and b.
+Calculate value c as `b operator a`.
+Push value to stack.
+Repeat.
+
+If we do this for our example `6 5 4 1 2 3 * + - / -`, we'll push 6, 5, 4, 1, 2 and 3 to stack.
+Our stack will look like this:
+<pre>
+3
+2
+1
+4
+5
+6
+</pre>
+Then we'll hit operator `*`, so we'll pop 3 and 2 from stack and calculate the value of `2*3`, which is `6`.
+Push `6` back to stack.
+Now stack looks like this:
+<pre>
+6
+1
+4
+5
+6
+</pre>
+Scan for the next token. It is operator `+`. Pop `6` and `1` from the stack, calculate `1 + 6`. It's 7, push it to stack.
+Now it's:
+<pre>
+7
+4
+5
+6
+</pre>
+Next operator is `-`, two top stack values are `7` and `4`. We calculate value as `4-7` = `-3`. Push it to stack:
+<pre>
+-3
+5
+6
+</pre>
+
