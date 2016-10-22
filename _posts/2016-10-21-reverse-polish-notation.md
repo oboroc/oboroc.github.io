@@ -33,82 +33,100 @@ We then replace this simple expression with result and look at bigger expression
 In our `3 4 5 * -` RPN, we should replace `4 5 *` with `20`. Now it's `3 20 -`, which in turn is `-17`.
 If we look at infix expression `(3-4)*5`
 
-But I'm not sure computer is well used if your code repeatedly scans expression and replace simple subexpressions with their result.
+I don't think computer is well used if your code repeatedly scans expression and replaces simple subexpressions with their result.
 
-Say, we want to represent infix expression `(1+2*3-4)/5-6` in RPN.
-I think we can prepare by using brackets gratuitously, which is what we would need to do if we didn't had operator precedence rules.
-Our bracketized infix would look like this: `(((1+(2*3))-4)/5)-6`.
-We scan this expression until we reach the very first closing bracket.
-Then we track back until we hit matching opening bracket.
-Then we do our RPN transformation, and so on.
-So our RPN will be `((((2 3 *) 1 +) 4 -) 5 /) 6 -`.
-If you look at it like this, you'll see that there is no ambiguity about the order of operator application and it's operands,
-so we can drop all brackets, and it still makes sense: `2 3 * 1 + 4 - 5 / 6 -`.
-<del>Now if we move all the operands to the left and all the operators to the rights, the final RPN expression will look like this:
-`2 3 1 4 5 6 * + - / -`. At least I think that's how it is.</del> - nope.
-It's actually more like this:
-<pre>
-1. `2 3 * 1 + 4 - 5 / 6 -`
-2. `1 2 3 * + 4 - 5 / 6 -`
-3. `4 1 2 3 * + - 5 / 6 -`
-4. `5 4 1 2 3 * + - / 6 -`
-5. `6 5 4 1 2 3 * + - / -`
-</pre>
-If we kept our brackets, it would look like this:
-<pre>
-1. `((((2 3 *) 1 +) 4 -) 5 /) 6 -`
-2. `(((1 (2 3 *) +) 4 -) 5 /) 6 -`
-3. `((4 (1 (2 3 *) +) -) 5 /) 6 -`
-4. `(5 (4 (1 (2 3 *) +) -) /) 6 -`
-5. `6 (5 (4 (1 (2 3 *) +) -) /) -`
-</pre>
+Lets do some simple mental excersise.
 
-I used some
-[online infix to RPN converter](http://www.meta-calculator.com/learning-lab/how-to-build-scientific-calculator/infix-to-postifix-convertor.php),
-and it says infix `(1+2*3-4)/5-6` is `1 2 3 * + 4 - 5 / 6 -` in RPN.
-[Another infix to RPN converter](http://www.mathblog.dk/tools/infix-postfix-converter/) says it's `1 2 3 * 4 + 5 6 / - -`.
-The third link in Google search results leads to a [blog post about shunting yard algorithm](http://andreinc.net/2010/10/05/converting-infix-to-rpn-shunting-yard-algorithm/).
+We'll start with string I = `(1-2*3)/4*5`, which is a infix representation of expression we want to transform into RPN representation.
+Please note, `(1-2*3)/4*5` = `-6.25`. We'll have to make sure that any RPN representation we build evaluates to the same value.
 
-I think a way for a computer to calculate the value or RPN expression is to use stack.
-It starts by reading a token from input. If it's a number, it's operand, and we just push it to stack.
-Repeat until we get an `operator`, i.e. one of `+ - * /`.
-If you get one of those pop the top two operands from stack to variables a and b.
+First we prepare by using brackets gratuitously.
+Pretending we don't know operator precedence rules but we still don't want any ambiguity.
+Our fully bracketized infix expression looks like this: `((1-(2*3))/4)*5`.
+Initial RPN expression R is empty. S is a temporary string value we'll use to build out R.
+
+1. In each iteration, we scan I for closing bracket `)`.
+2. If there is no `)` in I, just assign S the value of I and assign I an empty string and jump to step 6.
+3. If we found `)` in I, we track back to the last opening bracket `(` before it.
+4. Do the RPN transform on simple expression whithin the brackets and assign it to a temporary variable S.
+5. In I, we replace the whole substring between and including `(` and `)` with a special token `X`.
+6. If R is empty, assign R the value of S.
+7. If R is not empty, assign R a string that we build by replacing `X` in S with the old value of R.
+8. If I is not an empty string, jump to step 1.
+
+At this point R should be the full RPN representation of initial infix expression.
+
+Lets see how this works:
+
+Initial values are I = `((1-(2*3))/4)*5`, R is empty, S is undefined.
+
+1. I = `((1-X)/4)*5`, S = `2 3 *`, R = `2 3 *`
+2. I = `(X/4)*5`, S = `1 X -`, R = `1 2 3 * -`
+3. I = `X*5`, S = `X 4 /`, R = `1 2 3 * - 4 /`
+4. I = empty string, S = `X 5 *`, R = `1 2 3 * - 4 / 5 *`
+
+If you do a search for "convert to RPN", first link is an
+[Infix to Postfix Convertor](http://www.meta-calculator.com/learning-lab/how-to-build-scientific-calculator/infix-to-postifix-convertor.php).
+If you give it our infix expression `(1-2*3)/4*5`, it will print out `1 2 3 * - 4 / 5 *`.
+Oh yeah!
+
+Now, how should a computer evaluate an RPN expression optimally?
+I think an easy approach is to use stack.
+We start by reading a token from input. If it's an operand, we push it to stack.
+Repeat until we get an operator.
+If you got an operator, pop the top two operands from stack to variables a and b.
 Calculate value c as `b operator a`.
 Push value to stack.
 Repeat.
+Once we run out of tokens from input, the only value in stack should be the result of RPN evaluation.
 
-If we do this for our example `6 5 4 1 2 3 * + - / -`, we'll push 6, 5, 4, 1, 2 and 3 to stack.
-Our stack will look like this:
+Lets see how it works for our RPN example above: `1 2 3 * - 4 / 5 *`.
+We read `1 2 3` from input and push them to stack. At this point we have:
 <pre>
+Input: `* - 4 / 5 *`
+Stack:
 3
 2
 1
-4
-5
-6
 </pre>
-Then we'll hit operator `*`, so we'll pop 3 and 2 from stack and calculate the value of `2*3`, which is `6`.
-Push `6` back to stack.
-Now stack looks like this:
+Next we read `*`, which is an operator, so we pop 3 and then 2 from stack, evaluate the value of `2 * 3` = `6` and push it to stack:
 <pre>
+Input: `- 4 / 5 *`
+Stack:
 6
 1
-4
-5
-6
 </pre>
-Scan for the next token. It is operator `+`. Pop `6` and `1` from the stack, calculate `1 + 6`. It's 7, push it to stack.
-Now it's:
+Next we read `-`, which is also an operator. Pop 6 and 1, evaluate `1 - 6` = `5`, push it to stack:
 <pre>
-7
-4
-5
-6
+Input: `4 / 5 *`
+Stack:
+-5
 </pre>
-Next operator is `-`, two top stack values are `7` and `4`. We calculate value as `4-7` = `-3`. Push it to stack:
+Read next token, it's operand:
 <pre>
--3
-5
-6
+Input: `/ 5 *`
+Stack:
+4
+-5
 </pre>
+Next token is operator. Pop 4 and -5. Eval `-5 / 4` = `-1.25`, push it to stack:
+<pre>
+Input: `5 *`
+Stack:
+-1.25
+</pre>
+Next token is operand:
+<pre>
+Input: `*`
+Stack:
+5
+-1.25
+</pre>
+Next token is operator. Pop 5 and -1.25. Evaluate `-1.25*5` = `-6.25`, push to stack.
+<pre>
+Input: empty
+Stack:
+-6.25
+</pre> 
 
+TODO: read about [shunting yard algorithm](http://andreinc.net/2010/10/05/converting-infix-to-rpn-shunting-yard-algorithm/).
