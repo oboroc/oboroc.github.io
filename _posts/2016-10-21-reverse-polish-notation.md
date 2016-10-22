@@ -33,7 +33,7 @@ This works for humans, but I don't think computer is well used if you make it re
 Lets do a simple mental excersise.
 
 We'll start with string I = `(1-2*3)/4*5`, which is an infix representation of expression we want to transform into RPN representation.
-Please note, `(1-2*3)/4*5` = `-6.25`. We'll have to make sure that any RPN representation we build evaluates the same.
+Please note, `(1-2*3)/4*5` = `-6.25`. We'll have to make sure that any RPN representation we build evaluates to same value.
 
 First we prepare by using brackets gratuitously.
 Pretending we don't know operator precedence rules but we still want no ambiguity.
