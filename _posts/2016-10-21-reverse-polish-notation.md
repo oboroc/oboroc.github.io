@@ -51,3 +51,5 @@ Now if we move all the operands to the left and all the operators to the rights,
 I used some
 [online infix to RPN converter](http://www.meta-calculator.com/learning-lab/how-to-build-scientific-calculator/infix-to-postifix-convertor.php),
 and it says infix `(1+2*3-4)/5-6` is `1 2 3 * + 4 - 5 / 6 -` in RPN.
+[Another infix to RPN converter](http://www.mathblog.dk/tools/infix-postfix-converter/) says it's `1 2 3 * 4 + 5 6 / - -`.
+The third link in Google search results leads to a [blog post about shunting yard algorithm](http://andreinc.net/2010/10/05/converting-infix-to-rpn-shunting-yard-algorithm/).
