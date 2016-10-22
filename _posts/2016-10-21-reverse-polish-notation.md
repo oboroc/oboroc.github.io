@@ -9,4 +9,4 @@ A while ago I complained how I [strugle to understand yacc/lex inner workings](/
 
 It looks like RPN (Reverse Polish Notation) also known as postfix notation is a must have prerequisite to delving deeper into LL/LR parsing.
 
-There is a [wikipedia article about RPN](https://en.wikipedia.org/wiki/Reverse_Polish_notation) _tbc_
+There is a [wikipedia article about RPN](https://en.wikipedia.org/wiki/Reverse_Polish_notation)
