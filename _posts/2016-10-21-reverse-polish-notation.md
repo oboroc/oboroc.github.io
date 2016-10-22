@@ -121,4 +121,5 @@ Stack:
 -6.25
 </pre> 
 
-TODO: read about [shunting yard algorithm](http://andreinc.net/2010/10/05/converting-infix-to-rpn-shunting-yard-algorithm/).
+TODO: read about [shunting yard algorithm](http://andreinc.net/2010/10/05/converting-infix-to-rpn-shunting-yard-algorithm/),
+also check out [those problems](http://www.spoj.com/problems/TEST/).
