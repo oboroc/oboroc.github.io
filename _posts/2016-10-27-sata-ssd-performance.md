@@ -14,6 +14,7 @@ I installed this card in the bottom PCI Express slot, connected SSD and forgot a
 Recently, however, I learned about a free software for benchmarking storage devices:
 [Crystal Disk Mark](http://crystalmark.info/software/CrystalDiskMark/index-e.html).
 And boy oh boy, did my SSD performance suck:
+
 ![Samsung 840 EVO SSD with default Microsoft Windows 10 x64 driver in bottom PCIE slot](/img/2016-10-27-sata-ssd-performance-1.png)
 
 I tought may be Windows 10 x64 default driver isn't all that great, so I wanted to try vendor drivers.
@@ -21,7 +22,9 @@ Marvell cares so little about this chip, it doesn't even provide drivers on it's
 I got Marvell OEM driver from the awesome french site
 [Station Drivers](http://www.station-drivers.com/index.php?option=com_remository&Itemid=352&func=select&id=348&lang=en).
 It made performance slightly worse:
+
 ![Samsung 840 EVO SSD with Marvell x64 driver in bottom PCIE slot](/img/2016-10-27-sata-ssd-performance-2.png)
+
 I reverted driver back to Microsoft default.
 
 At this point it hit me: what if the slot I'm using is not the highest performing one?
