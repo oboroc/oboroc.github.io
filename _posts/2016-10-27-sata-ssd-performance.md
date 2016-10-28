@@ -35,7 +35,7 @@ Moving controller card one slot up, to PCI Express slot that would normally be u
 <del>I may try another SATA-3 controller card with a different chipset, like Asmedia ASM1061.</del>
 Nope, it looks like ASM1061 tops out at 380MB/S in sequential reads.
 
-With controller in a new PCIE slot, I decided to try latest Marvell OEM drivers 1.2.0.1048_WIN10_WHQL from Station-Drivers.
+With controller in a new PCIE slot, I decided to try latest Marvell OEM drivers 1.2.0.1048_WIN10_WHQL from Station-Drivers:
 
 ![Samsung 840 EVO SSD with Marvell 1.2.0.1048_WIN10_WHQL x64 driver in second from the bottom PCIE slot](/img/2016-10-27-sata-ssd-performance-4.png)
 
