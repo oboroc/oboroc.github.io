@@ -9,7 +9,7 @@ TL;DR: Be careful which PCI Express slot you use for your SATA-3 controller card
 
 I built my current home PC in 2010. 4 years later I upgraded it with Samsung 840 EVO 256GB SSD.
 My ASUS P6TD Deluxe motherboard only supports SATA-2, which peaks out around 250MB/S, way below 500MB/S that SSD can handle.
-To address this bottleneck, I bought a cheap PCI Express controller card with Marvell 88SE9123 controller.
+To address this bottleneck, I bought a cheap PCI Express controller card with Marvell 88SE9123 chip.
 I installed this card in the bottom PCI Express slot, connected SSD and forgot about it.
 Recently, however, I learned about a free software for benchmarking storage devices:
 [Crystal Disk Mark](http://crystalmark.info/software/CrystalDiskMark/index-e.html).
@@ -40,4 +40,4 @@ I decided to try latest Marvell OEM drivers 1.2.0.1048_WIN10_WHQL from Station-D
 
 ![Samsung 840 EVO SSD with Marvell 1.2.0.1048_WIN10_WHQL x64 driver in second from the bottom PCIE slot](/img/2016-10-27-sata-ssd-performance-4.png)
 
-Sequential reads/writes are a bit slower when with default Microsoft Windows 10 x64 drivers, but random 4k reads are faster.
+Sequential reads/writes are a bit slower when with default Microsoft Windows 10 x64 drivers, but random 4k reads/writes are faster.
