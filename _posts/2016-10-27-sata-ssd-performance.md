@@ -25,7 +25,7 @@ It made performance slightly worse:
 
 ![Samsung 840 EVO SSD with Marvell x64 driver in bottom PCIE slot](/img/2016-10-27-sata-ssd-performance-2.png)
 
-I reverted driver back to Microsoft default.
+I reverted driver back to Microsoft.
 
 At this point it hit me: what if the slot I'm using is not the highest performing one?
 Moving controller card one slot up, to PCI Express slot that would normally be used with a second CrossFire/SLI videocard, improved performance drammatically:
