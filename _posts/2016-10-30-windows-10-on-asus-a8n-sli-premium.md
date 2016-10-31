@@ -17,6 +17,7 @@ I build this PC back in 2005, it was expensive and top of the line all around:
 * Creative Sound Blaster X-Fi Platinum with 5.25" bay, remote and mini-DIN to DIN converters;
 * NEC ND-3520A DVD writer;
 * 2x 250GB SATA HDDs in RAID-0;
+* Thermaltake 680 Watt power supply (with cheap Chinese electrolytic capacitors, as I learned later);
 * black, windowless Thermaltake Tsunami Dream case.
 
 It was a very competent PC for it's time.
