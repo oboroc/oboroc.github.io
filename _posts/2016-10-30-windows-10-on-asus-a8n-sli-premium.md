@@ -23,7 +23,7 @@ I build this PC back in 2005, it was expensive and top of the line all around:
 It was a very competent PC for it's time.
 I used it up until 2007, when I upgraded to a new PC with Core 2 Quad Q6600 CPU.
 I kept it around until ~2011, and then gave it away to a coworker that needed a home PC but didn't want to spend any money.
-Fast forward 5 years, my coworker told me that power supply dies, so he bought a new PC, and if I want, I can have it back.
+Fast forward 5 years, my coworker told me that power supply died, so he bought a new PC, and if I want, I can have it back.
 I decided to take it.
 I vacuumed it, replaced the power supply and got it working again.
 I upgraded HDD to Samsung Spinpoint 750 GB.
