@@ -36,11 +36,11 @@ but I mostly follow the order of publishing.
 19. <del>Know No Fear</del>
 20. <del>The Primarchs</del>
 21. <del>Fear to Tread</del>
-22. **Shadows of Treachery**
+22. <del>Shadows of Treachery</del>
 23. <del>Angel Exterminatus</del>
 24. <del>Betrayer</del>
 25. <del>Mark of Calth</del>
-26. Vulkan Lives
+26. **Vulkan Lives**
 27. The Unremembered Empire
 28. Scars
 29. Vengeful Spirit
@@ -85,6 +85,6 @@ but I mostly follow the order of publishing.
 17. Pineapple Water for the Fair Lady (2010)
 18. <del>S.N.U.F.F. (2011)</del>
 19. Batman Apollo (2013)
-20. **Love for three Zuckerbrins (2014)**
+20. <del>Love for three Zuckerbrins (2014)</del>
 21. The Watcher (2015)
 22. <del>Mafusail's lamp or the most recent battle of chekists with masons (2016)</del>
