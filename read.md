@@ -76,7 +76,7 @@ but I mostly follow the order of publishing.
 8. <del>Generation P (1999)</del>
 9. 4 by Pelevin' (2001)
 10. Macedonian Criticism of French Thought (2003)
-11. <del>DTP(NN) - The Dialectics of the Transition Period (from Nowhere to No Place)) (2004)</del>
+11. <del>DTP(NN) - The Dialectics of the Transition Period (from Nowhere to No Place) (2004)</del>
 12. <del>The Sacred Book of the Werewolf (2004)</del>
 13. <del>The Helmet of Horror (2005)</del>
 14. <del>Empire V (2006)</del>
