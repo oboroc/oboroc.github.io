@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Zeitgeist for February 2017"
+title:  "February 2017 zeitgeist"
 date:   2017-02-06 20:41:00
 categories: posts
 ---
