@@ -50,11 +50,12 @@ a debugging emulator for SMS, Mark III and SG-1000.
 Most of the issues are addressed well enough in the
 [latest alpha version of Meka](http://www.smspower.org/forums/13019-Meka080WithNewSoundEngineTESTERSWANTED?start=300#86895).
 
-I am quite tempted to get hold of
+I am quite tempted to get a hold of
 [MSXPI device](https://www.msx.org/forum/msx-talk/hardware/msxpi-msx-raspberry-pi-interface-under-development?page=2).
 Combined with RPi3, it could work as all around accelerator and Wi-Fi enabled unapi network interface.
 Current design is neither elegant not fast, but it's a fantastic start!
 
 My next endeavor is to get CI server for my and my friends GitHub projects.
 I am following [GitHub's Building a CI server](https://developer.github.com/guides/building-a-ci-server/)
-tutorial, which in turn requires [Sinatra](http://www.sinatrarb.com/).
+tutorial, which in turn requires learning [Sinatra](http://www.sinatrarb.com/).
+I may run this off my [APU2C4 passive cooled custom PC](https://www.pcengines.ch/apu2c4.htm).
