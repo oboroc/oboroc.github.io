@@ -11,14 +11,14 @@ I followed a no-carbs diet from August to December 2016.
 I'm back to eating carbs, but in rather moderate quantity.
 
 I had my last alcoholic beverage somewhere in July 2016, didn't dring anything since then.
-This not an effort, as I never liked alcohol anyway.
+This is not really an effort, as I never liked alcohol anyway.
 
 I am trying again to learn to use
-[lex/yacc](http://www.oboroc.com/posts/2015/07/09/trouble-with-the-unicorn/).
-This time around I'm following hoc language design from chapter 8 of
+[lex/yacc again](http://www.oboroc.com/posts/2015/07/09/trouble-with-the-unicorn/).
+This time around I'm following the hoc language design from chapter 8 of
 [The UNIX Programming Environment](https://en.wikipedia.org/wiki/The_Unix_Programming_Environment).
-The book is from 1984, and the C dialect is very old, K&R 1-st edition style.
-Still, with minor tweaks it works great with latest GCC and flex/bison.
+The book is from 1984, and the C dialect is very old: K&R 1-st edition style.
+Still, with minor tweaks it works great with the latest GCC and flex/bison.
 I'm about to do excersises for
 [hoc3 and move on to hoc4](https://github.com/oboroc/redrage/tree/master/src/misc).
 
@@ -49,6 +49,11 @@ with the [last official release of Meka](http://www.smspower.org/meka/),
 a debugging emulator for SMS, Mark III and SG-1000.
 Most of the issues are addressed well enough in the
 [latest alpha version of Meka](http://www.smspower.org/forums/13019-Meka080WithNewSoundEngineTESTERSWANTED?start=300#86895).
+
+I am quite tempted to get hold of
+[MSXPI device](https://www.msx.org/forum/msx-talk/hardware/msxpi-msx-raspberry-pi-interface-under-development?page=2).
+Combined with RPi3, it could work as all around accelerator and Wi-Fi enabled unapi network interface.
+Current design is neither elegant not fast, but it's a fantastic start!
 
 My next endeavor is to get CI server for my and my friends GitHub projects.
 I am following [GitHub's Building a CI server](https://developer.github.com/guides/building-a-ci-server/)
