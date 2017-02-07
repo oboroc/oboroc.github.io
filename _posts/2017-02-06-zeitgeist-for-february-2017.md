@@ -13,6 +13,9 @@ I'm back to eating carbs, but in rather moderate quantity.
 I had my last alcoholic beverage somewhere in July 2016, didn't dring anything since then.
 This is not really an effort, as I never liked alcohol anyway.
 
+I discovered a very nice band: [Young Knives](https://en.wikipedia.org/wiki/Young_Knives).
+It reminds me a little of my other favorite band: [The Rakes](https://en.wikipedia.org/wiki/The_Rakes).
+
 I am trying again to learn to use
 [lex/yacc again](http://www.oboroc.com/posts/2015/07/09/trouble-with-the-unicorn/).
 This time around I'm following the hoc language design from chapter 8 of
