@@ -40,7 +40,7 @@ but I mostly follow the order of publishing.
 23. <del>Angel Exterminatus</del>
 24. <del>Betrayer</del>
 25. <del>Mark of Calth</del>
-26. **Vulkan Lives**
+26. <del>Vulkan Lives</del>
 27. The Unremembered Empire
 28. Scars
 29. Vengeful Spirit
@@ -86,5 +86,5 @@ but I mostly follow the order of publishing.
 18. <del>S.N.U.F.F. (2011)</del>
 19. Batman Apollo (2013)
 20. <del>Love for three Zuckerbrins (2014)</del>
-21. The Watcher (2015)
+21. **The Watcher (2015)**
 22. <del>Mafusail's lamp or the most recent battle of chekists with masons (2016)</del>
