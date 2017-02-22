@@ -6,8 +6,8 @@ permalink: /read/
 
 Books I finished are striken through. Books I am currently reading are in bold.
 
-### Horus Heresy
 
+### Horus Heresy
 
 Currently, I'm reading through
 [Horus Heresy novels](http://en.wikipedia.org/wiki/The_Horus_Heresy_%28novels%29).
@@ -54,6 +54,9 @@ but I mostly follow the order of publishing.
 37. The Silent War: Chosen of the Sigillite
 38. Angels of Caliban: Emperors and Slaves
 39. Praetorian of Dorn: Alpha to Omega
+40. Corax: Nevermore
+41. The Master of Mankind: War in the Webway
+
 
 ### Old Man's War
 
@@ -63,6 +66,7 @@ but I mostly follow the order of publishing.
 4. Zoe's Tale
 5. The Human Division
 6. The End of All Things
+
 
 ### Pelevin (russian author)
 
