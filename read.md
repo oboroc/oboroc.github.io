@@ -62,7 +62,7 @@ but I mostly follow the order of publishing.
 
 1. <del>Old Man's War</del>
 2. <del>The Ghost Brigades</del>
-3. **The Last Colony**
+3. The Last Colony
 4. Zoe's Tale
 5. The Human Division
 6. The End of All Things
@@ -88,7 +88,7 @@ but I mostly follow the order of publishing.
 16. <del>t (2009)</del>
 17. Pineapple Water for the Fair Lady (2010)
 18. <del>S.N.U.F.F. (2011)</del>
-19. Batman Apollo (2013)
+19. <del>Batman Apollo (2013)</del>
 20. <del>Love for three Zuckerbrins (2014)</del>
-21. **The Watcher (2015)**
+21. <del>The Watcher (2015)</del>
 22. <del>Mafusail's lamp or the most recent battle of chekists with masons (2016)</del>
