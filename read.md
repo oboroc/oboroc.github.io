@@ -56,6 +56,10 @@ but I mostly follow the order of publishing.
 39. Praetorian of Dorn: Alpha to Omega
 40. Corax: Nevermore
 41. The Master of Mankind: War in the Webway
+42. Garro: Weapon of Fate
+43. Shattered Legions
+44. The Crimson King: A Soul Divided
+45. Tallarn: War for a Dead World
 
 
 ### Old Man's War
@@ -92,3 +96,4 @@ but I mostly follow the order of publishing.
 20. <del>Love for three Zuckerbrins (2014)</del>
 21. <del>The Watcher (2015)</del>
 22. <del>Mafusail's lamp or the most recent battle of chekists with masons (2016)</del>
+23. <del>iPhuck 10 (2017)</del>
