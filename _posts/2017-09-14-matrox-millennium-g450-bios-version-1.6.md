@@ -7,10 +7,9 @@ categories: posts
 
 I bought a Matrox Millennium G450 16MB AGP video card.
 I assume it's an OEM version that came from a recycled old corporate desktop.
-It has a very sharp ramdac on primary VGA port: 360MHz.
+It has a sharp 360MHz ramdac on primary VGA port.
 That's more then 300MHz on Matrox Millennium G400 32MB AGP video card I got earlier.
-It's also what I had in my PC in year 2000: Athlon 700MHz, ASUS A7V, 128MB RAM, SB 128 PCI.
-I remember paying lots of money, something around 200 US$ for it back then.
+It's also what I had in my PC back in 2000.
 
 I upgraded the bios to the latest version 2.1.
 I took the backup of bios 1.6 that was on the videocard.
