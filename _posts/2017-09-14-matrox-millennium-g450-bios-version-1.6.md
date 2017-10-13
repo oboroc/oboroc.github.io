@@ -16,3 +16,5 @@ I upgraded the bios to the latest version 2.1.
 I took the backup of bios 1.6 that was on the videocard.
 Grab it here if you're interested:
 [Matrox Millennium G450 AGP BIOS v1.6](/files/2017-09-14-matrox-g450-v1.6-b29.zip).
+
+Update: I also dumped a [Matrox G400 AGP BIOS v1.5](/files/2017-09-14-matrox-g400-v1.5-b22.zip).
