@@ -40,8 +40,8 @@ Meanwhile I did some searching and found some interesting materials:
 
 - sensible error handling:
 [part 1](http://bitsquid.blogspot.ca/2012/01/sensible-error-handling-part-1.html),
-[part 2](http://bitsquid.blogspot.ca/2012/01/sensible-error-handling-part-2.html),
-[part 3](http://bitsquid.blogspot.ca/2012/01/sensible-error-handling-part-3.html);
+[part 2](http://bitsquid.blogspot.ca/2012/02/sensible-error-handling-part-2.html),
+[part 3](http://bitsquid.blogspot.ca/2012/02/sensible-error-handling-part-3.html);
 - [exceptions are hard](https://gamedev.stackexchange.com/questions/46424/try-catch-or-ifs-for-error-handling-in-c);
 - [using `longjmp()` / `setjmp()` for error recovery](http://www.on-time.com/ddj0011.htm);
 
