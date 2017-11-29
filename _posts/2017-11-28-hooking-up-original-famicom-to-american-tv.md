@@ -37,3 +37,7 @@ Both produce poor quality output, but CH1 / channel 95 works better.
 </a>
 
 Next up: test with Nintendo RF adapter. After that, modify Famicom with composite output.
+Rrelevant links:
+[1](https://assemblergames.com/threads/guide-av-mod-your-famicom.49263/),
+[2](http://8bitplus.co.uk/projects/famicom-av-mod-nintendo/),
+[3](https://www.youtube.com/watch?v=yH0dS_mo77U).
