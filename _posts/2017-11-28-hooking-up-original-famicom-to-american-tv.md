@@ -18,8 +18,8 @@ It also came with japanese Final Fantasy III cartridge.
 
 Today I decided to test it.
 Original Famicom only outputs RF.
-I didn't have a Nintendo RF adapter handy, but I got a SEGA Master System RF adapter.
-I tested RF adapter with a SEGA Master System first.
+I didn't have a Nintendo RF adapter handy, but I got one from SEGA Master System.
+I tested it with a SEGA Master System first.
 It worked great, image was almost as clear as from composite video.
 
 I did a quick online research about Famicom power supply needs.
@@ -30,7 +30,7 @@ Next I hooked up everything, set Famicom RF output channel to CH2 and tuned my T
 This didn't work. After some more online searching, it turned out
 japanese channel 1 is roughly equivalent to american channel 95 and
 japanese channel 2 is american channel 96.
-Both produce pure quality output, but CH1 / channel 95 works better.
+Both produce poor quality output, but CH1 / channel 95 works better.
 
 <a href="/img/2017-11-28-hooking-up-original-famicom-to-american-tv-2-full.jpg">
 ![Famicom](/img/2017-11-28-hooking-up-original-famicom-to-american-tv-2.jpg)
