@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Reading list
-permalink: /read/
+permalink: /rlist/
 ---
 
 Books I finished are striken through. Books I am currently reading are in bold.
