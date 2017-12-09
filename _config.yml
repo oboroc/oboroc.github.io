@@ -1,36 +1,26 @@
-# Site settings
-title:       Adrian Oboroc's personal site
-#email:       your_email@example.com
+title: Adrian Oboroc's personal site
+#email: your-email@example.com
 author:      Adrian Oboroc
-description: "Blog, links to my projects and some details about me."
+description: "Blog, links to my projects and some details about me"
 baseurl:     ""
 url:         "http://www.oboroc.com"
-
-# Google analytics
-#google_analytics:
-
-# Optional features
-animated:           false
-show_related_posts: false
-show_post_footers:  false
-
-# Social icons
-show_social_icons: false
-github_username:   oboroc
-#twitter_username:
-#google_plus_id:
-#linkedin_username:
-#bitcoin_url:
-#paypal_url:
-#flattr_button:
+twitter_username: oboroc416
+github_username:  oboroc
 
 # Build settings
-markdown:     kramdown
-permalink:    pretty
-paginate:     5
-sass:
-compressed: true
+markdown: kramdown
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-remote-theme
 
-# Setup redirect as per https://help.github.com/articles/redirects-on-github-pages/
-gems:
-  - jekyll-redirect-from
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
