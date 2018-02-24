@@ -60,6 +60,8 @@ but I mostly follow the order of publishing.
 43. Shattered Legions
 44. The Crimson King: A Soul Divided
 45. Tallarn: War for a Dead World
+46. Ruinstorm: Destiny unwritten...
+47. Old Earth: To the Gates of Terra
 
 
 ### Old Man's War
