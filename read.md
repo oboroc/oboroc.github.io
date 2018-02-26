@@ -9,12 +9,6 @@ Books I finished are striken through. Books I am currently reading are in bold.
 
 ### Horus Heresy
 
-Currently, I'm reading through
-[Horus Heresy novels](http://en.wikipedia.org/wiki/The_Horus_Heresy_%28novels%29).
-Wikipedia has an
-[elaborate reading order graph](http://en.wikipedia.org/wiki/Horus_Heresy_%28fictional_event%29#/media/File:English_Horus_heresy_spoiler_free_tree.jpg),
-but I mostly follow the order of publishing.
-
 1. <del>Horus Rising</del>
 2. <del>False Gods</del>
 3. <del>Galaxy in Flames</del>
@@ -84,15 +78,15 @@ but I mostly follow the order of publishing.
 6. <del>The Yellow Arrow (1993)</del>
 7. <del>Chapayev and Void (1996)</del>
 8. <del>Generation P (1999)</del>
-9. 4 by Pelevin' (2001)
-10. Macedonian Criticism of French Thought (2003)
+9. <del>4 by Pelevin' (2001)</del> - compilation of previously published works
+10. <del>Macedonian Criticism of French Thought (2003)</del> - was later included in DTP(NN)
 11. <del>DTP(NN) - The Dialectics of the Transition Period (from Nowhere to No Place) (2004)</del>
 12. <del>The Sacred Book of the Werewolf (2004)</del>
 13. <del>The Helmet of Horror (2005)</del>
 14. <del>Empire V (2006)</del>
 15. <del>P5: Farewell songs of the political pygmies of Pindostan</del>
 16. <del>t (2009)</del>
-17. Pineapple Water for the Fair Lady (2010)
+17. <del>Pineapple Water for the Fair Lady (2010)</del>
 18. <del>S.N.U.F.F. (2011)</del>
 19. <del>Batman Apollo (2013)</del>
 20. <del>Love for three Zuckerbrins (2014)</del>
