@@ -60,12 +60,12 @@ Books I finished are striken through. Books I am currently reading are in bold.
 
 ### Old Man's War
 
-1. <del>Old Man's War</del>
-2. <del>The Ghost Brigades</del>
-3. The Last Colony
-4. Zoe's Tale
-5. The Human Division
-6. The End of All Things
+1. <del>Old Man's War (2005)</del>
+2. <del>The Ghost Brigades (2006)</del>
+3. The Last Colony (2007)
+4. Zoe's Tale (2008)
+5. The Human Division (2013)
+6. The End of All Things (2015)
 
 
 ### Pelevin (russian author)
