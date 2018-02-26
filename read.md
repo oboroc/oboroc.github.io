@@ -79,7 +79,7 @@ Books I finished are striken through. Books I am currently reading are in bold.
 7. <del>Chapayev and Void (1996)</del>
 8. <del>Generation P (1999)</del>
 9. <del>4 by Pelevin' (2001)</del> - compilation of previously published works
-10. <del>Macedonian Criticism of French Thought (2003)</del> - was later included in DTP(NN)
+10. <del>Macedonian Criticism of French Thought (2003)</del> - part of DTP(NN)
 11. <del>DTP(NN) - The Dialectics of the Transition Period (from Nowhere to No Place) (2004)</del>
 12. <del>The Sacred Book of the Werewolf (2004)</del>
 13. <del>The Helmet of Horror (2005)</del>
