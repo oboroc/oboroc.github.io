@@ -4,7 +4,7 @@ title:       Adrian Oboroc's personal site
 author:      Adrian Oboroc
 description: "Blog, links to my projects and some details about me."
 baseurl:     ""
-url:         "http://www.oboroc.com"
+url:         "https://www.oboroc.com"
 
 # Google analytics
 #google_analytics:
