@@ -465,7 +465,7 @@ sets by prepending a '-', e.g.: '-game*'. Selected sets are labelled '[X]'.
     [X] bsd.rd        [X] man64.tgz     [X] xshare64.tgz
 Set name(s)? (or 'abort' or 'done') [done]
 ```
-Type `no` and press enter. Press enter again to finish installing sets.
+Type `yes` and press enter. Press enter again to finish installing sets.
 ```
 Directory does not contain SHA256.sig. Continue without verification? [no] yes
 Installing bsd          100% |**************************| 14987 KB    00:00
@@ -520,147 +520,9 @@ using the 'mail' command.
 Exit to (S)hell, (H)alt or (R)eboot? [reboot]
 syncing disks... done
 rebooting...
-PC Engines apu2
-coreboot build 20190803
-BIOS version v4.9.0.3
-4080 MB ECC DRAM
-SeaBIOS (version rel-1.12.0.1-0-g393dc9c)
-
-Press F10 key now for boot menu
-
-Booting from Hard Disk...
-Using drive 0, partition 3.
-Loading.....
-probing: pc0 com0 com1 com2 com3 mem[639K 3325M 752M a20=on]
-disk: hd0+ hd1+
->> OpenBSD/amd64 BOOT 3.41
-boot>
-cannot open hd0a:/etc/random.seed: No such file or directory
-booting hd0a:/6.4/amd64/bsd.rd: 3511114+1500160+3892040+0+598016 [372715+111+441
-072+293323]=0xa208a0
-entry point at 0x100015PC Engines apu2
-coreboot build 20190803
-BIOS version v4.9.0.3
-4080 MB ECC DRAM
-SeaBIOS (version rel-1.12.0.1-0-g393dc9c)
-
-Press F10 key now for boot menu
-
-Booting from Hard Disk...
-Using drive 0, partition 3.
-Loading.....
-probing: pc0 com0 com1 com2 com3 mem[639K 3325M 752M a20=on]
-disk: hd0+ hd1+
->> OpenBSD/amd64 BOOT 3.41
-boot> stty com0 115200
-boot> set tty com0
-switching console to com>> OpenBSD/amd64 BOOT 3.41
-boot>
-0
-cannot open hd0a:/etc/random.seed: No such file or directory
-booting hd0a:/6.4/amd64/bsd.rd: 3511114+1500160+3892040+0+598016 [372715+111+440
-entry point at 0x1000158
-Copyright (c) 1982, 1986, 1989, 1991, 1993
-        The Regents of the University of California.  All rights reserved.
-Copyright (c) 1995-2018 OpenBSD. All rights reserved.  https://www.OpenBSD.org
-
-OpenBSD 6.4 (RAMDISK_CD) #348: Thu Oct 11 13:36:16 MDT 2018
-    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
-real mem = 4259921920 (4062MB)
-avail mem = 4127031296 (3935MB)
-mainbus0 at root
-bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xcfe97020 (9 entries)
-bios0: vendor coreboot version "v4.9.0.3" date 03/08/2019
-bios0: PC Engines apu2
-acpi0 at bios0: rev 2
-acpi0: tables DSDT FACP SSDT TPM2 APIC HEST IVRS SSDT SSDT HPET
-acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
-cpu0 at mainbus0: apid 0 (boot processor)
-cpu0: AMD GX-412TC SOC, 998.28 MHz, 16-30-01
-cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CT
-cpu0: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 2MB 64b/line 16e
-cpu0: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
-cpu0: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
-cpu0: apic clock running at 99MHz
-cpu0: mwait min=64, max=64, IBE
-cpu at mainbus0: not configured
-cpu at mainbus0: not configured
-cpu at mainbus0: not configured
-ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 21, 24 pins
-ioapic1 at mainbus0: apid 5 pa 0xfec20000, version 21, 32 pins, remapped
-acpiprt0 at acpi0: bus 0 (PCI0)
-acpiprt1 at acpi0: bus -1 (PBR4)
-acpiprt2 at acpi0: bus 1 (PBR5)
-acpiprt3 at acpi0: bus 2 (PBR6)
-acpiprt4 at acpi0: bus 3 (PBR7)
-acpiprt5 at acpi0: bus -1 (PBR8)
-acpicpu at acpi0 not configured
-"PNP0C0C" at acpi0 not configured
-"PNP0B00" at acpi0 not configured
-"BOOT0000" at acpi0 not configured
-pci0 at mainbus0 bus 0
-pchb0 at pci0 dev 0 function 0 "AMD AMD64 16h Root Complex" rev 0x00
-vendor "AMD", unknown product 0x1567 (class system subclass IOMMU, rev 0x00) atd
-pchb1 at pci0 dev 2 function 0 "AMD AMD64 16h Host" rev 0x00
-ppb0 at pci0 dev 2 function 2 "AMD AMD64 16h PCIE" rev 0x00: msi
-pci1 at ppb0 bus 1
-em0 at pci1 dev 0 function 0 "Intel I210" rev 0x03: msi, address 00:0d:b9:42:e48
-ppb1 at pci0 dev 2 function 3 "AMD AMD64 16h PCIE" rev 0x00: msi
-pci2 at ppb1 bus 2
-em1 at pci2 dev 0 function 0 "Intel I210" rev 0x03: msi, address 00:0d:b9:42:e49
-ppb2 at pci0 dev 2 function 4 "AMD AMD64 16h PCIE" rev 0x00: msi
-pci3 at ppb2 bus 3
-em2 at pci3 dev 0 function 0 "Intel I210" rev 0x03: msi, address 00:0d:b9:42:e4a
-"AMD Cryptographic Co-processor v3" rev 0x00 at pci0 dev 8 function 0 not confid
-xhci0 at pci0 dev 16 function 0 "AMD Bolton xHCI" rev 0x11: msi, xHCI 1.0
-usb0 at xhci0: USB revision 3.0
-uhub0 at usb0 configuration 1 interface 0 "AMD xHCI root hub" rev 3.00/1.00 add1
-ahci0 at pci0 dev 17 function 0 "AMD Hudson-2 SATA" rev 0x39: msi, AHCI 1.3
-ahci0: port 0: 6.0Gb/s
-scsibus0 at ahci0: 32 targets
-sd0 at scsibus0 targ 0 lun 0: <ATA, Samsung SSD 850, EMT4> SCSI3 0/direct fixedd
-sd0: 114473MB, 512 bytes/sector, 234441648 sectors, thin
-ehci0 at pci0 dev 19 function 0 "AMD Hudson-2 USB2" rev 0x39: apic 4 int 18
-usb1 at ehci0: USB revision 2.0
-uhub1 at usb1 configuration 1 interface 0 "AMD EHCI root hub" rev 2.00/1.00 add1
-"AMD Hudson-2 SMBus" rev 0x42 at pci0 dev 20 function 0 not configured
-"AMD Hudson-2 LPC" rev 0x11 at pci0 dev 20 function 3 not configured
-sdhc0 at pci0 dev 20 function 7 "AMD Bolton SD/MMC" rev 0x01: apic 4 int 16
-sdhc0: SDHC 2.0, 50 MHz base clock
-sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed, dma
-pchb2 at pci0 dev 24 function 0 "AMD AMD64 16h Link Cfg" rev 0x00
-pchb3 at pci0 dev 24 function 1 "AMD AMD64 16h Address Map" rev 0x00
-pchb4 at pci0 dev 24 function 2 "AMD AMD64 16h DRAM Cfg" rev 0x00
-pchb5 at pci0 dev 24 function 3 "AMD AMD64 16h Misc Cfg" rev 0x00
-pchb6 at pci0 dev 24 function 4 "AMD AMD64 16h CPU Power" rev 0x00
-pchb7 at pci0 dev 24 function 5 "AMD AMD64 16h Misc Cfg" rev 0x00
-isa0 at mainbus0
-com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
-com0: console
-com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
-com2 at isa0 port 0x3e8/8 irq 5: ns16550a, 16 byte fifo
-umass0 at uhub0 port 3 configuration 1 interface 0 "Forza Motorsport 3" rev 2.02
-umass0: using SCSI over Bulk-Only
-scsibus1 at umass0: 2 targets, initiator 0
-sd1 at scsibus1 targ 1 lun 0: <Forza, Motorsport 3, 8.02> SCSI0 0/direct removaA
-sd1: 1927MB, 512 bytes/sector, 3948543 sectors
-uhub2 at uhub1 port 1 configuration 1 interface 0 "vendor 0x0438 product 0x79002
-softraid0 at root
-scsibus2 at softraid0: 256 targets
-root on rd0a swap on rd0b dump on rd0b
-erase ^?, werase ^W, kill ^U, intr ^C, status ^T
-
-Welcome to the OpenBSD/amd64 6.4 installation program.
-(I)nstall, (U)pgrade, (A)utoinstall or (S)hell? sd1 detached
-scsibus1 detached
-umass0 detached
-s
-# reboot
-syncing disks... done
-rebooting...
 ```
 
-Next, remove USB stick and then boot to installed OpenBSD:
+Now you can boot to installed OpenBSD:
 ```
 PC Engines apu2
 coreboot build 20190803
@@ -856,7 +718,6 @@ known fix for it exists, include that as well.
 You have mail.
 apu2c4#
 ```
-
 
 ## Configure OpenBSD as a router
 
