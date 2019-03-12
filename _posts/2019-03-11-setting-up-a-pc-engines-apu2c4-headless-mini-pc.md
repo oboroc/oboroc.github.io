@@ -435,9 +435,429 @@ Now installer is going to prompt you for the source of installation files.
 By default it is `http`, but since we didn't connect apu2c4 to network yet,
 type `disk` and enter instead.
 ```
-Is the disk partition already mounted? [yes]
+Let's install the sets!
+Location of sets? (disk http or 'done') [http] disk
+```
+In next prompt type `no` and enter.
+```
+Is the disk partition already mounted? [yes] no
+```
+In next prompt, type in `sd1` for USB stick and press enter.
+```
+Available disks are: sd0 sd1.
+Which disk contains the install media? (or 'done') [sd1] sd1
+```
+Next, type `a` and enter for OpenBSD partition on USB stick.
+```
+  a:           736256             1024  4.2BSD   2048 16384 16142
+  i:              960               64   MSDOS
+Available sd1 partitions are: a i.
+Which sd1 partition has the install sets? (or 'done') [a]
+```
+Next, press enter twice to accept defaults.
+```
 Pathname to the sets? (or 'done') [6.4/amd64]
-The directory '6.4/amd64' does not exist.
+
+Select sets by entering a set name, a file name pattern or 'all'. De-select
+sets by prepending a '-', e.g.: '-game*'. Selected sets are labelled '[X]'.
+    [X] bsd           [X] base64.tgz    [X] game64.tgz    [X] xfont64.tgz
+    [X] bsd.mp        [X] comp64.tgz    [X] xbase64.tgz   [X] xserv64.tgz
+    [X] bsd.rd        [X] man64.tgz     [X] xshare64.tgz
+Set name(s)? (or 'abort' or 'done') [done]
+```
+Type `no` and press enter. Press enter again to finish installing sets.
+```
+Directory does not contain SHA256.sig. Continue without verification? [no] yes
+Installing bsd          100% |**************************| 14987 KB    00:00
+Installing bsd.mp       100% |**************************| 15086 KB    00:00
+Installing bsd.rd       100% |**************************|  9782 KB    00:00
+Installing base64.tgz   100% |**************************|   157 MB    00:19
+Extracting etc.tgz      100% |**************************|   259 KB    00:00
+Installing comp64.tgz   100% |**************************| 64081 KB    00:11
+Installing man64.tgz    100% |**************************|  7086 KB    00:01
+Installing game64.tgz   100% |**************************|  2742 KB    00:00
+Installing xbase64.tgz  100% |**************************| 19287 KB    00:03
+Extracting xetc.tgz     100% |**************************|  6963       00:00
+Installing xshare64.tgz 100% |**************************|  4432 KB    00:01
+Installing xfont64.tgz  100% |**************************| 39342 KB    00:04
+Installing xserv64.tgz  100% |**************************| 13355 KB    00:01
+Location of sets? (disk http or 'done') [done]
+```
+Next we need to pick out time zone. Type in `?` to list coutries.
+Type in your contry. If needed, type in `?` again to list regions in your contry.
+Then type in your region.
+```
+What timezone are you in? ('?' for list) [Canada/Mountain] ?
+Africa/      Chile/       GB-Eire      Israel       Navajo       US/
+America/     Cuba         GMT          Jamaica      PRC          UTC
+Antarctica/  EET          GMT+0        Japan        PST8PDT      Universal
+Arctic/      EST          GMT-0        Kwajalein    Pacific/     W-SU
+Asia/        EST5EDT      GMT0         Libya        Poland       WET
+Atlantic/    Egypt        Greenwich    MET          Portugal     Zulu
+Australia/   Eire         HST          MST          ROC          posix/
+Brazil/      Etc/         Hongkong     MST7MDT      ROK          posixrules
+CET          Europe/      Iceland      Mexico/      Singapore    right/
+CST6CDT      Factory      Indian/      NZ           Turkey
+Canada/      GB           Iran         NZ-CHAT      UCT
+What timezone are you in? ('?' for list) [Canada/Mountain] Canada
+What sub-timezone of 'Canada' are you in? ('?' for list) ?
+Atlantic     Eastern      Newfoundland Saskatchewan
+Central      Mountain     Pacific      Yukon
+What sub-timezone of 'Canada' are you in? ('?' for list) Eastern
+Saving configuration files... done.
+Making all device nodes... done.
+Multiprocessor machine; using bsd.mp instead of bsd.
+Relinking to create unique kernel... done.
 ```
 
-Ok, now I'm stuck, but I'll figure it out another day.
+Next, remove USB stick and press enter to accept default option to reboot.
+```
+CONGRATULATIONS! Your OpenBSD install has been successfully completed!
+
+When you login to your new system the first time, please read your mail
+using the 'mail' command.
+
+Exit to (S)hell, (H)alt or (R)eboot? [reboot]
+syncing disks... done
+rebooting...
+PC Engines apu2
+coreboot build 20190803
+BIOS version v4.9.0.3
+4080 MB ECC DRAM
+SeaBIOS (version rel-1.12.0.1-0-g393dc9c)
+
+Press F10 key now for boot menu
+
+Booting from Hard Disk...
+Using drive 0, partition 3.
+Loading.....
+probing: pc0 com0 com1 com2 com3 mem[639K 3325M 752M a20=on]
+disk: hd0+ hd1+
+>> OpenBSD/amd64 BOOT 3.41
+boot>
+cannot open hd0a:/etc/random.seed: No such file or directory
+booting hd0a:/6.4/amd64/bsd.rd: 3511114+1500160+3892040+0+598016 [372715+111+441
+072+293323]=0xa208a0
+entry point at 0x100015PC Engines apu2
+coreboot build 20190803
+BIOS version v4.9.0.3
+4080 MB ECC DRAM
+SeaBIOS (version rel-1.12.0.1-0-g393dc9c)
+
+Press F10 key now for boot menu
+
+Booting from Hard Disk...
+Using drive 0, partition 3.
+Loading.....
+probing: pc0 com0 com1 com2 com3 mem[639K 3325M 752M a20=on]
+disk: hd0+ hd1+
+>> OpenBSD/amd64 BOOT 3.41
+boot> stty com0 115200
+boot> set tty com0
+switching console to com>> OpenBSD/amd64 BOOT 3.41
+boot>
+0
+cannot open hd0a:/etc/random.seed: No such file or directory
+booting hd0a:/6.4/amd64/bsd.rd: 3511114+1500160+3892040+0+598016 [372715+111+440
+entry point at 0x1000158
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+        The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2018 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+
+OpenBSD 6.4 (RAMDISK_CD) #348: Thu Oct 11 13:36:16 MDT 2018
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/RAMDISK_CD
+real mem = 4259921920 (4062MB)
+avail mem = 4127031296 (3935MB)
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xcfe97020 (9 entries)
+bios0: vendor coreboot version "v4.9.0.3" date 03/08/2019
+bios0: PC Engines apu2
+acpi0 at bios0: rev 2
+acpi0: tables DSDT FACP SSDT TPM2 APIC HEST IVRS SSDT SSDT HPET
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD GX-412TC SOC, 998.28 MHz, 16-30-01
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CT
+cpu0: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 2MB 64b/line 16e
+cpu0: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, IBE
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+cpu at mainbus0: not configured
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 21, 24 pins
+ioapic1 at mainbus0: apid 5 pa 0xfec20000, version 21, 32 pins, remapped
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PBR4)
+acpiprt2 at acpi0: bus 1 (PBR5)
+acpiprt3 at acpi0: bus 2 (PBR6)
+acpiprt4 at acpi0: bus 3 (PBR7)
+acpiprt5 at acpi0: bus -1 (PBR8)
+acpicpu at acpi0 not configured
+"PNP0C0C" at acpi0 not configured
+"PNP0B00" at acpi0 not configured
+"BOOT0000" at acpi0 not configured
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "AMD AMD64 16h Root Complex" rev 0x00
+vendor "AMD", unknown product 0x1567 (class system subclass IOMMU, rev 0x00) atd
+pchb1 at pci0 dev 2 function 0 "AMD AMD64 16h Host" rev 0x00
+ppb0 at pci0 dev 2 function 2 "AMD AMD64 16h PCIE" rev 0x00: msi
+pci1 at ppb0 bus 1
+em0 at pci1 dev 0 function 0 "Intel I210" rev 0x03: msi, address 00:0d:b9:42:e48
+ppb1 at pci0 dev 2 function 3 "AMD AMD64 16h PCIE" rev 0x00: msi
+pci2 at ppb1 bus 2
+em1 at pci2 dev 0 function 0 "Intel I210" rev 0x03: msi, address 00:0d:b9:42:e49
+ppb2 at pci0 dev 2 function 4 "AMD AMD64 16h PCIE" rev 0x00: msi
+pci3 at ppb2 bus 3
+em2 at pci3 dev 0 function 0 "Intel I210" rev 0x03: msi, address 00:0d:b9:42:e4a
+"AMD Cryptographic Co-processor v3" rev 0x00 at pci0 dev 8 function 0 not confid
+xhci0 at pci0 dev 16 function 0 "AMD Bolton xHCI" rev 0x11: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 "AMD xHCI root hub" rev 3.00/1.00 add1
+ahci0 at pci0 dev 17 function 0 "AMD Hudson-2 SATA" rev 0x39: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+scsibus0 at ahci0: 32 targets
+sd0 at scsibus0 targ 0 lun 0: <ATA, Samsung SSD 850, EMT4> SCSI3 0/direct fixedd
+sd0: 114473MB, 512 bytes/sector, 234441648 sectors, thin
+ehci0 at pci0 dev 19 function 0 "AMD Hudson-2 USB2" rev 0x39: apic 4 int 18
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 "AMD EHCI root hub" rev 2.00/1.00 add1
+"AMD Hudson-2 SMBus" rev 0x42 at pci0 dev 20 function 0 not configured
+"AMD Hudson-2 LPC" rev 0x11 at pci0 dev 20 function 3 not configured
+sdhc0 at pci0 dev 20 function 7 "AMD Bolton SD/MMC" rev 0x01: apic 4 int 16
+sdhc0: SDHC 2.0, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed, dma
+pchb2 at pci0 dev 24 function 0 "AMD AMD64 16h Link Cfg" rev 0x00
+pchb3 at pci0 dev 24 function 1 "AMD AMD64 16h Address Map" rev 0x00
+pchb4 at pci0 dev 24 function 2 "AMD AMD64 16h DRAM Cfg" rev 0x00
+pchb5 at pci0 dev 24 function 3 "AMD AMD64 16h Misc Cfg" rev 0x00
+pchb6 at pci0 dev 24 function 4 "AMD AMD64 16h CPU Power" rev 0x00
+pchb7 at pci0 dev 24 function 5 "AMD AMD64 16h Misc Cfg" rev 0x00
+isa0 at mainbus0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+com2 at isa0 port 0x3e8/8 irq 5: ns16550a, 16 byte fifo
+umass0 at uhub0 port 3 configuration 1 interface 0 "Forza Motorsport 3" rev 2.02
+umass0: using SCSI over Bulk-Only
+scsibus1 at umass0: 2 targets, initiator 0
+sd1 at scsibus1 targ 1 lun 0: <Forza, Motorsport 3, 8.02> SCSI0 0/direct removaA
+sd1: 1927MB, 512 bytes/sector, 3948543 sectors
+uhub2 at uhub1 port 1 configuration 1 interface 0 "vendor 0x0438 product 0x79002
+softraid0 at root
+scsibus2 at softraid0: 256 targets
+root on rd0a swap on rd0b dump on rd0b
+erase ^?, werase ^W, kill ^U, intr ^C, status ^T
+
+Welcome to the OpenBSD/amd64 6.4 installation program.
+(I)nstall, (U)pgrade, (A)utoinstall or (S)hell? sd1 detached
+scsibus1 detached
+umass0 detached
+s
+# reboot
+syncing disks... done
+rebooting...
+```
+
+Next, remove USB stick and then boot to installed OpenBSD:
+```
+PC Engines apu2
+coreboot build 20190803
+BIOS version v4.9.0.3
+4080 MB ECC DRAM
+SeaBIOS (version rel-1.12.0.1-0-g393dc9c)
+
+Press F10 key now for boot menu
+
+Booting from Hard Disk...
+Using drive 0, partition 3.
+Loading.....
+probing: pc0 com0 com1 com2 com3 mem[639K 3325M 752M a20=on]
+disk: hd0+
+>> OpenBSD/amd64 BOOT 3.41
+switching console to com>> OpenBSD/amd64 BOOT 3.41
+boot> 0
+
+booting hd0a:/bsd: 10495751+2540552+266272+0+675840 [699989+119+851088+593598]=0
+entry point at 0x1000158
+[ using 2145760 bytes of bsd ELF symbol table ]
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+        The Regents of the University of California.  All rights reserved.
+Copyright (c) 1995-2018 OpenBSD. All rights reserved.  https://www.OpenBSD.org
+
+OpenBSD 6.4 (GENERIC.MP) #364: Thu Oct 11 13:30:23 MDT 2018
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
+real mem = 4259930112 (4062MB)
+avail mem = 4121554944 (3930MB)
+mpath0 at root
+scsibus0 at mpath0: 256 targets
+mainbus0 at root
+bios0 at mainbus0: SMBIOS rev. 2.7 @ 0xcfe97020 (9 entries)
+bios0: vendor coreboot version "v4.9.0.3" date 03/08/2019
+bios0: PC Engines apu2
+acpi0 at bios0: rev 2
+acpi0: sleep states S0 S1 S4 S5
+acpi0: tables DSDT FACP SSDT TPM2 APIC HEST IVRS SSDT SSDT HPET
+acpi0: wakeup devices PWRB(S4) PBR4(S4) PBR5(S4) PBR6(S4) PBR7(S4) PBR8(S4) UOH)
+acpitimer0 at acpi0: 3579545 Hz, 32 bits
+acpimadt0 at acpi0 addr 0xfee00000: PC-AT compat
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: AMD GX-412TC SOC, 998.25 MHz, 16-30-01
+cpu0: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CT
+cpu0: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 2MB 64b/line 16e
+cpu0: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu0: smt 0, core 0, package 0
+mtrr: Pentium Pro MTRR support, 8 var ranges, 88 fixed ranges
+cpu0: apic clock running at 99MHz
+cpu0: mwait min=64, max=64, IBE
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: AMD GX-412TC SOC, 998.13 MHz, 16-30-01
+cpu1: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CT
+cpu1: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 2MB 64b/line 16e
+cpu1: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu1: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu1: smt 0, core 1, package 0
+cpu2 at mainbus0: apid 2 (application processor)
+cpu2: AMD GX-412TC SOC, 998.13 MHz, 16-30-01
+cpu2: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CT
+cpu2: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 2MB 64b/line 16e
+cpu2: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu2: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu2: smt 0, core 2, package 0
+cpu3 at mainbus0: apid 3 (application processor)
+cpu3: AMD GX-412TC SOC, 998.13 MHz, 16-30-01
+cpu3: FPU,VME,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,PSE36,CT
+cpu3: 32KB 64b/line 2-way I-cache, 32KB 64b/line 8-way D-cache, 2MB 64b/line 16e
+cpu3: ITLB 32 4KB entries fully associative, 8 4MB entries fully associative
+cpu3: DTLB 40 4KB entries fully associative, 8 4MB entries fully associative
+cpu3: smt 0, core 3, package 0
+ioapic0 at mainbus0: apid 4 pa 0xfec00000, version 21, 24 pins
+ioapic1 at mainbus0: apid 5 pa 0xfec20000, version 21, 32 pins, remapped
+acpihpet0 at acpi0: 14318180 Hz
+acpiprt0 at acpi0: bus 0 (PCI0)
+acpiprt1 at acpi0: bus -1 (PBR4)
+acpiprt2 at acpi0: bus 1 (PBR5)
+acpiprt3 at acpi0: bus 2 (PBR6)
+acpiprt4 at acpi0: bus 3 (PBR7)
+acpiprt5 at acpi0: bus -1 (PBR8)
+acpicpu0 at acpi0: C2(0@400 io@0x1771), C1(@1 halt!), PSS
+acpicpu1 at acpi0: C2(0@400 io@0x1771), C1(@1 halt!), PSS
+acpicpu2 at acpi0: C2(0@400 io@0x1771), C1(@1 halt!), PSS
+acpicpu3 at acpi0: C2(0@400 io@0x1771), C1(@1 halt!), PSS
+acpibtn0 at acpi0: PWRB
+acpicmos0 at acpi0
+"BOOT0000" at acpi0 not configured
+cpu0: 998 MHz: speeds: 1000 800 600 MHz
+pci0 at mainbus0 bus 0
+pchb0 at pci0 dev 0 function 0 "AMD AMD64 16h Root Complex" rev 0x00
+vendor "AMD", unknown product 0x1567 (class system subclass IOMMU, rev 0x00) atd
+pchb1 at pci0 dev 2 function 0 "AMD AMD64 16h Host" rev 0x00
+ppb0 at pci0 dev 2 function 2 "AMD AMD64 16h PCIE" rev 0x00: msi
+pci1 at ppb0 bus 1
+em0 at pci1 dev 0 function 0 "Intel I210" rev 0x03: msi, address 00:0d:b9:42:e48
+ppb1 at pci0 dev 2 function 3 "AMD AMD64 16h PCIE" rev 0x00: msi
+pci2 at ppb1 bus 2
+em1 at pci2 dev 0 function 0 "Intel I210" rev 0x03: msi, address 00:0d:b9:42:e49
+ppb2 at pci0 dev 2 function 4 "AMD AMD64 16h PCIE" rev 0x00: msi
+pci3 at ppb2 bus 3
+em2 at pci3 dev 0 function 0 "Intel I210" rev 0x03: msi, address 00:0d:b9:42:e4a
+ccp0 at pci0 dev 8 function 0 "AMD Cryptographic Co-processor v3" rev 0x00
+xhci0 at pci0 dev 16 function 0 "AMD Bolton xHCI" rev 0x11: msi, xHCI 1.0
+usb0 at xhci0: USB revision 3.0
+uhub0 at usb0 configuration 1 interface 0 "AMD xHCI root hub" rev 3.00/1.00 add1
+ahci0 at pci0 dev 17 function 0 "AMD Hudson-2 SATA" rev 0x39: msi, AHCI 1.3
+ahci0: port 0: 6.0Gb/s
+scsibus1 at ahci0: 32 targets
+sd0 at scsibus1 targ 0 lun 0: <ATA, Samsung SSD 850, EMT4> SCSI3 0/direct fixedd
+sd0: 114473MB, 512 bytes/sector, 234441648 sectors, thin
+ehci0 at pci0 dev 19 function 0 "AMD Hudson-2 USB2" rev 0x39: apic 4 int 18
+usb1 at ehci0: USB revision 2.0
+uhub1 at usb1 configuration 1 interface 0 "AMD EHCI root hub" rev 2.00/1.00 add1
+piixpm0 at pci0 dev 20 function 0 "AMD Hudson-2 SMBus" rev 0x42: SMBus disabled
+pcib0 at pci0 dev 20 function 3 "AMD Hudson-2 LPC" rev 0x11
+sdhc0 at pci0 dev 20 function 7 "AMD Bolton SD/MMC" rev 0x01: apic 4 int 16
+sdhc0: SDHC 2.0, 50 MHz base clock
+sdmmc0 at sdhc0: 4-bit, sd high-speed, mmc high-speed, dma
+pchb2 at pci0 dev 24 function 0 "AMD AMD64 16h Link Cfg" rev 0x00
+pchb3 at pci0 dev 24 function 1 "AMD AMD64 16h Address Map" rev 0x00
+pchb4 at pci0 dev 24 function 2 "AMD AMD64 16h DRAM Cfg" rev 0x00
+km0 at pci0 dev 24 function 3 "AMD AMD64 16h Misc Cfg" rev 0x00
+pchb5 at pci0 dev 24 function 4 "AMD AMD64 16h CPU Power" rev 0x00
+pchb6 at pci0 dev 24 function 5 "AMD AMD64 16h Misc Cfg" rev 0x00
+isa0 at pcib0
+isadma0 at isa0
+com0 at isa0 port 0x3f8/8 irq 4: ns16550a, 16 byte fifo
+com0: console
+com1 at isa0 port 0x2f8/8 irq 3: ns16550a, 16 byte fifo
+com2 at isa0 port 0x3e8/8 irq 5: ns16550a, 16 byte fifo
+pcppi0 at isa0 port 0x61
+spkr0 at pcppi0
+lpt0 at isa0 port 0x378/4 irq 7
+wbsio0 at isa0 port 0x2e/2: NCT5104D rev 0x52
+vmm0 at mainbus0: SVM/RVI
+uhub2 at uhub1 port 1 configuration 1 interface 0 "Advanced Micro Devices produ2
+vscsi0 at root
+scsibus2 at vscsi0: 256 targets
+softraid0 at root
+scsibus3 at softraid0: 256 targets
+root on sd0a (7e843ede35181b1e.a) swap on sd0b dump on sd0b
+Automatic boot in progress: starting file system checks.
+/dev/sd0a (7e843ede35181b1e.a): file system is clean; not checking
+/dev/sd0k (7e843ede35181b1e.k): file system is clean; not checking
+/dev/sd0d (7e843ede35181b1e.d): file system is clean; not checking
+/dev/sd0f (7e843ede35181b1e.f): file system is clean; not checking
+/dev/sd0g (7e843ede35181b1e.g): file system is clean; not checking
+/dev/sd0h (7e843ede35181b1e.h): file system is clean; not checking
+/dev/sd0j (7e843ede35181b1e.j): file system is clean; not checking
+/dev/sd0i (7e843ede35181b1e.i): file system is clean; not checking
+/dev/sd0e (7e843ede35181b1e.e): file system is clean; not checking
+setting tty flags
+pf enabled
+starting network
+reordering libraries: done.
+openssl: generating isakmpd/iked RSA keys... done.
+ssh-keygen: generating new host keys: RSA DSA ECDSA ED25519
+starting early daemons: syslogd pflogd ntpd.
+starting RPC daemons:.
+savecore: no core dump
+checking quotas: done.
+clearing /tmp
+kern.securelevel: 0 -> 1
+creating runtime link editor directory cache.
+preserving editor files.
+starting network daemons: sshd smtpd sndiod.
+running rc.firsttime
+Path to firmware: http://firmware.openbsd.org/firmware/6.4/
+Installing: vmm-firmware
+http://firmware.openbsd.org/firmware/6.4/: ftp: firmware.openbsd.org: no addrese
+http://firmware.openbsd.org/firmware/6.4/: empty
+Can't find vmm-firmware
+Checking for available binary patches...ftp: cdn.openbsd.org: no address associe
+
+starting local daemons: cron.
+Sun Feb 18 13:06:55 EST 2018
+
+OpenBSD/amd64 (apu2c4.homelan) (tty00)
+
+login: root
+Password:
+OpenBSD 6.4 (GENERIC.MP) #364: Thu Oct 11 13:30:23 MDT 2018
+
+Welcome to OpenBSD: The proactively secure Unix-like operating system.
+
+Please use the sendbug(1) utility to report bugs in the system.
+Before reporting a bug, please try to reproduce it with the latest
+version of the code.  With bug reports, please try to ensure that
+enough information to reproduce the problem is enclosed, and if a
+known fix for it exists, include that as well.
+
+You have mail.
+apu2c4#
+```
+
+
+# Configure OpenBSD as a router
+
+A great example is [here](https://www.openbsd.org/faq/pf/example1.html)
