@@ -7,7 +7,7 @@ categories: posts
 
 Those notes are mostly for myself, in case if I need to do this again.
 
-# Hook up apu2c4 to your PC via serial connection.
+## Hook up apu2c4 to your PC via serial connection.
 
 I use a cheap Trendnet USB to serial cable and a serial null-modem cable.
 Null modem cable should have a female DB-9 connector on both ends. Pin 2 goes to pin 3 on the other side.
@@ -35,7 +35,7 @@ B I O S   6 3 8 k B / 3 6 6 8 6 6 4 k B   a v a i l a b l e
 m e m o r y y
 ```
 
-# Update BIOS
+## Update BIOS
 
 Grab the latest mainline BIOS release from <https://pcengines.github.io/>. At the time of writting it's v4.9.0.3.
 
@@ -166,7 +166,7 @@ Press F10 key now for boot menu
 
 BIOS update is done!
 
-# Install OpenBSD
+## Install OpenBSD
 
 Go to <http://www.openbsd.org/faq/faq4.html#Download> and download `installXX.fs` for amd64.
 At the time of writting it's `install64.fs`. 64 is for OpenBSD 6.4, not for CPU type.
@@ -858,6 +858,6 @@ apu2c4#
 ```
 
 
-# Configure OpenBSD as a router
+## Configure OpenBSD as a router
 
 A great example is [here](https://www.openbsd.org/faq/pf/example1.html)
