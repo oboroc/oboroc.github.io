@@ -8,9 +8,9 @@ categories: posts
 Those notes are mostly for myself, in case if I need to do this again.
 
 Get serial connection going. I use a cheap Trendnet USB to serial cable and a serial null-modem cable.
-Null modem cable has female DB-9 connector on both ends. Pin 2 goes to pin 3 on the other side.
+Null modem cable should have a female DB-9 connector on both ends. Pin 2 goes to pin 3 on the other side.
 
-Install PuTTY, configure it for the COM port you got as 115200 8N1.
+Install PuTTY, configure it for the COM port you use as 115200 8N1.
 ![PuTTY settings](/img/2019-03-11-setting-up-a-pc-engines-apu2c4-headless-mini-pc-1.png)
 
 Turn apu2c4 system on by plugging in the power supply.
@@ -24,11 +24,13 @@ BIOS version v4.0.12
 SeaBIOS (version rel-1.10.2.1)
 
 Press F10 key now for boot menu
-C o n s o l e s :   i n t e r n a l   v i d e o / k e y b o a r d     s e r i a l   p o r t       Disk...
+C o n s o l e s :   i n t e r n a l   v i d e o / k e y b o a r d
+s e r i a l   p o r t       Disk...
  /bboooott//ccoonnffiigg::  --SS111155220000  --DD
 B I O S   d r i v e   C :   i s   d i s k 0 0
  \
-B I O S   6 3 8 k B / 3 6 6 8 6 6 4 k B   a v a i l a b l e   m e m o r y y
+B I O S   6 3 8 k B / 3 6 6 8 6 6 4 k B   a v a i l a b l e
+m e m o r y y
 ```
 
 Next, grab the latest mainline BIOS release from <https://pcengines.github.io/>. At the time of writting it's v4.9.0.3.
@@ -43,8 +45,7 @@ select your USB stick and click on the check box saying "...format drive...".
 
 Click "Next", then "Finish".
 
-Next, copy BIOS file to the stick:
-
+Copy BIOS file to the stick.
 If you check the USB stick, you'll see the following files on it:
 ```
 E:\>dir
@@ -70,7 +71,7 @@ E:\>dir
                0 Dir(s)   1,984,458,752 bytes free
 ```
 
-Eject the stick, plug it in apu2c4 and unplug/replug its power supply.
+Eject the stick, plug it in apu2c4 and unplug/replug apu2c4 power supply.
 PuTTY should print out something like this:
 ```
 PC Engines apu2
@@ -129,9 +130,9 @@ To update the BIOS type "flashrom -w apu_xyz.rom -p internal"
 [+46.9 C][root@box:/media/TINYCORE]$
 ```
 
-Next, type in `flashrom bios-file-name` and press enter:
+Next, type in `flashrom -w bios-file-name -p internal` and press enter:
 ```
-[+45.1 C][root@box:/media/TINYCORE]$ flashrom -w apu2_v4.9.0.3.rom
+[+45.1 C][root@box:/media/TINYCORE]$ flashrom -w apu2_v4.9.0.3.rom -p internal
 flashrom v0.9.9-r1954-beead91-17 on Linux 4.2.9-tinycore (i686)
 flashrom is free software, get the source code at https://flashrom.org
 
@@ -148,4 +149,15 @@ Erasing and writing flash chip... Erase/write done.
 Verifying flash... VERIFIED.
 ```
 
-Next, unplug USB stick, type `reboot` and press enter. apu2c4 will restart. BIOS update is done!
+Next, unplug USB stick, type `reboot` and press enter. apu2c4 will restart. You should see something like this:
+```
+PC Engines apu2
+coreboot build 20190803
+BIOS version v4.9.0.3
+4080 MB ECC DRAM
+SeaBIOS (version rel-1.12.0.1-0-g393dc9c)
+
+Press F10 key now for boot menu
+```
+
+BIOS update is done!
