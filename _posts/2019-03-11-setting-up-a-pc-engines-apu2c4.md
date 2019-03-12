@@ -13,7 +13,7 @@ I use a cheap Trendnet USB to serial cable and a serial null-modem cable.
 Null modem cable should have a female DB-9 connector on both ends. Pin 2 goes to pin 3 on the other side.
 
 Install PuTTY, configure it for the COM port you use as 115200 8N1.
-![PuTTY settings](/img/2019-03-11-setting-up-a-pc-engines-apu2c4-headless-mini-pc-1.png)
+![PuTTY settings](/img/2019-03-11-setting-up-a-pc-engines-apu2c4-1.png)
 
 Turn apu2c4 system on by plugging in the power supply.
 You should see a bunch of output in PuTTY, first from BIOS and then from whatever OS is currently installed:
@@ -45,7 +45,7 @@ Get a USB stick. I am using an old 2GB USB stick formatted as FAT32.
 Run downloaded "apu-bootable-usb-installer_v1.8.exe", elevate permissions, accept license,
 select your USB stick and click on the check box saying "...format drive...".
 
-![Preparing USB stick for BIOS update](/img/2019-03-11-setting-up-a-pc-engines-apu2c4-headless-mini-pc-2.png)
+![Preparing USB stick for BIOS update](/img/2019-03-11-setting-up-a-pc-engines-apu2c4-2.png)
 
 Click "Next", then "Finish".
 
@@ -174,7 +174,7 @@ At the time of writting it's `install64.fs`. 64 is for OpenBSD 6.4, not for CPU 
 Now grab the tool to write fs file to USB stick: [win32diskimager](https://sourceforge.net/projects/win32diskimager/files/Archive/).
 At this time, latest version is in Win32DiskImager-1.0.0-binary.zip file. Extract it and run Win32DiskImager.exe. Elevate permissions.
 Browse for `install64.fs` file. Plug your USB stick and pick it under `Device`:
-![Using Win32DiskImager.exe to write OpenBSD image to a USB stick](/img/2019-03-11-setting-up-a-pc-engines-apu2c4-headless-mini-pc-3.png)
+![Using Win32DiskImager.exe to write OpenBSD image to a USB stick](/img/2019-03-11-setting-up-a-pc-engines-apu2c4-3.png)
 
 Click `Write`, you'll get `Confirm Overwrite` popup dialog. Click `Yes`.
 After the tool is done writing, you'll get a `Complete: Write Successful` dialog. Click OK.
