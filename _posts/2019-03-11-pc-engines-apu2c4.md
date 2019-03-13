@@ -5,6 +5,10 @@ date:   2019-03-11 22:41:00
 categories: posts
 ---
 
+This is a tutorial on setting up PC Engines apu2c4 as a home router using OpenBSD.
+I don't plan to use wireless card and antennas with my apu2c4.
+I will reuse an old OnHub router as wireless AP.
+
 Those notes are mostly for myself, in case if I need to do this again.
 
 ## Hook up apu2c4 to your PC via serial connection.
@@ -721,4 +725,61 @@ apu2c4#
 
 ## Configure OpenBSD as a router
 
-A great example is [here](https://www.openbsd.org/faq/pf/example1.html)
+I'll use this [great example](https://www.openbsd.org/faq/pf/example1.html) as a reference.
+
+Enable routing:
+```
+echo 'net.inet.ip.forwarding=1' >> /etc/sysctl.conf
+```
+
+Configure WAN port em0 to use DHCP:
+```
+echo 'dhcp' > /etc/hostname.em0
+```
+
+Set up LAN port em1 to use IPv4 address 192.168.1.1:
+```
+echo 'inet 192.168.1.1 255.255.255.0 192.168.1.255' > /etc/hostname.em1
+```
+
+Enable and configure DHCP:
+```
+rcctl enable dhcpd
+rcctl set dhcpd flags em1
+```
+
+Edit `/etc/dhcp.conf`:
+```
+subnet 192.168.1.0 netmask 255.255.255.0 {
+	option routers 192.168.1.1;
+	option domain-name-servers 8.8.8.8 8.8.4.4;
+	range 192.168.1.10 192.168.1.254;
+}
+```
+
+Edit `/etc/pf.conf`:
+```
+wired = "em1"
+table <martians> { 0.0.0.0/8 10.0.0.0/8 127.0.0.0/8 169.254.0.0/16     \
+	 	   172.16.0.0/12 192.0.0.0/24 192.0.2.0/24 224.0.0.0/3 \
+	 	   192.168.0.0/16 198.18.0.0/15 198.51.100.0/24        \
+	 	   203.0.113.0/24 }
+set block-policy drop
+set loginterface egress
+set skip on lo0
+match in all scrub (no-df random-id max-mss 1440)
+match out on egress inet from !(egress:network) to any nat-to (egress:0)
+antispoof quick for { egress $wired }
+block in quick on egress from <martians> to any
+block return out quick on egress from any to <martians>
+block all
+pass out quick inet
+pass in on { $wired } inet
+```
+
+Now, I'll try to see if it works.
+I'm going to unplug my Windows PC from the network cable to router and
+plug the cable into one of the network ports on apu2c4, hopefully `em0`.
+I'll then plug my Windows PC into the second network port on apu2c4, hopefully `em1`.
+
+It doesn't work, DNS is not resolving, dhcpd won't start, I'm tired and will give it another go some other time.
