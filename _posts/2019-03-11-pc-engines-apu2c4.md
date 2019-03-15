@@ -783,3 +783,86 @@ plug the cable into one of the network ports on apu2c4, hopefully `em0`.
 I'll then plug my Windows PC into the second network port on apu2c4, hopefully `em1`.
 
 It doesn't work, DNS is not resolving, dhcpd won't start, I'm tired and will give it another go some other time.
+
+## Configure automatic time synchronization
+
+```
+rcctl enable ntpd
+rcctl start ntpd
+rcctl ls started
+```
+
+## Add packages
+
+`pkg_add gmake bison mc git`
+
+
+## Search for packages
+
+pkg_info -Q python
+
+
+## Install ddclient
+
+I'll try to get dynamic DNS working with my domain at Namecheap, so I need to get ddclient on my apu2c4.
+Fortunately it seems OpenBSD comes with ddclient prepackaged:
+```
+apu2c4$ pkg_info -Q ddclient
+ddclient-3.8.3p1
+```
+To install, use `pkg_add ddclient`:
+```
+# pkg_add ddclient
+quirks-3.16 signed on 2018-10-12T15:26:25Z
+ddclient-3.8.3p1:p5-Net-SSLeay-1.85: ok
+ddclient-3.8.3p1:p5-IO-Socket-SSL-2.060: ok
+ddclient-3.8.3p1:p5-Digest-SHA1-2.13p4: ok
+ddclient-3.8.3p1: ok
+The following new rcscripts were installed: /etc/rc.d/ddclient
+See rcctl(8) for details.
+```
+Let us also enable autostarting for ddclient:
+```
+# rcctl enable ddclient
+# rcctl start ddclient
+ddclient(ok)
+# rcctl ls started
+cron
+ddclient
+ntpd
+pflogd
+slaacd
+smtpd
+sndiod
+sshd
+syslogd
+```
+Next, update /etc/ddclient/ddclient.conf by uncommenting relevant section (NameCheap for me) and filling in the details.
+Don't use NameCheap account password.
+Once you create A+Dynamic record and enable Dynamic DNS, you'll get a generated password. Use that in ddclient.conf.
+
+## Fix messed pseudo graphics in PuTTY
+
+I edited ~/.profile for my unprivileged and root IDs to set and export `LC_CTYPE=en_EN.UTF-8`.
+
+## Install vim
+
+```
+# pkg_add vim
+quirks-3.16 signed on 2018-10-12T15:26:25Z
+Ambiguous: choose package for vim
+a       0: <None>
+        1: vim-8.1.0438-gtk2
+        2: vim-8.1.0438-gtk2-lua
+        3: vim-8.1.0438-gtk2-perl-python-ruby
+        4: vim-8.1.0438-gtk2-perl-python3-ruby
+        5: vim-8.1.0438-no_x11
+        6: vim-8.1.0438-no_x11-lua
+        7: vim-8.1.0438-no_x11-perl-python-ruby
+        8: vim-8.1.0438-no_x11-perl-python3-ruby
+        9: vim-8.1.0438-no_x11-python
+        10: vim-8.1.0438-no_x11-python3
+        11: vim-8.1.0438-no_x11-ruby
+Your choice: 10
+vim-8.1.0438-no_x11-python3: ok
+```
