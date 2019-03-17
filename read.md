@@ -56,6 +56,10 @@ Books I finished are striken through. Books I am currently reading are in bold.
 45. Tallarn: War for a Dead World
 46. Ruinstorm: Destiny unwritten...
 47. Old Earth: To the Gates of Terra
+48. The Burden of Loyalty
+49. Wolfsbane
+50. Born of Flame
+51. Slaves to Darkness
 
 
 ### Old Man's War
@@ -93,3 +97,4 @@ Books I finished are striken through. Books I am currently reading are in bold.
 21. <del>The Watcher (2015)</del>
 22. <del>Mafusail's lamp or the most recent battle of chekists with masons (2016)</del>
 23. <del>iPhuck 10 (2017)</del>
+24. Secret Views of Mount Fuji (2018)
