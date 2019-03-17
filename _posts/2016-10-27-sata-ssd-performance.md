@@ -28,7 +28,7 @@ It made performance slightly worse:
 I reverted driver back to Microsoft.
 
 At this point it hit me: what if the slot I'm using is not the highest performing one?
-Moving controller card one slot up, to PCI Express slot that would normally be used with a second CrossFire/SLI videocard, improved performance drammatically:
+Moving controller card one slot up, to PCI Express slot that would normally be used with a second CrossFire/SLI videocard, improved performance dramatically:
 
 ![Samsung 840 EVO SSD with default Microsoft Windows 10 x64 driver in second from the bottom PCIE slot](/img/2016-10-27-sata-ssd-performance-3.png)
 
