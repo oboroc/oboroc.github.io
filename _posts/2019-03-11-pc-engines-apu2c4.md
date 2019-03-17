@@ -794,7 +794,7 @@ rcctl ls started
 
 ## Add packages
 
-`pkg_add gmake bison mc git`
+`pkg_add gmake bison mc git go`
 
 
 ## Search for packages
