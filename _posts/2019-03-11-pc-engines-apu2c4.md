@@ -866,3 +866,129 @@ a       0: <None>
 Your choice: 10
 vim-8.1.0438-no_x11-python3: ok
 ```
+
+## Update OpenBSD
+
+### Patch the kernel with syspatch
+
+I learned about this from here: <https://www.cyberciti.biz/faq/howto-apply-updates-on-openbsd-operating-system/>.
+
+Use `syspatch -l` to list currently installed patches. For fresh install it's empty.
+
+Use `syspatch -c` to list pending updates:
+```
+# syspatch -c
+001_xserver
+002_syspatch
+003_portsmash
+004_lockf
+005_perl
+006_uipc
+007_smtpd
+008_qcow2
+009_recvwait
+010_pcbopts
+011_mincore
+012_nfs
+013_unveil
+014_pf6frag
+```
+
+To install updates, use `syspatch`:
+```
+Get/Verify syspatch64-001_xserver... 100% |*************|  1227 KB    00:00
+Installing patch 001_xserver
+Get/Verify syspatch64-002_syspatc... 100% |*************|  4627       00:00
+Installing patch 002_syspatch
+syspatch updated itself, run it again to install missing patches
+Get/Verify syspatch64-003_portsma... 100% |*************| 15264 KB    00:02
+Installing patch 003_portsmash
+Get/Verify syspatch64-004_lockf.tgz 100% |**************|   658 KB    00:00
+Installing patch 004_lockf
+Get/Verify syspatch64-005_perl.tgz 100% |***************|  5319 KB    00:00
+Installing patch 005_perl
+Get/Verify syspatch64-006_uipc.tgz 100% |***************|   176 KB    00:00
+Installing patch 006_uipc
+Get/Verify syspatch64-007_smtpd.tgz 100% |**************|  6484       00:00
+Installing patch 007_smtpd
+Get/Verify syspatch64-008_qcow2.tgz 100% |**************| 95855       00:00
+Installing patch 008_qcow2
+Get/Verify syspatch64-009_recvwai... 100% |*************|   101 KB    00:00
+Installing patch 009_recvwait
+Get/Verify syspatch64-010_pcbopts... 100% |*************|   108 KB    00:00
+Installing patch 010_pcbopts
+Get/Verify syspatch64-011_mincore... 100% |*************| 83488       00:00
+Installing patch 011_mincore
+Get/Verify syspatch64-012_nfs.tgz 100% |****************|   318 KB    00:00
+Installing patch 012_nfs
+Get/Verify syspatch64-013_unveil.tgz 100% |*************|   213 KB    00:00
+Installing patch 013_unveil
+Get/Verify syspatch64-014_pf6frag... 100% |*************|   101 KB    00:00
+Installing patch 014_pf6frag
+Relinking to create unique kernel... done.
+```
+
+Notice "syspatch updated itself, run it again to install missing patches" and run syspatch again.
+It doesn't have any additional updates. Restart `shutdown -r now`.
+After the restart, if you type in `uname -a`, you'll get:
+```
+OpenBSD apu2c4.lan 6.4 GENERIC.MP#7 amd64
+```
+I didn't check this before patching kernel, but I suspect it didn't have the `#7` part.
+
+
+### Update binary packages
+
+Use `pkg_add -Uuv` command.
+If you installed packages recently, you'll see lots of candidates, but nothing will actually get updated.
+If you run your OpenBSD box for a while, it may have some package updates.
+
+```
+# pkg_add -Uuv
+Update candidates: quirks-3.16 -> quirks-3.16
+quirks-3.16 signed on 2018-10-12T15:26:25Z
+Update candidates: bison-3.0.5 -> bison-3.0.5
+Update candidates: bzip2-1.0.6p9 -> bzip2-1.0.6p9
+Update candidates: cmake-3.10.2p0v0 -> cmake-3.10.2p0v0
+Update candidates: curl-7.61.1 -> curl-7.61.1
+Update candidates: cvsps-2.1p2 -> cvsps-2.1p2
+Update candidates: ddclient-3.8.3p1 -> ddclient-3.8.3p1
+Update candidates: gdbm-1.16 -> gdbm-1.16
+Update candidates: gdiff-3.6 -> gdiff-3.6
+Update candidates: gettext-0.19.8.1p1 -> gettext-0.19.8.1p1
+Update candidates: git-2.19.1 -> git-2.19.1
+Update candidates: glib2-2.56.3p0 -> glib2-2.56.3p0
+Update candidates: gmake-4.2.1 -> gmake-4.2.1
+Update candidates: go-1.11 -> go-1.11
+Update candidates: jsoncpp-1.8.4p0 -> jsoncpp-1.8.4p0
+Update candidates: libarchive-3.3.3 -> libarchive-3.3.3
+Update candidates: libelf-0.8.13p4 -> libelf-0.8.13p4
+Update candidates: libffi-3.2.1p4 -> libffi-3.2.1p4
+Update candidates: libiconv-1.14p3 -> libiconv-1.14p3
+Update candidates: libsigsegv-2.12 -> libsigsegv-2.12
+Update candidates: libslang-2.2.4p4 -> libslang-2.2.4p4
+Update candidates: libssh2-1.8.0p0 -> libssh2-1.8.0p0
+Update candidates: libuv-1.19.1p1 -> libuv-1.19.1p1
+Update candidates: lz4-1.8.3 -> lz4-1.8.3
+Update candidates: m4-1.4.18 -> m4-1.4.18
+Update candidates: mc-4.8.21 -> mc-4.8.21
+Update candidates: nghttp2-1.33.0 -> nghttp2-1.33.0
+Update candidates: oniguruma-6.9.0 -> oniguruma-6.9.0
+Update candidates: p5-Digest-SHA1-2.13p4 -> p5-Digest-SHA1-2.13p4
+Update candidates: p5-Error-0.17025 -> p5-Error-0.17025
+Update candidates: p5-IO-Socket-SSL-2.060 -> p5-IO-Socket-SSL-2.060
+Update candidates: p5-Net-SSLeay-1.85 -> p5-Net-SSLeay-1.85
+Update candidates: pcre-8.41 -> pcre-8.41
+Update candidates: png-1.6.35 -> png-1.6.35
+Update candidates: python-2.7.15p0 -> python-2.7.15p0
+Update candidates: python-3.6.6p1 -> python-3.6.6p1
+Update candidates: python-gdbm-3.6.6p1 -> python-gdbm-3.6.6p1
+Update candidates: rhash-1.3.5 -> rhash-1.3.5
+Update candidates: rsync-3.1.3 -> rsync-3.1.3
+Update candidates: sqlite3-3.24.0p0 -> sqlite3-3.24.0p0
+Update candidates: unzip-6.0p11 -> unzip-6.0p11
+Update candidates: vim-8.1.0438-no_x11-python3 -> vim-8.1.0438-no_x11-python3
+Update candidates: xz-5.2.4 -> xz-5.2.4
+Update candidates: zip-3.0p0 -> zip-3.0p0
+Update candidates: zstd-1.3.5p0 -> zstd-1.3.5p0
+```
