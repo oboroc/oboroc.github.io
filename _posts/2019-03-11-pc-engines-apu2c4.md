@@ -29,7 +29,7 @@ I will reuse an old OnHub router as wireless AP.
 Those notes are mostly for myself, in case if I need to do this again.
 
 
-## <a name="1"></a>Hook up apu2c4 to your PC via serial connection
+## <a name="1"></a>Connect apu2c4 to your PC via serial connection
 
 I use a cheap Trendnet USB to serial cable and a serial null-modem cable.
 Null modem cable should have a female DB-9 connector on both ends. Pin 2 goes to pin 3 on the other side.
