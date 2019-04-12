@@ -723,6 +723,7 @@ rcctl ls started
 
 ## <a name="9">Search for packages
 
+Use `pkg_info -Q <key word>`:
 ```
 # pkg_info -Q python3
 bpython3-0.17.1p0
