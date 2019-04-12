@@ -5,19 +5,19 @@ date:   2019-03-11 22:41:00
 categories: posts
 ---
 
-[Introduction](#0)
-[Connect apu2c4 to your PC via serial connection](#1)
-[Update BIOS](#2)
-[Install OpenBSD](#3)
-[Install vim and fix pseudo graphics](#4)
-[Update OpenBSD](#5)
-- [Patch the kernel with syspatch](#5.1)
-- [Update binary packages](#5.2)
-[Configure OpenBSD as a router](#6)
-[Configure automatic time synchronization](#7)
-[Add packages](#8)
-[Search for packages](#9)
-[Install and configure ddclient](#10)
+- [Introduction](#0)
+- [Connect apu2c4 to your PC via serial connection](#1)
+- [Update BIOS](#2)
+- [Install OpenBSD](#3)
+- [Install vim and fix pseudo graphics](#4)
+- [Update OpenBSD](#5)
+  - [Patch the kernel with syspatch](#5.1)
+  - [Update binary packages](#5.2)
+- [Configure OpenBSD as a router](#6)
+- [Configure automatic time synchronization](#7)
+- [Add packages](#8)
+- [Search for packages](#9)
+- [Install and configure ddclient](#10)
 
 
 ## <a name="0"></a>Introduction
