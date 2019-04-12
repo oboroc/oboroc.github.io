@@ -5,13 +5,31 @@ date:   2019-03-11 22:41:00
 categories: posts
 ---
 
+[Introduction](#0)
+[Connect apu2c4 to your PC via serial connection](#1)
+[Update BIOS](#2)
+[Install OpenBSD](#3)
+[Install vim and fix pseudo graphics](#4)
+[Update OpenBSD](#5)
+- [Patch the kernel with syspatch](#5.1)
+- [Update binary packages](#5.2)
+[Configure OpenBSD as a router](#6)
+[Configure automatic time synchronization](#7)
+[Add packages](#8)
+[Search for packages](#9)
+[Install and configure ddclient](#10)
+
+
+## <a name="0"></a>Introduction
+
 This is a tutorial on setting up PC Engines apu2c4 as a home router using OpenBSD.
 I don't plan to use wireless card and antennas with my apu2c4.
 I will reuse an old OnHub router as wireless AP.
 
 Those notes are mostly for myself, in case if I need to do this again.
 
-## Hook up apu2c4 to your PC via serial connection.
+
+## <a name="1"></a>Hook up apu2c4 to your PC via serial connection
 
 I use a cheap Trendnet USB to serial cable and a serial null-modem cable.
 Null modem cable should have a female DB-9 connector on both ends. Pin 2 goes to pin 3 on the other side.
@@ -39,7 +57,7 @@ B I O S   6 3 8 k B / 3 6 6 8 6 6 4 k B   a v a i l a b l e
 m e m o r y y
 ```
 
-## Update BIOS
+## <a name="2"></a>Update BIOS
 
 Grab the latest mainline BIOS release from <https://pcengines.github.io/>. At the time of writting it's v4.9.0.3.
 
@@ -78,7 +96,6 @@ E:\>dir
               13 File(s)     32,760,572 bytes
                0 Dir(s)   1,984,458,752 bytes free
 ```
-
 Eject the stick, plug it in apu2c4 and unplug/replug apu2c4 power supply.
 PuTTY should print out something like this:
 ```
@@ -156,7 +173,6 @@ Reading old flash chip contents... done.
 Erasing and writing flash chip... Erase/write done.
 Verifying flash... VERIFIED.
 ```
-
 Next, unplug USB stick, type `reboot` and press enter. apu2c4 will restart. You should see something like this:
 ```
 PC Engines apu2
@@ -170,7 +186,8 @@ Press F10 key now for boot menu
 
 BIOS update is done!
 
-## Install OpenBSD
+
+## <a name="3"></a>Install OpenBSD
 
 Go to <http://www.openbsd.org/faq/faq4.html#Download> and download `installXX.fs` for amd64.
 At the time of writting it's `install64.fs`. 64 is for OpenBSD 6.4, not for CPU type.
@@ -509,7 +526,127 @@ rebooting...
 ```
 Now you can boot to installed OpenBSD.
 
-## Configure OpenBSD as a router
+
+## <a name="4">Install vim and fix pseudo graphics
+
+Install vim. I chose version with Python3 support.
+```
+# pkg_add vim
+quirks-3.16 signed on 2018-10-12T15:26:25Z
+Ambiguous: choose package for vim
+a       0: <None>
+        1: vim-8.1.0438-gtk2
+        2: vim-8.1.0438-gtk2-lua
+        3: vim-8.1.0438-gtk2-perl-python-ruby
+        4: vim-8.1.0438-gtk2-perl-python3-ruby
+        5: vim-8.1.0438-no_x11
+        6: vim-8.1.0438-no_x11-lua
+        7: vim-8.1.0438-no_x11-perl-python-ruby
+        8: vim-8.1.0438-no_x11-perl-python3-ruby
+        9: vim-8.1.0438-no_x11-python
+        10: vim-8.1.0438-no_x11-python3
+        11: vim-8.1.0438-no_x11-ruby
+Your choice: 10
+vim-8.1.0438-no_x11-python3: ok
+```
+To fix pseudographics and replace `vi` with `vim`, edit `.profile` and add:
+```
+LC_CTYPE=en_EN.UTF-8
+alias vi="vim"
+```
+
+
+## <a name="5">Update OpenBSD
+
+### <a name="5.1">Patch the kernel with syspatch
+
+Use `syspatch -l` to list currently installed patches. For fresh install it's empty.
+
+Use `syspatch -c` to list pending updates:
+```
+# syspatch -c
+001_xserver
+002_syspatch
+003_portsmash
+004_lockf
+005_perl
+006_uipc
+007_smtpd
+008_qcow2
+009_recvwait
+010_pcbopts
+011_mincore
+012_nfs
+013_unveil
+014_pf6frag
+015_pficmp
+016_vmmints
+```
+To install updates, use `syspatch`:
+```
+Get/Verify syspatch64-001_xserver... 100% |*************|  1227 KB    00:00
+Installing patch 001_xserver
+Get/Verify syspatch64-002_syspatc... 100% |*************|  4627       00:00
+Installing patch 002_syspatch
+syspatch updated itself, run it again to install missing patches
+Get/Verify syspatch64-003_portsma... 100% |*************| 15264 KB    00:02
+Installing patch 003_portsmash
+Get/Verify syspatch64-004_lockf.tgz 100% |**************|   658 KB    00:00
+Installing patch 004_lockf
+Get/Verify syspatch64-005_perl.tgz 100% |***************|  5319 KB    00:00
+Installing patch 005_perl
+Get/Verify syspatch64-006_uipc.tgz 100% |***************|   176 KB    00:00
+Installing patch 006_uipc
+Get/Verify syspatch64-007_smtpd.tgz 100% |**************|  6484       00:00
+Installing patch 007_smtpd
+Get/Verify syspatch64-008_qcow2.tgz 100% |**************| 95855       00:00
+Installing patch 008_qcow2
+Get/Verify syspatch64-009_recvwai... 100% |*************|   101 KB    00:00
+Installing patch 009_recvwait
+Get/Verify syspatch64-010_pcbopts... 100% |*************|   108 KB    00:00
+Installing patch 010_pcbopts
+Get/Verify syspatch64-011_mincore... 100% |*************| 83488       00:00
+Installing patch 011_mincore
+Get/Verify syspatch64-012_nfs.tgz 100% |****************|   318 KB    00:00
+Installing patch 012_nfs
+Get/Verify syspatch64-013_unveil.tgz 100% |*************|   213 KB    00:00
+Installing patch 013_unveil
+Get/Verify syspatch64-014_pf6frag... 100% |*************|   101 KB    00:00
+Installing patch 014_pf6frag
+Relinking to create unique kernel... done.
+```
+
+Notice "syspatch updated itself, run it again to install missing patches" and run syspatch again.
+It doesn't have any additional updates. Restart `shutdown -r now`.
+After the restart, if you type in `uname -a`, you'll get:
+```
+OpenBSD apu2c4.lan 6.4 GENERIC.MP#9 amd64
+```
+Before patching kernel, it had a different number after hash.
+
+
+### <a name="5.2">Update binary packages
+
+Use `pkg_add -Uuv` command.
+If you installed packages recently, you'll see lots of candidates, but nothing will actually get updated.
+If you run your OpenBSD box for a while, it may have some package updates.
+
+```
+apu2c4# pkg_add -Uuv
+Update candidates: quirks-3.16 -> quirks-3.16
+quirks-3.16 signed on 2018-10-12T15:26:25Z
+Update candidates: bzip2-1.0.6p9 -> bzip2-1.0.6p9
+Update candidates: gettext-0.19.8.1p1 -> gettext-0.19.8.1p1
+Update candidates: libffi-3.2.1p4 -> libffi-3.2.1p4
+Update candidates: libiconv-1.14p3 -> libiconv-1.14p3
+Update candidates: python-3.6.6p1 -> python-3.6.6p1
+Update candidates: sqlite3-3.24.0p0 -> sqlite3-3.24.0p0
+Update candidates: vim-8.1.0438-no_x11-python3 -> vim-8.1.0438-no_x11-python3
+Update candidates: xz-5.2.4 -> xz-5.2.4
+```
+
+
+## <a name="6"></a>Configure OpenBSD as a router
 
 I'll use this [great example](https://www.openbsd.org/faq/pf/example1.html) as a reference.
 
@@ -570,7 +707,8 @@ I'll then plug my Windows PC into the second network port on apu2c4, hopefully `
 
 It doesn't work, DNS is not resolving, dhcpd won't start, I'm tired and will give it another go some other time.
 
-## Configure automatic time synchronization
+
+## <a name="7">Configure automatic time synchronization
 
 ```
 rcctl enable ntpd
@@ -578,19 +716,20 @@ rcctl start ntpd
 rcctl ls started
 ```
 
-## Add packages
+## <a name="8">Add packages
 
 `pkg_add gmake bison mc git go`
 
 
-## Search for packages
+## <a name="9">Search for packages
 
-pkg_info -Q python
+`pkg_info -Q python`
 
 
-## Install ddclient
+## <a name="10">Install and configure ddclient
 
-I'll try to get dynamic DNS working with my domain at Namecheap, so I need to get ddclient on my apu2c4.
+I want to get dynamic DNS working with my domain at Namecheap,
+so I need to get ddclient on my apu2c4.
 Fortunately it seems OpenBSD comes with ddclient prepackaged:
 ```
 apu2c4$ pkg_info -Q ddclient
@@ -626,155 +765,3 @@ syslogd
 Next, update /etc/ddclient/ddclient.conf by uncommenting relevant section (NameCheap for me) and filling in the details.
 Don't use NameCheap account password.
 Once you create A+Dynamic record and enable Dynamic DNS, you'll get a generated password. Use that in ddclient.conf.
-
-## Fix messed pseudo graphics in PuTTY
-
-I edited ~/.profile for my unprivileged and root IDs to set and export `LC_CTYPE=en_EN.UTF-8`.
-
-## Install vim
-
-```
-# pkg_add vim
-quirks-3.16 signed on 2018-10-12T15:26:25Z
-Ambiguous: choose package for vim
-a       0: <None>
-        1: vim-8.1.0438-gtk2
-        2: vim-8.1.0438-gtk2-lua
-        3: vim-8.1.0438-gtk2-perl-python-ruby
-        4: vim-8.1.0438-gtk2-perl-python3-ruby
-        5: vim-8.1.0438-no_x11
-        6: vim-8.1.0438-no_x11-lua
-        7: vim-8.1.0438-no_x11-perl-python-ruby
-        8: vim-8.1.0438-no_x11-perl-python3-ruby
-        9: vim-8.1.0438-no_x11-python
-        10: vim-8.1.0438-no_x11-python3
-        11: vim-8.1.0438-no_x11-ruby
-Your choice: 10
-vim-8.1.0438-no_x11-python3: ok
-```
-
-## Update OpenBSD
-
-### Patch the kernel with syspatch
-
-I learned about this from here: <https://www.cyberciti.biz/faq/howto-apply-updates-on-openbsd-operating-system/>.
-
-Use `syspatch -l` to list currently installed patches. For fresh install it's empty.
-
-Use `syspatch -c` to list pending updates:
-```
-# syspatch -c
-001_xserver
-002_syspatch
-003_portsmash
-004_lockf
-005_perl
-006_uipc
-007_smtpd
-008_qcow2
-009_recvwait
-010_pcbopts
-011_mincore
-012_nfs
-013_unveil
-014_pf6frag
-```
-
-To install updates, use `syspatch`:
-```
-Get/Verify syspatch64-001_xserver... 100% |*************|  1227 KB    00:00
-Installing patch 001_xserver
-Get/Verify syspatch64-002_syspatc... 100% |*************|  4627       00:00
-Installing patch 002_syspatch
-syspatch updated itself, run it again to install missing patches
-Get/Verify syspatch64-003_portsma... 100% |*************| 15264 KB    00:02
-Installing patch 003_portsmash
-Get/Verify syspatch64-004_lockf.tgz 100% |**************|   658 KB    00:00
-Installing patch 004_lockf
-Get/Verify syspatch64-005_perl.tgz 100% |***************|  5319 KB    00:00
-Installing patch 005_perl
-Get/Verify syspatch64-006_uipc.tgz 100% |***************|   176 KB    00:00
-Installing patch 006_uipc
-Get/Verify syspatch64-007_smtpd.tgz 100% |**************|  6484       00:00
-Installing patch 007_smtpd
-Get/Verify syspatch64-008_qcow2.tgz 100% |**************| 95855       00:00
-Installing patch 008_qcow2
-Get/Verify syspatch64-009_recvwai... 100% |*************|   101 KB    00:00
-Installing patch 009_recvwait
-Get/Verify syspatch64-010_pcbopts... 100% |*************|   108 KB    00:00
-Installing patch 010_pcbopts
-Get/Verify syspatch64-011_mincore... 100% |*************| 83488       00:00
-Installing patch 011_mincore
-Get/Verify syspatch64-012_nfs.tgz 100% |****************|   318 KB    00:00
-Installing patch 012_nfs
-Get/Verify syspatch64-013_unveil.tgz 100% |*************|   213 KB    00:00
-Installing patch 013_unveil
-Get/Verify syspatch64-014_pf6frag... 100% |*************|   101 KB    00:00
-Installing patch 014_pf6frag
-Relinking to create unique kernel... done.
-```
-
-Notice "syspatch updated itself, run it again to install missing patches" and run syspatch again.
-It doesn't have any additional updates. Restart `shutdown -r now`.
-After the restart, if you type in `uname -a`, you'll get:
-```
-OpenBSD apu2c4.lan 6.4 GENERIC.MP#7 amd64
-```
-I didn't check this before patching kernel, but I suspect it didn't have the `#7` part.
-
-
-### Update binary packages
-
-Use `pkg_add -Uuv` command.
-If you installed packages recently, you'll see lots of candidates, but nothing will actually get updated.
-If you run your OpenBSD box for a while, it may have some package updates.
-
-```
-# pkg_add -Uuv
-Update candidates: quirks-3.16 -> quirks-3.16
-quirks-3.16 signed on 2018-10-12T15:26:25Z
-Update candidates: bison-3.0.5 -> bison-3.0.5
-Update candidates: bzip2-1.0.6p9 -> bzip2-1.0.6p9
-Update candidates: cmake-3.10.2p0v0 -> cmake-3.10.2p0v0
-Update candidates: curl-7.61.1 -> curl-7.61.1
-Update candidates: cvsps-2.1p2 -> cvsps-2.1p2
-Update candidates: ddclient-3.8.3p1 -> ddclient-3.8.3p1
-Update candidates: gdbm-1.16 -> gdbm-1.16
-Update candidates: gdiff-3.6 -> gdiff-3.6
-Update candidates: gettext-0.19.8.1p1 -> gettext-0.19.8.1p1
-Update candidates: git-2.19.1 -> git-2.19.1
-Update candidates: glib2-2.56.3p0 -> glib2-2.56.3p0
-Update candidates: gmake-4.2.1 -> gmake-4.2.1
-Update candidates: go-1.11 -> go-1.11
-Update candidates: jsoncpp-1.8.4p0 -> jsoncpp-1.8.4p0
-Update candidates: libarchive-3.3.3 -> libarchive-3.3.3
-Update candidates: libelf-0.8.13p4 -> libelf-0.8.13p4
-Update candidates: libffi-3.2.1p4 -> libffi-3.2.1p4
-Update candidates: libiconv-1.14p3 -> libiconv-1.14p3
-Update candidates: libsigsegv-2.12 -> libsigsegv-2.12
-Update candidates: libslang-2.2.4p4 -> libslang-2.2.4p4
-Update candidates: libssh2-1.8.0p0 -> libssh2-1.8.0p0
-Update candidates: libuv-1.19.1p1 -> libuv-1.19.1p1
-Update candidates: lz4-1.8.3 -> lz4-1.8.3
-Update candidates: m4-1.4.18 -> m4-1.4.18
-Update candidates: mc-4.8.21 -> mc-4.8.21
-Update candidates: nghttp2-1.33.0 -> nghttp2-1.33.0
-Update candidates: oniguruma-6.9.0 -> oniguruma-6.9.0
-Update candidates: p5-Digest-SHA1-2.13p4 -> p5-Digest-SHA1-2.13p4
-Update candidates: p5-Error-0.17025 -> p5-Error-0.17025
-Update candidates: p5-IO-Socket-SSL-2.060 -> p5-IO-Socket-SSL-2.060
-Update candidates: p5-Net-SSLeay-1.85 -> p5-Net-SSLeay-1.85
-Update candidates: pcre-8.41 -> pcre-8.41
-Update candidates: png-1.6.35 -> png-1.6.35
-Update candidates: python-2.7.15p0 -> python-2.7.15p0
-Update candidates: python-3.6.6p1 -> python-3.6.6p1
-Update candidates: python-gdbm-3.6.6p1 -> python-gdbm-3.6.6p1
-Update candidates: rhash-1.3.5 -> rhash-1.3.5
-Update candidates: rsync-3.1.3 -> rsync-3.1.3
-Update candidates: sqlite3-3.24.0p0 -> sqlite3-3.24.0p0
-Update candidates: unzip-6.0p11 -> unzip-6.0p11
-Update candidates: vim-8.1.0438-no_x11-python3 -> vim-8.1.0438-no_x11-python3
-Update candidates: xz-5.2.4 -> xz-5.2.4
-Update candidates: zip-3.0p0 -> zip-3.0p0
-Update candidates: zstd-1.3.5p0 -> zstd-1.3.5p0
-```
