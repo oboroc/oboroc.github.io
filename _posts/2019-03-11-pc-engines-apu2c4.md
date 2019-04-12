@@ -723,7 +723,12 @@ rcctl ls started
 
 ## <a name="9">Search for packages
 
-`pkg_info -Q python`
+```
+# pkg_info -Q python3
+bpython3-0.17.1p0
+diveintopython3-20130531
+ipython3-5.3.0p0
+```
 
 
 ## <a name="10">Install and configure ddclient
