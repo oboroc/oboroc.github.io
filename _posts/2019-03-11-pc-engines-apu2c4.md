@@ -714,6 +714,29 @@ pass out quick inet
 pass in on { $wired } inet
 pass in on egress inet proto tcp from any to (egress) port { 80 443 } rdr-to 192.168.1.2
 ```
+
+Next, enable and configure DNS server:
+```
+rcctl enable unbound
+```
+
+Edit `/var/unbound/etc/unbound.conf`:
+```
+server:
+	interface: 192.168.1.1
+	interface: 192.168.2.1
+	interface: 127.0.0.1
+	access-control: 192.168.1.0/24 allow
+	access-control: 192.168.2.0/24 allow
+	do-not-query-localhost: no
+	hide-identity: yes
+	hide-version: yes
+
+forward-zone:
+        name: "."
+        forward-addr: 1.1.1.1  # IP of the upstream resolver
+```
+
 To test, I'll plug your normal network cable into `em0` (nearest to serial port) and your PC into `em1` or `em2`.
 
 
