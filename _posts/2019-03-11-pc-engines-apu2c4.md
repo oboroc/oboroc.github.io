@@ -527,7 +527,7 @@ rebooting...
 Now you can boot to installed OpenBSD.
 
 
-## <a name="4">Install vim and fix pseudo graphics
+## <a name="4"></a>Install vim and fix pseudo graphics
 
 Install vim. I chose version with Python3 support.
 ```
@@ -556,9 +556,9 @@ alias vi="vim"
 ```
 
 
-## <a name="5">Update OpenBSD
+## <a name="5"></a>Update OpenBSD
 
-### <a name="5.1">Patch the kernel with syspatch
+### <a name="5.1"></a>Patch the kernel with syspatch
 
 Use `syspatch -l` to list currently installed patches. For fresh install it's empty.
 
@@ -625,7 +625,7 @@ OpenBSD apu2c4.lan 6.4 GENERIC.MP#9 amd64
 Before patching kernel, it had a different number after hash.
 
 
-### <a name="5.2">Update binary packages
+### <a name="5.2"></a>Update binary packages
 
 Use `pkg_add -Uuv` command.
 If you installed packages recently, you'll see lots of candidates, but nothing will actually get updated.
@@ -665,24 +665,38 @@ Set up LAN port em1 to use IPv4 address 192.168.1.1:
 echo 'inet 192.168.1.1 255.255.255.0 192.168.1.255' > /etc/hostname.em1
 ```
 
+Set up LAN port em2 to use IPv4 address 192.168.2.1:
+```
+echo 'inet 192.168.2.1 255.255.255.0 192.168.2.255' > /etc/hostname.em2
+```
+
 Enable and configure DHCP:
 ```
 rcctl enable dhcpd
-rcctl set dhcpd flags em1
+rcctl set dhcpd flags em1 em2	
 ```
 
 Edit `/etc/dhcp.conf`:
 ```
 subnet 192.168.1.0 netmask 255.255.255.0 {
 	option routers 192.168.1.1;
-	option domain-name-servers 8.8.8.8 8.8.4.4;
+	option domain-name-servers 192.168.1.1;
 	range 192.168.1.10 192.168.1.254;
+	host myserver {
+		fixed-address 192.168.1.2;
+		hardware ethernet 00:00:00:00:00:00;
+	}
+}
+subnet 192.168.2.0 netmask 255.255.255.0 {
+	option routers 192.168.2.1;
+	option domain-name-servers 192.168.2.1;
+	range 192.168.2.10 192.168.2.254;
 }
 ```
 
 Edit `/etc/pf.conf`:
 ```
-wired = "em1"
+wired = "em1 em2"
 table <martians> { 0.0.0.0/8 10.0.0.0/8 127.0.0.0/8 169.254.0.0/16     \
 	 	   172.16.0.0/12 192.0.0.0/24 192.0.2.0/24 224.0.0.0/3 \
 	 	   192.168.0.0/16 198.18.0.0/15 198.51.100.0/24        \
@@ -698,17 +712,12 @@ block return out quick on egress from any to <martians>
 block all
 pass out quick inet
 pass in on { $wired } inet
+pass in on egress inet proto tcp from any to (egress) port { 80 443 } rdr-to 192.168.1.2
 ```
-
-Now, I'll try to see if it works.
-I'm going to unplug my Windows PC from the network cable to router and
-plug the cable into one of the network ports on apu2c4, hopefully `em0`.
-I'll then plug my Windows PC into the second network port on apu2c4, hopefully `em1`.
-
-It doesn't work, DNS is not resolving, dhcpd won't start, I'm tired and will give it another go some other time.
+To test, I'll plug your normal network cable into `em0` (nearest to serial port) and your PC into `em1` or `em2`.
 
 
-## <a name="7">Configure automatic time synchronization
+## <a name="7"></a>Configure automatic time synchronization
 
 ```
 rcctl enable ntpd
@@ -716,12 +725,12 @@ rcctl start ntpd
 rcctl ls started
 ```
 
-## <a name="8">Add packages
+## <a name="8"></a>Add packages
 
 `pkg_add gmake bison mc git go`
 
 
-## <a name="9">Search for packages
+## <a name="9"></a>Search for packages
 
 Use `pkg_info -Q <key word>`:
 ```
@@ -732,7 +741,7 @@ ipython3-5.3.0p0
 ```
 
 
-## <a name="10">Install and configure ddclient
+## <a name="10"></a>Install and configure ddclient
 
 I want to get dynamic DNS working with my domain at Namecheap,
 so I need to get ddclient on my apu2c4.
