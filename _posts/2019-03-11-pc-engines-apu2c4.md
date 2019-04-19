@@ -737,7 +737,7 @@ forward-zone:
         forward-addr: 1.1.1.1  # IP of the upstream resolver
 ```
 
-To test, I'll plug your normal network cable into `em0` (nearest to serial port) and your PC into `em1` or `em2`.
+To test, I'll plug a normal network cable into `em0` (nearest to serial port) and a PC into `em1` or `em2`.
 
 
 ## <a name="7"></a>Configure automatic time synchronization
