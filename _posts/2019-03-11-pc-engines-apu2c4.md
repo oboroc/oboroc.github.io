@@ -676,7 +676,7 @@ rcctl enable dhcpd
 rcctl set dhcpd flags em1 em2	
 ```
 
-Edit `/etc/dhcp.conf`:
+Edit `/etc/dhcpd.conf`:
 ```
 subnet 192.168.1.0 netmask 255.255.255.0 {
 	option routers 192.168.1.1;
