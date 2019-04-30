@@ -24,8 +24,8 @@ The cable that needs to be fixed is the one that snakes to the little compartmen
 in front of the power supply and behind the top of front hinge.
 Unplug two connectors: one for the speaker and another for chassis intrusion button.
 Pull the cable out of compartment. Strip the big black shrinking tubing from the cable to reveal the 2N3904 NPN transistor.
-Shorter transistor leg is collector and it is connected to the grey wire.
-The other two legs are base and emitter and they are connected to black wire.
+Shorter transistor leg is collector and it is connected to the brown wire.
+The other two legs are base and emitter and they are connected to grey wire.
 
 ![bad original 2n3904 NPN transistor](/img/2019-04-29-hp-z800-loud-fan-noise-fix-1.jpg)
 
