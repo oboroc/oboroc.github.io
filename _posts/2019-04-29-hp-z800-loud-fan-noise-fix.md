@@ -27,11 +27,15 @@ Pull the cable out of compartment. Strip the big black shrinking tubing from the
 Shorter transistor leg is collector and it is connected to the grey wire.
 The other two legs are base and emitter and they are connected to black wire.
 
+![bad original 2n3904 NPN transistor](/img/2019-04-29-hp-z800-loud-fan-noise-fix-1.jpg)
+
 I unsoldered the old transistor, added my new heat shrinking tubing to the wires and resoldered the new 2N2222 NPN transistor.
 I then shrank the tubing, used a bit of black isolation tape to bundle the cables together.
 I left the body of NPN transistor uncovered, so it hopefully won't heat up too much and go bad like the old 2N3904 did.
 Internet search says 2N2222 is very similar to 2N3904, but can handle 3x times the current.
 I hope it won't go bad.
+
+![new 2n2222 NPN transistor soldered in](/img/2019-04-29-hp-z800-loud-fan-noise-fix-2.jpg)
 
 I reassembled and tested my Z800. While not whisper quiet, it's a lot less loud now.
 It is totally bearable to sit next to it.
