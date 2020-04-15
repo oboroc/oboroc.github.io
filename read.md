@@ -35,7 +35,7 @@ Books I finished are striken through. Books I am currently reading are in bold.
 24. <del>Betrayer</del>
 25. <del>Mark of Calth</del>
 26. <del>Vulkan Lives</del>
-27. The Unremembered Empire
+27. **The Unremembered Empire**
 28. Scars
 29. Vengeful Spirit
 30. The Damnation of Pythos
@@ -60,6 +60,27 @@ Books I finished are striken through. Books I am currently reading are in bold.
 49. Wolfsbane
 50. Born of Flame
 51. Slaves to Darkness
+
+
+### Warhammer Fantasy Battle
+
+1. <del>Trollslayer</del>
+2. <del>Skavenslayer</del>
+3. <del>Daemonslayer</del>
+4. **Dragonslayer (September 2000)**
+5. Beastslayer
+6. Vampireslayer
+7. Giantslayer
+8. Orcslayer
+9. Manslayer
+10. Elfslayer 
+11. Shamanslayer
+12. Zombieslayer
+13. Road of Skulls
+14. City of the Damned
+15. The Serpent Queen
+16. Kinslayer
+17. Slayer
 
 
 ### Old Man's War
@@ -98,3 +119,4 @@ Books I finished are striken through. Books I am currently reading are in bold.
 22. <del>Mafusail's lamp or the most recent battle of chekists with masons (2016)</del>
 23. <del>iPhuck 10 (2017)</del>
 24. Secret Views of Mount Fuji (2018)
+25. The Art of Light Touches (2019)
