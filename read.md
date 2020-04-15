@@ -67,7 +67,7 @@ Books I finished are striken through. Books I am currently reading are in bold.
 1. <del>Trollslayer</del>
 2. <del>Skavenslayer</del>
 3. <del>Daemonslayer</del>
-4. **Dragonslayer (September 2000)**
+4. **Dragonslayer**
 5. Beastslayer
 6. Vampireslayer
 7. Giantslayer
