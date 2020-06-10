@@ -54,10 +54,10 @@ the Supervisor password instead.
 
 ## FINALLY THE INSTRUCTIONS:
 
-*Step 1:* You might as well make life easier by disconnecting the CMOS battery for a few seconds
+**Step 1** You might as well make life easier by disconnecting the CMOS battery for a few seconds
 to clear any user password that may be present. Count to 15, reconnect the battery and proceed...
 
-*Step 2:* Find the physical EEPROM that holds the supervisor password.
+**Step 2** Find the physical EEPROM that holds the supervisor password.
 These EEPROMs have varying numbers of pins.
 A few examples: On the T23, the chip is a 14-pin Atmel 28RF08.
 On the X31, the EEPROM is an 8-pin Atmel AT28RF08.
@@ -69,7 +69,7 @@ On other machines, you'll have to disassemble the entire laptop.
 Locations of many ThinkPad EEPROM chips can be found at <http://www.ja.axxs.net/eeprom_location.htm>
 if you don't want to hunt for it.
 
-*Step 3:* Locate the PROT and GND pins.
+**Step 3** Locate the PROT and GND pins.
 These are the pins we'll short to subvert the ThinkPad's access to the supervisor password.
 On a 14-pin Atmel 28RF08, these are pins 5 and 6. On (I think all) 8-pin EEPROMs, these are pins 3 and 4.
 On the 8356908, it's pins 31 and 32 (pin 32 is actually the write-protect pin, but it will be grounded).
@@ -86,22 +86,22 @@ At some point, for some reason, reposts started saying to short SCL and SDA inst
 possibly due to mixing up pins between 8 and 14 pin EEPROM variants.
 The mistake was probably cemented by the fact that shorting SCL and SDA does work on some models.
 
-*Step 4:* Boot the machine. Upon the 'ThinkPad' logo boot screen appearing,
+**Step 4** Boot the machine. Upon the 'ThinkPad' logo boot screen appearing,
 immediately short the pins and press the appropriate key to enter the BIOS (F1 on most models).
 The BIOS may take longer to appear than normal, and the machine will throw one or more errors; that's expected.
 It may also ask you to press F1 again (do so). Keep the pins shorted until you're in the BIOS screen,
 then release the short.
 
-*Step 5:* Navigate to the BIOS 'Security' menu, then arrow down to the 'Supervisor password' selection,
+**Step 5** Navigate to the BIOS 'Security' menu, then arrow down to the 'Supervisor password' selection,
 which should currently read 'Enabled'.
 
-*Step 6:* Short the pins again. While holding the short, press Enter to select the Supervisor password entry,
+**Step 6** Short the pins again. While holding the short, press Enter to select the Supervisor password entry,
 then release the short. It should not ask for the old password, only to enter a new password twice.
 After releasing the short, press Enter twice to disable the password.
 
-*Step 7:* Press F10 to save and exit.
+**Step 7** Press F10 to save and exit.
 
-*Step 8:* Before reassembling or desoldering any temporary wires, reboot and test that you can enter the BIOS
+**Step 8** Before reassembling or desoldering any temporary wires, reboot and test that you can enter the BIOS
 without any password.
 
 Done!
