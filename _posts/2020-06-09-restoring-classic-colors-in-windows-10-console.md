@@ -19,8 +19,6 @@ Microsoft released [Color Tool](https://github.com/microsoft/terminal/releases/t
 Download it, extract it, copy files colortool.exe and campbell-legacy.ini somewhere
 and then run this command:
 
-```
-colortool.exe -b campbell-legacy.ini
-```
+    colortool.exe -b campbell-legacy.ini
 
 This will tweak the colors for both the current console and for the default console.
