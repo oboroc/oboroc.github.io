@@ -12,7 +12,7 @@ Same with Far Manager, but not as noticeable.
 
 Turns out Microsoft folks decided to "update" the colors by "brightening" the palette in Windows 10 1709.
 Check [this announcement](https://devblogs.microsoft.com/commandline/updating-the-windows-console-colors/)
-to see the difference in colors. 
+to see the difference. 
 
 Turns out there is a quick and easy way to revert to old colors.
 Microsoft released [Color Tool](https://github.com/microsoft/terminal/releases/tag/1708.14008).
