@@ -16,7 +16,7 @@ to see the difference in colors.
 
 Turns out there is a quick and easy way to revert to old colors.
 Microsoft released [Color Tool](https://github.com/microsoft/terminal/releases/tag/1708.14008).
-Download it, extract it, copy files colortool.exe and campbell-legacy.ini somewhere
+Download it, extract it, copy files `colortool.exe` and `campbell-legacy.ini` somewhere
 and then run this command:
 
     colortool.exe -b campbell-legacy.ini
