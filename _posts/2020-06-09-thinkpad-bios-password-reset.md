@@ -10,7 +10,7 @@ All copyrights belong to xiphmont.
 Their [original article](https://web.archive.org/web/20170222202252/https://xiphmont.livejournal.com/70560.html)
 is still available on Internet Archive, but this may change in the future. Below is my copy.
 
-# Notes to myself: (Re)discovering/correcting a ThinkPad supervisor password crack
+## Notes to myself: (Re)discovering/correcting a ThinkPad supervisor password crack
 November 26th, 2016
 
 You can bypass and remove the supervisor password from ThinkPads by shorting
@@ -25,12 +25,12 @@ and including the Ivy Bridge models.
 The SL300, SL400, SL500, and G550 do not store the supervisor password in EEPROM,
 so they're the only exceptions of which I'm aware.
 
-##DISCLAIMER
+## DISCLAIMER
 
 Any discussion of how to crack security on even vintage machines is banned on most ThinkPad forums.
 So much as mentioning this page can get you banned in some places.
 
-##SOME BACKGROUND
+## SOME BACKGROUND
 
 ThinkPads have three types of security passwords.
 
