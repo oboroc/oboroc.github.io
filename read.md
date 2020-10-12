@@ -36,8 +36,8 @@ Books I finished are striken through. Books I am currently reading are in bold.
 25. <del>Mark of Calth</del>
 26. <del>Vulkan Lives</del>
 27. <del>The Unremembered Empire</del>
-28. **Scars**
-29. Vengeful Spirit
+28. <del>Scars</del>
+29. **Vengeful Spirit**
 30. The Damnation of Pythos
 31. Legacies of Betrayal
 32. Deathfire: Into the Ruinstorm
