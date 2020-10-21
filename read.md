@@ -37,7 +37,7 @@ Books I finished are striken through. Books I am currently reading are in bold.
 26. <del>Vulkan Lives</del>
 27. <del>The Unremembered Empire</del>
 28. <del>Scars</del>
-29. **Vengeful Spirit**
+29. <del>Vengeful Spirit</del>
 30. The Damnation of Pythos
 31. Legacies of Betrayal
 32. Deathfire: Into the Ruinstorm
