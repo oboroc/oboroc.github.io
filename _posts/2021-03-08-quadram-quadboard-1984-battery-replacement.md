@@ -13,7 +13,7 @@ Inside it had a 1984 model of Quadram Quadboard multi-function 8-bit ISA card.
 </a>
 
 I noticed it had a soldered in Vatra Ni-Cd rechargeable battery on it.
-Those batteries often leak the acid when fully discharged.
+Those batteries often leak acid when fully discharged.
 The acid destroys PCB tracks and makes restoring a chore.
 
 My cards battery didn't leak yet, but I decided to remove it anyway.
