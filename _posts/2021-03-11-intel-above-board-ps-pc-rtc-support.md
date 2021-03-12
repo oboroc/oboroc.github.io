@@ -13,7 +13,7 @@ I decided to make public my work on Intel Above Board PS/PC RTC support:
 
 So far I had lots of fun using Ghidra to disassemble original Intel driver.
 I did my best to format and clearly label functions and data structures and generally follow the logic along.
-WinMerge is fantastic for spotting the differences between binary files.
+WinMerge is a fantastic tool for spotting the differences between binary files.
 I left labes as lXXX, where XXX is the label address in hexadecimal.
 
 Next, I want to:
