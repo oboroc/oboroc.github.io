@@ -25,7 +25,7 @@ I used it up until 2007, when I upgraded to a new PC with Core 2 Quad Q6600 CPU.
 I kept it around until ~2011, and then gave it away to a coworker that needed a home PC but didn't want to spend any money.
 Fast forward 5 years, my coworker told me that power supply died, so he bought a new PC, and if I want, I can have it back.
 I decided to take it.
-I vacuumed it, replaced the power supply with [Cooler Master GX 750W](http://www.coolermaster.com/powersupply/gx-series/gx-750w/) and got it working again.
+I vacuumed it, replaced the power supply with Cooler Master GX 750W and got it working again.
 I upgraded HDD to Samsung Spinpoint 750 GB.
 I used to have a pair of them in RAID-0, but one died long time ago.
 I also upgraded Geforce 7800 GT with a beastly and beloved ASUS Geforce 8800 GTX.
