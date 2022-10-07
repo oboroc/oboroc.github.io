@@ -38,8 +38,8 @@ Books I finished are striken through. Books I am currently reading are in bold.
 27. <del>The Unremembered Empire</del>
 28. <del>Scars</del>
 29. <del>Vengeful Spirit</del>
-30. **The Damnation of Pythos**
-31. Legacies of Betrayal
+30. <del>The Damnation of Pythos</del> - worst in the series, took a year to power through it
+31. **Legacies of Betrayal**
 32. Deathfire: Into the Ruinstorm
 33. War Without End: Heresy Begets Retribution
 34. Pharos: the Dying of the Light
@@ -57,9 +57,19 @@ Books I finished are striken through. Books I am currently reading are in bold.
 46. Ruinstorm: Destiny unwritten...
 47. Old Earth: To the Gates of Terra
 48. The Burden of Loyalty
-49. Wolfsbane
-50. Born of Flame
-51. Slaves to Darkness
+49. Wolfsbane: The wyrd spear cast
+50. Born of Flame: The Hammer and the Anvil
+51. Slaves to Darkness: Chaos undivided
+52. Heralds of the Siege
+53. Titandeath: The God Machines cometh
+54. Buried Dagger: Doom of the Death Guard
+55. The Solar War
+56. The Lost and the Damned
+57. The First Wall
+58. Saturnine
+59. Mortis
+60. Warhawk
+61. Echoes of Eternity
 
 
 ### Warhammer Fantasy Battle
@@ -81,16 +91,6 @@ Books I finished are striken through. Books I am currently reading are in bold.
 15. The Serpent Queen
 16. Kinslayer
 17. Slayer
-
-
-### Old Man's War
-
-1. <del>Old Man's War (2005)</del>
-2. <del>The Ghost Brigades (2006)</del>
-3. The Last Colony (2007)
-4. Zoe's Tale (2008)
-5. The Human Division (2013)
-6. The End of All Things (2015)
 
 
 ### Pelevin (russian author)
@@ -120,3 +120,24 @@ Books I finished are striken through. Books I am currently reading are in bold.
 23. <del>iPhuck 10 (2017)</del>
 24. Secret Views of Mount Fuji (2018)
 25. The Art of Light Touches (2019)
+26. Indomitable Sun (2020)
+27. Transhumanism Inc. (2021)
+28. KGBT+ (2022)
+
+
+### The Expanse
+1. <del>Drive</del>
+2. <del>The Churn</del>
+3. <del>The Butcher of Anderson Station</del>
+4. Leviathan Wakes
+5. The Last Flight of the Cassandra
+6. Caliban's War
+
+### Old Man's War
+
+1. <del>Old Man's War (2005)</del>
+2. <del>The Ghost Brigades (2006)</del>
+3. The Last Colony (2007)
+4. Zoe's Tale (2008)
+5. The Human Division (2013)
+6. The End of All Things (2015)
