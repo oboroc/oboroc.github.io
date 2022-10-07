@@ -95,6 +95,8 @@ Books I finished are striken through. Books I am currently reading are in bold.
 
 ### Pelevin (russian author)
 
+[Wikipedia list](https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%BD,_%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80_%D0%9E%D0%BB%D0%B5%D0%B3%D0%BE%D0%B2%D0%B8%D1%87)
+
 1. <del>Hermit and Sixfinger (1990)</del>
 2. <del>Blue Lantern and Other Stories (1991)</del>
 3. <del>Prince of Central Planning (1992)</del>
@@ -126,6 +128,9 @@ Books I finished are striken through. Books I am currently reading are in bold.
 
 
 ### The Expanse
+
+[Wikipedia list](https://en.wikipedia.org/wiki/The_Expanse_(novel_series))
+
 1. <del>Drive</del>
 2. <del>The Churn</del>
 3. <del>The Butcher of Anderson Station</del>
