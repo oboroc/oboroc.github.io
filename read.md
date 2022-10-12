@@ -39,7 +39,7 @@ Books I finished are striken through. Books I am currently reading are in bold.
 28. <del>Scars</del>
 29. <del>Vengeful Spirit</del>
 30. <del>The Damnation of Pythos</del> - worst in the series, took a year to power through it
-31. **Legacies of Betrayal**
+31. Legacies of Betrayal
 32. Deathfire: Into the Ruinstorm
 33. War Without End: Heresy Begets Retribution
 34. Pharos: the Dying of the Light
@@ -77,7 +77,7 @@ Books I finished are striken through. Books I am currently reading are in bold.
 1. <del>Trollslayer</del>
 2. <del>Skavenslayer</del>
 3. <del>Daemonslayer</del>
-4. **Dragonslayer**
+4. Dragonslayer
 5. Beastslayer
 6. Vampireslayer
 7. Giantslayer
@@ -134,7 +134,7 @@ Books I finished are striken through. Books I am currently reading are in bold.
 1. <del>Drive</del>
 2. <del>The Churn</del>
 3. <del>The Butcher of Anderson Station</del>
-4. Leviathan Wakes
+4. **Leviathan Wakes**
 5. The Last Flight of the Cassandra
 6. Caliban's War
 
