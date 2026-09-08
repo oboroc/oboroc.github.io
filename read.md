@@ -39,7 +39,7 @@ Books I finished are striken through. Books I am currently reading are in bold.
 28. <del>Scars</del>
 29. <del>Vengeful Spirit</del>
 30. <del>The Damnation of Pythos</del> - worst in the series, took a year to power through it
-31. Legacies of Betrayal
+31. <del>Legacies of Betrayal</del>
 32. Deathfire: Into the Ruinstorm
 33. War Without End: Heresy Begets Retribution
 34. Pharos: the Dying of the Light
